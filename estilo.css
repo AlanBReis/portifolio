@@ -7,6 +7,18 @@ body {
     color: #333;
 }
 
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#language-switcher {
+    padding: 5px;
+    font-size: 16px;
+}
+
+
 .container {
     border: 3px dotted #000000;
     padding: 20px;
@@ -17,7 +29,7 @@ body {
 
 header {
     
-    
+    color: white;
     justify-content: space-between;
     margin-bottom: 20px;
     padding: 10px;
