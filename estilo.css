@@ -1,11 +1,34 @@
+:root{
+    --cor-font-grande: #2f3334;
+    --cor-font-pequena: #538898;
+    --cor-background: #F4F4F4;
+}
+.apresentacao {
+    width: 1200px ;
+    height: 600px;
+
+}
+
+.apresentacao-alan {
+
+    width: 1200px ;
+    height: 600px;
+    
+
+}
+
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Ruda, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url(arquivos/89787.jpg); 
+    background-color: var(--cor-background);
     background-repeat: no-repeat;
-    color: #333;
+    background-size: cover;
+   
+    
 }
 
 .language-selector {
@@ -36,7 +59,7 @@ body {
 #language-switcher {
     padding: 10px;
     font-size: 16px;
-    background-color: #fff;
+    background-color: var(--cor-background);
     border: 2px solid #00aaff;
     border-radius: 4px;
     color: #333;
@@ -45,8 +68,20 @@ body {
 }
 
 #language-switcher:hover {
-    background-color: #f0f8ff;
-    border-color: #0088cc;
+    background-color: var(--cor-background);
+    border-color: var(--cor-font-grande);
+}
+
+.about-me:hover {
+    background-color: #c4b9b9;
+    
+}
+
+.about-me {
+    transform: scale(0.7);
+    background-color: var(--cor-background);
+    color: black;
+    font-size: 24px;
 }
 
 
@@ -106,7 +141,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: var(--cor-font-pequena);
     text-decoration: none;
 }
 
@@ -123,13 +158,13 @@ h2 {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background: #fff;
+    background: var(--cor-background);
 }
 
 .projeto {
     margin: 1.5rem 0;
     padding: 1rem;
-    background: #e2e2e2;
+    background: var(--cor-background);
     border-radius: 8px;
 }
 
@@ -140,7 +175,7 @@ ul {
 
 ul li {
     margin: 0.5rem 0;
-    background: #e2e2e2;
+    background: var(--cor-background);
     padding: 0.5rem;
     border-radius: 4px;
 }
