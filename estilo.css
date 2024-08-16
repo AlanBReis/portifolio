@@ -13,13 +13,20 @@
 
 .titulo {
     font-family: "Ruda", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: var(--cor-font-grande);
     text-align: center;
 }
 
+.titulo-menor {
+    font-family: "Ruda", sans-serif;
+    font-size: 40px;
+    color: var(--cor-font-grande);
+    text-align: left;
+}
+
 .paragrafo {
-    font-size: 38px;
+    font-size: 34px;
     font-family: "Questrial", sans-serif;
     text-align: left;
     color: var(--cor-font-pequena);
@@ -193,10 +200,17 @@ section {
 }
 
 .projeto {
-    margin: 1.5rem 0;
-    padding: 1rem;
-    background: var(--cor-background);
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo-expandido {
+    display: none; /* Inicialmente oculto */
+}
+
+.btn-expandir {
+    /* Estilize o botão como desejar */
 }
 
 ul {

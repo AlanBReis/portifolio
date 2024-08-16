@@ -36,3 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
         updateContent(translations);
     });
 });
+
+
+const botoesExpandir = document.querySelectorAll('.btn-expandir');
+
+botoesExpandir.forEach(botao => {
+    botao.addEventListener('click', () => {
+        const conteudoExpandido = botao.nextElementSibling;
+        conteudoExpandido.style.display = conteudoExpandido.style.display === 'none' ? 'block' : 'none';
+    });
+});
