@@ -2,33 +2,64 @@
     --cor-font-grande: #2f3334;
     --cor-font-pequena: #538898;
     --cor-background: #F4F4F4;
+    --cor-hover: #f0e6e6;
 }
+
 .apresentacao {
     width: 1200px ;
     height: 600px;
 
 }
 
-.apresentacao-alan {
+.titulo {
+    font-family: "Ruda", sans-serif;
+    font-size: 80px;
+    color: var(--cor-font-grande);
+    text-align: center;
+}
 
-    width: 1200px ;
-    height: 600px;
-    
+.paragrafo {
+    font-size: 38px;
+    font-family: "Questrial", sans-serif;
+    text-align: left;
+    color: var(--cor-font-pequena);
+}
+
+.paragrafo-habilidades {
+    font-size: 18px;
+    font-family: "Ruda", sans-serif;
+    color: var(--cor-font-pequena);
+}
+
+.paragrafo-sobre {
+    font-size: 32px;
+    font-family: "Questrial", sans-serif;
+    text-align: right;
 
 }
 
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.foto-perfil {
+    width: 400px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    
+}
+
+.texto-sobre {
+    flex: 1; /* Ocupa o espaço restante */
+    margin-left: 20px; /* Espaçamento entre a imagem e o texto */
+}
 
 body {
-    font-family: Ruda, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: var(--cor-background);
-    background-repeat: no-repeat;
-    background-size: cover;
-   
-    
 }
 
 .language-selector {
@@ -62,7 +93,6 @@ body {
     background-color: var(--cor-background);
     border: 2px solid #00aaff;
     border-radius: 4px;
-    color: #333;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
@@ -72,16 +102,23 @@ body {
     border-color: var(--cor-font-grande);
 }
 
+
 .about-me:hover {
-    background-color: #c4b9b9;
-    
+    background-color:var(--cor-hover); 
 }
 
 .about-me {
     transform: scale(0.7);
-    background-color: var(--cor-background);
-    color: black;
-    font-size: 24px;
+    font-family: "Ruda", sans-serif;
+    font-size: 32px;
+    font-style: none;
+    color: var(--cor-font-grande);
+}
+
+
+.about-me a {
+    color: var(--cor-font-grande);
+
 }
 
 
@@ -110,12 +147,6 @@ header {
     align-items: center;
 }
 
-.foto-perfil {
-    border-radius: 50%;
-    width: 240px; 
-    height: 240px; 
-    margin-right: 20px;
-}
 
 .contato {
     display: flexbox;
