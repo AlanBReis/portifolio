@@ -20,12 +20,15 @@ body {
 
 
 .container {
-    border: 3px dotted #000000;
+    border: 3px solid rgb(0, 0, 0); 
     padding: 20px;
     max-width: 1200px;
     margin: 12px auto;
-    background-color: black;
+    background: linear-gradient(135deg, #b4ac96, #c5acac); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
 
 header {
     
