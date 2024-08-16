@@ -3,7 +3,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url(arquivos/89787.jpg); 
+    background-repeat: no-repeat;
     color: #333;
 }
 
@@ -22,7 +23,7 @@ body {
 }
 
 .lang-btn img {
-    width: 30px; /* Ajuste o tamanho das bandeiras conforme necessário */
+    width: 40px; /* tamanho da bandeira */
     height: auto;
     border-radius: 4px;
 }
@@ -50,14 +51,14 @@ body {
 
 
 .container {
-    border: 3px solid rgb(0, 0, 0); 
+    
     padding: 20px;
     max-width: 1200px;
     margin: 12px auto;
-    background: linear-gradient(135deg, #b4ac96, #c5acac); 
-    border-radius: 12px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: transparent
+
 }
+
 
 
 header {
