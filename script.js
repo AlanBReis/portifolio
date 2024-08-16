@@ -18,18 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Evento de mudança do seletor de idioma
-    languageSwitcher.addEventListener('change', function() {
-        const language = this.value;
-        loadTranslations(language).then(translations => {
-            updateContent(translations);
-            localStorage.setItem('preferredLanguage', language); // Salva a preferência de idioma
+    // Evento de clique nos botões de idioma
+    document.querySelectorAll('.lang-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const language = this.getAttribute('data-lang');
+            loadTranslations(language).then(translations => {
+                updateContent(translations);
+                localStorage.setItem('preferredLanguage', language); // Salva a preferência de idioma
+            });
         });
     });
 
     // Configura o idioma inicial
     const savedLanguage = localStorage.getItem('preferredLanguage') || 'pt';
-    languageSwitcher.value = savedLanguage;
+    document.getElementById('language-switcher').value = savedLanguage;
     loadTranslations(savedLanguage).then(translations => {
         updateContent(translations);
     });
