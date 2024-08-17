@@ -5,5 +5,17 @@
     "skills": "Skills",
     "certifications": "Certifications",
     "about2": "Hello, I’m Alan, currently studying Software Engineering at Unicesumar. My journey in technology began in 2023 when I started a course in Digital Games Technology, where I first encountered the world of programming. Since then, I have focused on the DevOps field, dedicating myself to mastering best practices in automation, continuous integration, and infrastructure as code. I’m passionate about technology and always looking for new opportunities to expand my knowledge and grow professionally in this dynamic and challenging field.",
-    "Hability":"Hability"
+    "Hability":"Hability",
+    "Aws":"AWS (Amazon Web Services) – Experience in configuration, management of EC2, S3, and RDS instances, as well as integration with other cloud services.",
+    "Docker": "Docker: Containers, Docker Compose – Creation and orchestration of containers, optimization of development and production environments.",
+    "Kubernetes":"Kubernetes: Creation and management of clusters, implementation of horizontal and vertical scalability strategies for mission-critical applications, using resources such as Deployments, Services, Ingresses and NetworkPolicies.",
+    "Ci/Cd": "CI/CD: Implementation of robust CI/CD pipelines with Jenkins, GitLab CI and GitHub Actions, covering everything from construction and testing to deployment in various environments. Experience in unit, integration and end-to-end testing, using tools such as Jest and Selenium.",
+    "Iac":"IaC: Infrastructure provisioning and management with Terraform and Ansible, ensuring the reproducibility and scalability of environments. Creation of custom modules to automate repetitive tasks.",
+    "Prometheus":"Prometheus, Grafana – Configuration and customization of monitoring systems, dashboards, and alerts to ensure application availability and performance.",
+    "Redes":"Networks: Knowledge of TCP/IP networks, configuration of routing and firewalls, VPNs, and network security practices.",
+    "Git":"Git Versioning Control: Git GitHub GitLab – Advanced use of code versioning, branch management, pull requests and integration with CI/CD.",
+    "Github":"Github code versioning, Using GitHub tools, such as GitHub Actions to automate workflows",
+    "Gitlab":"GitLab Configuring runners to run pipelines on different platforms",
+    "Python":"Python for scripting and automation",
+    "Javascript":"JavaScript (fullstack development)"
 }
