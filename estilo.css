@@ -25,6 +25,7 @@
     text-align: left;
 }
 
+
 .paragrafo {
     font-size: 34px;
     font-family: "Questrial", sans-serif;
@@ -189,21 +190,11 @@ section {
     background: var(--cor-background);
 }
 
-.projeto {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.conteudo-expandido {
-    display: none; /* Inicialmente oculto */
-}
-
-.btn-expandir {
-    /* Estilize o botão como desejar */
-}
 
 .project-title {
+    font-family: "Ruda", sans-serif;
+    text-align: center;
+    font-size: 26px;
     cursor: pointer;
     color: var(--cor-font-grande);
     margin-top: 20px;
@@ -239,6 +230,17 @@ ul li {
     padding: 0.5rem;
     border-radius: 4px;
 }
+
+.contato-itens {
+    text-align: center;
+
+}
+
+.contato-icones {
+    margin: 2rem;
+}
+
+
 
 footer {
     text-align: center;

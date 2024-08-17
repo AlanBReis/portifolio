@@ -46,3 +46,12 @@ botoesExpandir.forEach(botao => {
         conteudoExpandido.style.display = conteudoExpandido.style.display === 'none' ? 'block' : 'none';
     });
 });
+
+function toggleProjectDetails(projectId) {
+    const projectDetails = document.getElementById(projectId);
+    if (projectDetails.style.display === "none" || projectDetails.style.display === "") {
+        projectDetails.style.display = "block";
+    } else {
+        projectDetails.style.display = "none";
+    }
+}
