@@ -51,6 +51,22 @@
         <br><br><br>
         <section id="projetos">
             <h2 class="titulo">Projetos</h2>
+            <div class="project-container">
+                <!-- Repita este bloco para cada projeto -->
+                <h2 class="project-title" onclick="toggleProjectDetails('project1')">Título do Projeto 1</h2>
+                <div id="project1" class="project-details">
+                    <p>Descrição do Projeto 1...</p>
+                    <img src="caminho/para/imagem-projeto1.jpg" alt="Imagem do Projeto 1">
+                </div>
+            
+                <h2 class="project-title" onclick="toggleProjectDetails('project2')">Título do Projeto 2</h2>
+                <div id="project2" class="project-details">
+                    <p>Descrição do Projeto 2...</p>
+                    <img src="caminho/para/imagem-projeto2.jpg" alt="Imagem do Projeto 2">
+            </div>
+                <!-- Repita até aqui -->
+            </div>
+            
             <div class="projeto">
                 <h3 class="titulo-projeto">Criar um bot para automatizar tarefas repetitivas.</h3>
                 <p class="descricao"> Utilize Python e bibliotecas como Slack API para criar um bot que possa executar tarefas como abrir tickets, responder a perguntas frequentes ou gerenciar recursos em nuvem.</p>
@@ -137,6 +153,18 @@
             <a href="https://www.linkedin.com/in/alanbrreis/" target="_blank"><svg height="48px" width="48px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.693 56.693"><g><path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/><path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/></g></svg></a>
             <a href="https://github.com/AlanBReis/" target="_blank"><svg height="48px" width="48px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.467-5.887-60.466,22.668c-17.587-4.885-37.172-8.134-57.501-8.134c-20.336,0-39.92,3.249-57.501,8.134c-42-28.555-60.466-22.668-60.466-22.668c-12.252,30.833-5,53.057-2.734,58.947c-14.046,15.421-22.67,35.379-22.67,59.869c0,86.162,53.057,104.301,102.942,110.192c-6.515,5.587-12.252,16.753-14.516,32.34c-13.026,5.888-46.998,16.753-67.327-19.336c0,0-12.252-21.337-35.379-22.668c0,0-22.67-0.775-1.512,14.646c0,0,15.42,7.664,26.585,36.498c0,0,13.792,44.448,77.566,29.002v38.777c0,5.891-4.374,12.252-14.516,10.912c-80.643-26.585-139.092-101.367-139.092-189.98C71.93,164.04,160.23,75.74,267.392,75.74c107.163,0,195.464,88.301,195.464,195.464c0,88.613-58.449,163.395-139.092,189.98c-10.138,1.34-14.516-5.022-14.516-10.912v-53.776C308.385,385.522,302.648,372.494,296.133,354.174z"/></g></svg></a>
         </section>
+        <!-- Adicione isso ao final do seu arquivo HTML, antes de </body> -->
+        <script>
+            function toggleProjectDetails(projectId) {
+                const projectDetails = document.getElementById(projectId);
+                if (projectDetails.style.display === "none" || projectDetails.style.display === "") {
+                    projectDetails.style.display = "block";
+                } else {
+                    projectDetails.style.display = "none";
+                }
+            }
+</script>
+
     </div>    
         <footer>
             <p>&copy; 2024 Alan Borges dos Reis. Todos os direitos reservados.</p>

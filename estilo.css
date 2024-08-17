@@ -203,6 +203,31 @@ section {
     /* Estilize o botão como desejar */
 }
 
+.project-title {
+    cursor: pointer;
+    color: var(--cor-font-grande);
+    margin-top: 20px;
+}
+
+.project-title:hover {
+    background-color: var(--cor-hover);
+}
+
+.project-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-details img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
 ul {
     list-style: none;
     padding: 0;
