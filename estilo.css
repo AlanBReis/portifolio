@@ -259,6 +259,13 @@ ul li {
     border-radius: 4px;
 }
 
+.contato {
+    font-family: "Ruda", sans-serif;
+    font-size: 60px;
+    color: var(--cor-font-grande);
+    text-align: center;
+}
+
 .contato-itens {
     text-align: center;
 
