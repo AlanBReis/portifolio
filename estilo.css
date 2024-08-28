@@ -29,7 +29,7 @@
 }
 
 .download-button:hover {
-    background-color: #444444; /* Cor ao passar o mouse */
+    background-color: #666363; /* Cor ao passar o mouse */
 }
 
 
@@ -66,6 +66,12 @@
     font-family: "Questrial", sans-serif;
     text-align: right;
 
+}
+
+.paragrafo-projetos {
+    font-size: 18px;
+    font-family: "Questrial", sans-serif;
+    text-align: center;
 }
 
 .sobre-container {
