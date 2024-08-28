@@ -4,6 +4,7 @@
     "projects": "Projects",
     "skills": "Skills",
     "certifications": "Certifications",
+    "contact":"contact",
     "about2": "Hello, I'm Alan, a Software Engineering student at Unicesumar with a strong passion for DevOps. I started in the technology area in 2023 with game development in Unity, where I acquired knowledge in C#. Currently, I am focused on mastering DevOps best practices, with an emphasis on infrastructure automation using Terraform and container orchestration with Kubernetes. I have practical experience in CI/CD with Jenkins and am proficient in languages ​​such as Python and Bash. I constantly seek to improve my skills through personal projects.",
     "Hability":"Hability",
     "Aws":"AWS (Amazon Web Services) – Experience in configuration, management of EC2, S3, and RDS instances, as well as integration with other cloud services.",

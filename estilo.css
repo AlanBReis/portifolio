@@ -17,7 +17,7 @@
 }
 
 .download-button {
-    background-color: #71a874; /* Cor do botão */
+    background-color: #121312; /* Cor do botão */
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -29,7 +29,7 @@
 }
 
 .download-button:hover {
-    background-color: #45a049; /* Cor ao passar o mouse */
+    background-color: #444444; /* Cor ao passar o mouse */
 }
 
 
