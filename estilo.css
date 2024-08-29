@@ -1,4 +1,4 @@
-:root{
+:root {
     --cor-font-grande: #2f3334;
     --cor-font-pequena: #538898;
     --cor-background: #F4F4F4;
@@ -6,9 +6,9 @@
 }
 
 .apresentacao {
-    width: 1200px ;
-    height: 600px;
-
+    width: 100%; /* Ajuste para se adaptar ao tamanho da tela */
+    height: auto; /* Permite que a altura seja ajustada automaticamente */
+    max-width: 1200px;
 }
 
 #resume-download {
@@ -25,13 +25,11 @@
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-
 }
 
 .download-button:hover {
     background-color: #666363; /* Cor ao passar o mouse */
 }
-
 
 .titulo {
     font-family: "Ruda", sans-serif;
@@ -46,7 +44,6 @@
     color: var(--cor-font-grande);
     text-align: left;
 }
-
 
 .paragrafo {
     font-size: 34px;
@@ -65,7 +62,6 @@
     font-size: 32px;
     font-family: "Questrial", sans-serif;
     text-align: right;
-
 }
 
 .paragrafo-projetos {
@@ -78,12 +74,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
 }
 
 .foto-perfil {
-    width: 400px; /* Ajuste o tamanho conforme necessário */
+    width: 100%; /* Ajusta a largura da imagem */
+    max-width: 400px; /* Limita o tamanho máximo */
     height: auto;
-    
 }
 
 .texto-sobre {
@@ -138,9 +135,8 @@ body {
     border-color: var(--cor-font-grande);
 }
 
-
 .about-me:hover {
-    background-color:var(--cor-hover); 
+    background-color: var(--cor-hover);
 }
 
 .about-me {
@@ -151,24 +147,19 @@ body {
     color: var(--cor-font-grande);
 }
 
-
 .about-me a {
     color: var(--cor-font-grande);
-
 }
-
 
 .container {
     padding: 20px;
     max-width: 1200px;
     margin: 12px auto;
-    background: transparent
+    background: transparent;
 }
 
-
-
+/* Estilos padrão para header */
 header {
-    
     color: white;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -176,13 +167,14 @@ header {
     text-align: center;
 }
 
+/* Estilos padrão para perfil */
 .perfil {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
 }
 
-
-
+/* Navegação */
 nav {
     margin-left: 20px;
 }
@@ -217,7 +209,6 @@ section {
     margin: 1rem 0;
     background: var(--cor-background);
 }
-
 
 .project-title {
     font-family: "Ruda", sans-serif;
@@ -259,23 +250,13 @@ ul li {
     border-radius: 4px;
 }
 
-.contato {
-    font-family: "Ruda", sans-serif;
-    font-size: 60px;
-    color: var(--cor-font-grande);
-    text-align: center;
-}
-
 .contato-itens {
     text-align: center;
-
 }
 
 .contato-icones {
     margin: 2rem;
 }
-
-
 
 footer {
     text-align: center;
@@ -283,4 +264,118 @@ footer {
     background-color: #333;
     color: #fff;
     margin-top: 2rem;
+}
+
+/* Media Queries */
+
+/* Estilos para telas de desktop grandes (1200px e acima) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 20px;
+        max-width: 1200px;
+    }
+}
+
+/* Estilos para tablets (768px a 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        padding: 15px;
+        max-width: 750px;
+    }
+    
+    .titulo {
+        font-size: 48px;
+    }
+
+    .titulo-menor {
+        font-size: 32px;
+    }
+
+    .paragrafo {
+        font-size: 28px;
+    }
+
+    .paragrafo-sobre {
+        font-size: 28px;
+    }
+
+    .foto-perfil {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .texto-sobre {
+        margin-left: 15px;
+    }
+}
+
+/* Estilos para smartphones (576px a 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        padding: 10px;
+        max-width: 540px;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .titulo-menor {
+        font-size: 28px;
+    }
+
+    .paragrafo {
+        font-size: 24px;
+    }
+
+    .paragrafo-sobre {
+        font-size: 24px;
+    }
+
+    .foto-perfil {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .texto-sobre {
+        margin-left: 10px;
+    }
+}
+
+/* Estilos para dispositivos móveis (menor que 576px) */
+@media (max-width: 575px) {
+    .container {
+        padding: 5px;
+        max-width: 100%;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .titulo-menor {
+        font-size: 24px;
+    }
+
+    .paragrafo {
+        font-size: 20px;
+    }
+
+    .paragrafo-sobre {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .foto-perfil {
+        width: 100%;
+        max-width: 200px;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .texto-sobre {
+        margin-left: 5px;
+    }
 }
