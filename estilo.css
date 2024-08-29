@@ -295,17 +295,27 @@ footer {
         font-size: 28px;
     }
 
+    .sobre-container {
+        flex-direction: column; /* Alinha a foto e o texto em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
     .paragrafo-sobre {
         font-size: 28px;
+        text-align: center;
     }
 
     .foto-perfil {
         width: 80%;
         max-width: 300px;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
     }
 
     .texto-sobre {
         margin-left: 15px;
+
     }
 }
 
@@ -328,13 +338,22 @@ footer {
         font-size: 24px;
     }
 
+    .sobre-container {
+        flex-direction: column; /* Alinha a foto e o texto em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
     .paragrafo-sobre {
-        font-size: 24px;
+        font-size: 28px;
+        text-align: center;
     }
 
     .foto-perfil {
         width: 100%;
-        max-width: 250px;
+        max-width: 300px;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
     }
 
     .texto-sobre {
@@ -364,6 +383,11 @@ footer {
     .paragrafo-sobre {
         font-size: 20px;
         text-align: center;
+    }
+
+    .sobre-container {
+        flex-direction: column; /* Alinha a foto e o texto em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
     }
 
 
