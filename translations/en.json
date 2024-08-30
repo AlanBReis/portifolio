@@ -6,7 +6,7 @@
     "certifications": "Certifications",
     "contact":"Contact",
     "about2": "Hello, I'm Alan, a Software Engineering student at Unicesumar with a strong passion for DevOps. I started in the technology area in 2023 with game development in Unity, where I acquired knowledge in C#. Currently, I am focused on mastering DevOps best practices, with an emphasis on infrastructure automation using Terraform and container orchestration with Kubernetes. I have practical experience in CI/CD with Jenkins and am proficient in languages ​​such as Python and Bash. I constantly seek to improve my skills through personal projects.",
-    "Hability":"Hability",
+    "Hability":"Skills",
     "Aws":"AWS (Amazon Web Services) – Experience in configuration, management of EC2, S3, and RDS instances, as well as integration with other cloud services.",
     "Docker": "Docker: Containers, Docker Compose – Creation and orchestration of containers, optimization of development and production environments.",
     "Kubernetes":"Kubernetes: Creation and management of clusters, implementation of horizontal and vertical scalability strategies for mission-critical applications, using resources such as Deployments, Services, Ingresses and NetworkPolicies.",
@@ -18,5 +18,9 @@
     "Github":"Github code versioning, Using GitHub tools, such as GitHub Actions to automate workflows",
     "Gitlab":"GitLab Configuring runners to run pipelines on different platforms",
     "Python":"Python for scripting and automation",
-    "Javascript":"JavaScript (fullstack development)"
+    "Javascript":"JavaScript (fullstack development)",
+    "certification":"Certification",
+    "certification-aws":"Certifications AWS Cloud Practitioner Certification (in progress)",
+    "curriculum":"Download my resume",
+    "deploy-automation":"deploy-automation"
 }

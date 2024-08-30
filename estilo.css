@@ -67,7 +67,8 @@
 .paragrafo-projetos {
     font-size: 18px;
     font-family: "Questrial", sans-serif;
-    text-align: center;
+    text-align: left;
+
 }
 
 .sobre-container {
@@ -303,6 +304,10 @@ footer {
     .paragrafo-sobre {
         font-size: 28px;
         text-align: center;
+    }
+
+    .paragrafo-projetos {
+        font-size: 18px;
     }
 
     .foto-perfil {

@@ -18,5 +18,9 @@
     "Github":"Github versionamento de código, Utilização de ferramentas do GitHub, como GitHub Actions para automatizar workflows",
     "Gitlab":"GitLab Configuração de runners para executar pipelines em diferentes plataformas",
     "Python":"Python para a criação de scripts e automação",
-    "Javascript":"Desenvolvimento FullStack"
+    "Javascript":"Desenvolvimento FullStack",
+    "Certification":"Certificação",
+    "certification-aws":"Certificação AWS Cloud Practitioner (em andamento)",
+    "curriculum":"Baixe meu currículo",
+    "deploy-automation":"deploy-automatico"
 }
