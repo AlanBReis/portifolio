@@ -9,6 +9,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Ruda&display=swap');
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
     <meta http-equiv='pragma' content='no-cache'>
@@ -61,49 +64,81 @@
                 <!-- Repita este bloco para cada projeto -->
                 <h2 class="project-title" onclick="toggleProjectDetails('project1')">Pipeline Automatizado com Docker</h2>
                 <div id="project1" class="project-details">
-                    <p class="paragrafo-projetos"> Voce Pode Conferir o projeto em meu <a href="https://github.com/AlanBReis/pipeline-automatizado" target="_blank">Github</a> <br><br>Descrição: Este projeto demonstra a criação de uma aplicação web simples com Flask, acompanhada de um pipeline de automação para desenvolvimento e testes. A ideia principal é automatizar o processo de construção e testes da aplicação, utilizando Docker e GitHub Actions. <br>
-                        <img src="arquivos/img1.png" alt="imagem aplicação no ar">
+                    <p class="paragrafo-projetos"> Voce Pode Conferir o codigo fonte do projeto em meu <a href="https://github.com/AlanBReis/pipeline-automatizado" target="_blank">Github</a> <br><br>Descrição: Este projeto demonstra a criação de uma aplicação web simples com Flask, acompanhada de um pipeline de automação para desenvolvimento e testes. A ideia principal é automatizar o processo de construção e testes da aplicação, utilizando Docker e GitHub Actions. </p>
+                    <h2 class="paragrafo-projetos-tecnologias">
+                        Tecnologias Utilizadas
+                    </h2>
+                    <div class="paragrafo-projetos-tecnologias">
+                        <li>
+                            Controle de Versão: Git, GitHub        
+                        </li>
+                        <li>
+                            CI/CD: GitHub Actions  
+                        </li>
+                        <li>
+                            Containerização: Docker   
+                        </li>
+                        <li>
+                            Orquestração de Containers: Docker Compose
+                        </li>
+                        <li>
+                            Linguagem de Programação: Python
+                        </li>
+                        <li>
+                            Serviços de Deploy: AWS
+                        </div>
+                    </p>    
+                    <img src="arquivos/img1.png" alt="imagem aplicação no ar">
 
-                        O que Faz: A aplicação web foi desenvolvida com o framework Flask e é exibida em uma página estilizada e animada. Com o uso de Docker, a aplicação é empacotada em um container, o que facilita sua execução e gerenciamento. O pipeline automatizado, configurado com GitHub Actions, garante que o código seja testado e a imagem do Docker seja criada automaticamente sempre que há uma atualização no código. <br>
-                        <img src="arquivos/img2.png" alt="imagem testes">
+                    <p class="paragrafo-projetos-tecnologias">O que Faz: A aplicação web foi desenvolvida com o framework Flask e é exibida em uma página estilizada e animada. Com o uso de Docker, a aplicação é empacotada em um container, o que facilita sua execução e gerenciamento. O pipeline automatizado, configurado com GitHub Actions, garante que o código seja testado e a imagem do Docker seja criada automaticamente sempre que há uma atualização no código.</p>
+                    
+                    <img src="arquivos/img2.png" alt="imagem testes">
                         
+                    <p class="paragrafo-projetos-tecnologias">
                         Objetivo: O principal objetivo deste projeto é demonstrar a aplicação de práticas modernas de desenvolvimento e automação. Embora o deploy automático na AWS ainda não esteja implementado, o projeto já inclui um pipeline que prepara a aplicação para um futuro deploy em ambientes de produção.
                         
+                    </p>
+                    <p class="paragrafo-projetos-tecnologias">
                         Por que é Interessante: Este projeto é uma excelente vitrine para quem deseja ver como a automação pode ser utilizada para facilitar o desenvolvimento e garantir a qualidade do código. Ele mostra a integração de tecnologias como Flask para o desenvolvimento da aplicação, Docker para a containerização, e GitHub Actions para a automação do processo de build e testes.
+                        
                     </p>
                     <img src="arquivos/img3.png" alt="Imagem Docker">
                 </div>
             
                 <h2 class="project-title" onclick="toggleProjectDetails('project2')">CI/CD Pipeline para Aplicação Web com Deploy na AWS</h2>
                 <div id="project2" class="project-details">
-                    <p class="paragrafo-projetos" >Voce pode Conferir o projeto em meu <a href="https://github.com/AlanBReis/ci-cd-aws-deploy" target="_blank"> Github</a>. Este projeto exemplifica a criação de um pipeline CI/CD robusto para uma aplicação web de previsão do tempo, construída com Flask e Docker. Utilizando a API do OpenWeatherMap, a aplicação é totalmente automatizada desde a construção até o deploy. O pipeline inclui integração com GitHub Actions para automação de build e testes, e usa Terraform e Ansible para a configuração e deploy automatizado na AWS. Este projeto visa demonstrar práticas avançadas de DevOps, como criação de imagens Docker, deploy contínuo e integração contínua, aplicando as melhores práticas para garantir uma entrega eficiente e segura.
+                    <p class="paragrafo-projetos" >Voce pode Conferir o codigo fonte do projeto em meu <a href="https://github.com/AlanBReis/ci-cd-aws-deploy" target="_blank"> Github</a>. Este projeto exemplifica a criação de um pipeline CI/CD robusto para uma aplicação web de previsão do tempo, construída com Flask e Docker. Utilizando a API do OpenWeatherMap, a aplicação é totalmente automatizada desde a construção até o deploy. O pipeline inclui integração com GitHub Actions para automação de build e testes, e usa Terraform e Ansible para a configuração e deploy automatizado na AWS. Este projeto visa demonstrar práticas avançadas de DevOps, como criação de imagens Docker, deploy contínuo e integração contínua, aplicando as melhores práticas para garantir uma entrega eficiente e segura.
                     </p>
-                    <h2>Tecnologias Utilizadas</h2>
-                    <li>
-                        Linguagem/Framework: Flask (Python)
-                    </li>
-                    <li>
-                            Docker: Para containerização da aplicação
-                    </li>
-                    <li>
-                            GitHub Actions: Para automação do pipeline CI/CD
-                    </li>
-                    <li>
-                            Terraform: Para provisionamento de infraestrutura como código (EC2, S3)
-                    </li>
-                    <li>
-                            Ansible: Para automação e configuração de servidores
-                        AWS:
-                    </li>
-                    <img src="arquivos/img-tempo.jpg" alt="Imagem do Projeto 2">
+                    <h2 class="paragrafo-projetos-tecnologias">Tecnologias Utilizadas</h2>
+                    <div class="paragrafo-projetos-tecnologias">
+                        <li>
+                            Linguagem/Framework: Flask (Python)
+                        </li>
+                        <li>
+                                Docker: Para containerização da aplicação
+                        </li>
+                        <li>
+                                GitHub Actions: Para automação do pipeline CI/CD
+                        </li>
+                        <li>
+                                Terraform: Para provisionamento de infraestrutura como código (EC2, S3)
+                        </li>
+                        <li>
+                                Ansible: Para automação e configuração de servidores
+                            AWS:
+                        </li>
+                    </div>
+                    <div class="img-project" >
+                        <img src="arquivos/img-tempo.jpg" alt="Imagem do Projeto 2">
+                    </div>
                 </div>
 
                 <h2 class="project-title" onclick="toggleProjectDetails('project3')" data-translate="deploy-automation">Deploy Automatico (Vagrant)</h2>
                 <div id="project3" class="project-details">
                     <h2 data-translate="deploy-automation-resume1"> O que o projeto faz?</h2>
-                    <p class="paragrafo-projetos" data-translate="deploy-automation-resume2"  ><br>
+                    <p class="paragrafo-projetos-tecnologias" data-translate="deploy-automation-resume2"  ><br>
                         
-                        Voce Pode Conferir o projeto em meu <a href="https://github.com/AlanBReis/vagrant-deploy-automatico" target="_blank">Github</a> :  <br><br>
+                        Voce Pode Conferir o codigo fonte do meu projeto em meu <a href="https://github.com/AlanBReis/vagrant-deploy-automatico" target="_blank">Github</a> :  <br><br>
 
                         
                         Este projeto demonstra a capacidade de criar e configurar um ambiente de desenvolvimento virtualizado e hospedar um site web. Aqui está uma visão geral do que ele faz: <br>
@@ -118,6 +153,21 @@
                         
                         
                     </p>
+                    <div class="paragrafo-projetos-tecnologias">
+                        <h2> Tecnologias Utilizadas: </h2>
+                        <li>
+                            Vagrant
+                        </li>
+                        <li>
+                            VirtualBox
+                        </li>
+                        <li>
+                            Nginx
+                        </li>
+                        <li>
+                            Shell Script
+                        </li>
+                    </div>
                     <img src="arquivos/vagrant-vm.png" alt="Devops - Imagem VM criada por Vagrant">
                 </div>
 

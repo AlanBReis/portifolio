@@ -5,6 +5,13 @@
     --cor-hover: #f0e6e6;
 }
 
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
 .apresentacao {
     width: 100%; /* Ajuste para se adaptar ao tamanho da tela */
     height: auto; /* Permite que a altura seja ajustada automaticamente */
@@ -45,6 +52,8 @@
     text-align: left;
 }
 
+
+
 .paragrafo {
     font-size: 34px;
     font-family: "Questrial", sans-serif;
@@ -66,8 +75,14 @@
 
 .paragrafo-projetos {
     font-size: 18px;
-    font-family: "Questrial", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: left;
+
+}
+
+.paragrafo-projetos-tecnologias {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
 
 }
 
@@ -134,6 +149,10 @@ body {
 #language-switcher:hover {
     background-color: var(--cor-background);
     border-color: var(--cor-font-grande);
+}
+
+.img-project {
+    text-align: center;
 }
 
 .about-me:hover {
