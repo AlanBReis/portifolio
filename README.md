@@ -6,36 +6,6 @@ Bem-vindo ao meu portfólio! Aqui você encontrará uma visão geral dos meus pr
 
 Olá, sou Alan, estudante de Engenharia de Software na Unicesumar com forte paixão por DevOps. Iniciei na área de tecnologia em 2023 com o desenvolvimento de jogos em Unity, onde adquiri conhecimentos em C#. Atualmente, estou focado em dominar as melhores práticas de DevOps, com ênfase em automação de infraestrutura utilizando Terraform e orquestração de containers com Kubernetes. Possuo experiência prática em CI/CD com Jenkins e sou proficiente em linguagens como Python e Bash. Busco constantemente aprimorar minhas habilidades através de projetos pessoais.
 
-## Projetos
-
-### Bot-Slack
-- **Descrição**: Um bot desenvolvido em Python utilizando a Slack API para executar tarefas como abrir tickets, responder a perguntas frequentes ou gerenciar recursos em nuvem.
-- **Incremento**: Adicionar uma funcionalidade de notificação usando Slack, Discord ou email para avisar quando a tarefa for concluída.
-- **Modificação**: Expandir o bot para incluir integração com sistemas CI/CD (como Jenkins ou GitHub Actions) para automatizar o fluxo de trabalho.
-- **Link**: [Veja no GitHub](https://github.com/AlanBReis/bot-slack)
-
-### Criar um Dashboard para Monitorar a Saúde de um Servidor
-- **Descrição**: Usar Prometheus e Grafana para coletar métricas de um servidor e criar um dashboard visual para monitorar seu desempenho.
-- **Incremento**: Usar Grafana e Prometheus para criar um dashboard interativo que monitore a saúde do servidor e o desempenho de serviços específicos.
-- **Modificação**: Adicionar alertas automáticos configuráveis que enviam notificações quando certos limites de desempenho são excedidos.
-
-### Criar um Script para Provisionar um Ambiente de Desenvolvimento
-- **Descrição**: Usar ferramentas como Ansible ou Terraform para configurar automaticamente um servidor virtual com as ferramentas necessárias para iniciar um novo projeto.
-- **Incremento**: Automatizar a criação e configuração de ambientes na nuvem, garantindo que sejam reproduzíveis e escaláveis.
-- **Modificação**: Adicionar suporte para múltiplos ambientes (desenvolvimento, staging, produção) com variações na configuração.
-
-### Provisionar um Cluster Kubernetes
-- **Descrição**: Usar Terraform para criar um cluster Kubernetes em uma nuvem pública (AWS, GCP ou Azure) e deployar um aplicativo simples nele.
-- **Incremento**: Implementar a implantação automatizada de uma aplicação completa com CI/CD e adicionar políticas de segurança e gerenciamento de identidade (IAM).
-- **Modificação**: Configurar o cluster para ser altamente disponível e implementar escalabilidade automática de pods.
-
-### Projeto Extra: Infraestrutura como Código (IaC) Completa
-- **Descrição**: Criar um projeto que configure toda a infraestrutura necessária para uma aplicação usando apenas código.
-- **Benefícios**: Demonstra a capacidade de gerenciar infraestruturas complexas e reproduzíveis.
-
-### Projeto Extra: Implementação de Observabilidade
-- **Descrição**: Configurar um sistema completo de observabilidade para uma aplicação, incluindo logs centralizados, métricas e tracing distribuído.
-- **Benefícios**: Mostra habilidade em monitorar e diagnosticar problemas em sistemas distribuídos.
 
 ## Habilidades
 
@@ -50,8 +20,10 @@ Olá, sou Alan, estudante de Engenharia de Software na Unicesumar com forte paix
 
 ## Certificações
 
-- **Certificação AWS Cloud Practitioner** (em andamento)
-- **Certificação Docker DCA** (em andamento)
+- **AWS Certified Cloud Practitioner (Em andamento, voucher garantido pela Escola
+da Nuvem)
+- **Microsoft Certified: Azure Fundamentals (Planejada, voucher garantido por
+bootcamp DIO)
 
 ## Contato
 
