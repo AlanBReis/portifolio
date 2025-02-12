@@ -20,7 +20,3 @@ Olá, sou Alan, estudante de Engenharia de Software na Unicesumar com forte paix
 
 
 
-## Contato
-
-- **WhatsApp**: [Clique aqui para entrar em contato](https://wa.me/5544920024399/?text=Oi%20Tudo%20bem%20?%20vamos%20conversar)
-- **Currículo**: [Baixe meu currículo](arquivos/CURRICULO%20-%20ALAN%20BREIS.pdf)
