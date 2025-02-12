@@ -18,12 +18,7 @@ Olá, sou Alan, estudante de Engenharia de Software na Unicesumar com forte paix
 - **Redes**: Conhecimento em redes TCP/IP, configuração de roteamento e firewalls, VPNs e práticas de segurança em rede.
 - **Git**: Controle de versionamento, gerenciamento de branches, pull requests e integração com CI/CD.
 
-## Certificações
 
-- **AWS Certified Cloud Practitioner (Em andamento, voucher garantido pela Escola
-da Nuvem)
-- **Microsoft Certified: Azure Fundamentals (Planejada, voucher garantido por
-bootcamp DIO)
 
 ## Contato
 
