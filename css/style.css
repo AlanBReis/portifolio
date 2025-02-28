@@ -64,6 +64,7 @@ body {
 	font-size: 23px;
 }
 
+
 .section {
 	padding: 100px 0;
 }
@@ -91,7 +92,7 @@ body {
 }
 
 .certification img {
-    width: 120px; /* Ajuste o tamanho do badge */
+    width: 160px; /* Ajuste o tamanho do badge */
     height: auto;
     transition: transform 0.3s ease-in-out;
     border-radius: 8px;
@@ -99,6 +100,41 @@ body {
 
 .certification img:hover {
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.oracleSection {
+    background-color: #e74c3c; 
+    color: white;
+    padding: 50px 0;
+}
+
+.oracleContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.oracle {
+    text-align: center;
+}
+
+.oracle img {
+    width: 290px; /* Ajuste o tamanho do badge */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.oracle img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.oracle p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .certification p {
