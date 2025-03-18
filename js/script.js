@@ -18,7 +18,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Devops.","Computação em Nuvem"],
+		strings: ["Devops.","Cloud.","Automação."],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,
