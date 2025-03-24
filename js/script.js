@@ -18,7 +18,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Devops.","Cloud.","Automação."],
+		strings: ["Data Engineer","Cloud","Automação"],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,
