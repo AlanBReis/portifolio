@@ -113,14 +113,15 @@
 				<div class="timeline-content">
 					<p>🔹 Semana de provas chegando</p>
 					<p>🔹 Analise e projetos orientado a objetos | Estrutura de dados | Matemática aplicada a computação</p>
-					<img src="https://media1.tenor.com/m/x1dYnqeehLAAAAAC/stitch-sad-sad-stitch.gif" alt="stitch"></img>
+					<img class="timeline-image" src="https://media1.tenor.com/m/x1dYnqeehLAAAAAC/stitch-sad-sad-stitch.gif" alt="stitch"></img>
 				</div>
 			</div>
 			<div class="timeline-item">
 				<div class="timeline-date">20/03/2025</div>
 				<div class="timeline-content">
-					<p>🔹 Apache Airflow, Sql, Python - Engenharia de Dados</p>
-					<p>🔹 Cursando vários conteúdos de Engenharia de Dados na Alura e Udemy, alguma sugestão de Roadmap? envie por whatsapp</p>
+					<p>🔹 Cursando diversos conteúdos de Engenharia de Dados</p>
+					<p>🔹 Pipeline de Dados, MongoDB, SQL, Apache Airflow </p>
+					<img class="timeline-image" src="https://media.tenor.com/whgQwNlVvNkAAAAi/xero-code.gif" alt="stitch"></img>
 				</div>
 			</div>
 			<!-- Outros itens ocultos inicialmente -->
@@ -172,6 +173,8 @@
 		.timeline-content p {
 			margin: 5px 0;
 		}
+
+
 	
 		/* Ocultar itens que não estão visíveis inicialmente */
 		.hidden {
@@ -249,117 +252,73 @@
 			</div>
 		</div>
 	</div>
-	
-	
-
 
 
 	<div id="portfolio" class="section">
-
 		<div class="container">
-
 			<div class="row">
-
 				<div class="heading">
 					<h2>Projetos</h2>
 				</div>
-
 				<div class="filter">
-
 					<ul id="filters">
-
 						<li><a href="#" data-filter="*" class="current">Todos</a></li>
-						<li><a href="#" data-filter=".apps">CI/CD</a></li>
-						<li><a href="#" data-filter=".me">Terraform</a></li>
-						<li><a href="#" data-filter=".websites">Kubernetes</a></li>
-
+						<li><a href="#" data-filter=".apps">ETL & Pipelines de Dados</a></li>
+						<li><a href="#" data-filter=".me">Armazenamento de Dados</a></li>
+						<li><a href="#" data-filter=".websites">Banco de Dados e Data Warehousing</a></li>
+						<li><a href="#" data-filter=".websites">Ferramentas de Análise e Visualização</a></li>
 					</ul>
-
 				</div>
-
-
 				<div class="itemsContainer">
-
 					<ul class="items">
-
-						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-
-
-							<div class="item">
-
-								<img src="img/thumbnail/validadorcpf.jpg">
-
-
-								<div class="icons">
-									<a href="https://github.com/AlanBReis/serveless-validar-cpf/blob/main/image.png?raw=true" title="View image" class="openButton" data-fancybox data-caption="">
-										<i class="fa fa-search"></i>
-									</a>
-
-									<a href="https://github.com/AlanBReis/serveless-validar-cpf" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
-								</div>
-
-								<div class="imageOverlay"></div>
-
-							</div>
-
 						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
 							<div class="item">
-
-								<img src="img/em breve.jpg">
-
-
+								<img src="img/thumbnail/project-apacheairflow-etl-escrita.png">
 								<div class="icons">
-									<a href="" title="View image" class="openButton" data-fancybox data-caption="">
+									<a href="#project-details-modal" title="View image" class="openButton projectDetailsButton">
 										<i class="fa fa-search"></i>
 									</a>
-
-									<a href="" target="_blank" class="projectLink">
+									<a href="https://github.com/AlanBReis/ans-data-pipeline-airflow" target="_blank" class="projectLink">
 										<i class="fa fa-link"></i>
 									</a>
 								</div>
-
 								<div class="imageOverlay"></div>
-
-							</div>
-
-
-
-						</li>
-						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							<div class="item">
-
-								<img src="img/em breve.jpg">
-
-
-								<div class="icons">
-									<a href="" title="View image" class="openButton" data-fancybox data-caption="">
-										<i class="fa fa-search"></i>
-									</a>
-
-									<a href="" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
-								</div>
-
-								<div class="imageOverlay"></div>
-
 							</div>
 						</li>
 					</ul>
 				</div>
-
-
-
-
-
-
 			</div>
-
 		</div>
-
 	</div>
+	
+	<div style="display: none;" id="project-details-modal">
+		<h2>Automatizando a Extração de Dados da ANS com Apache Airflow</h2>
+		<p>
+			Imagine ter um assistente digital que vasculha a internet em busca de informações importantes, extrai dados de arquivos PDF e organiza tudo em planilhas fáceis de entender. Foi exatamente isso que eu construí com este projeto!
+			<br><br>
+			Utilizando o Apache Airflow, uma ferramenta de orquestração de fluxos de trabalho, desenvolvi um pipeline automatizado que coleta dados, transforma-os em arquivos CSV e os compacta para facilitar o armazenamento e o compartilhamento.
+			<br><br>
+			Este projeto demonstra como a automação pode simplificar tarefas complexas de extração e transformação de dados, economizando tempo e recursos.
+		</p>
+		<button id="backToProjects">Voltar para Projetos</button>
+	</div>
+	
+	<script>
+		$(document).ready(function() {
+			$('.projectDetailsButton').click(function(e) {
+				e.preventDefault();
+				$('#project-details-modal').show();
+			});
+	
+			$('#backToProjects').click(function() {
+				$('#project-details-modal').hide();
+			});
+		});
+	</script>
+	
+	
+
+
 
 	<div id="contact" class="contactSection section">
 		<div class="container">
@@ -368,13 +327,7 @@
 				<div class="col-md-4 text-center">
 					<h4 class="subHeading">Me envie um e-mail</h4>
 					<a href="mailto:contato@alanbreis.com" class="contactButton">Basta clicar aqui!</a>
-				</div>
-	
-				<!-- Seção de Download do Currículo -->
-				<div class="col-md-4 text-center">
-					<h4 class="subHeading">Baixe meu currículo</h4>
-					<a href="document/CURRICULO DEVOPS - ALAN REIS.pdf" class="contactButton" download>Baixar Currículo</a>
-				</div>
+				</div>				
 			</div>
 		</div>
 	</div>
@@ -428,6 +381,18 @@
 				role="button"
 				><i class="fab fa-whatsapp"></i
 			></a>
+
+			<!-- Curriculo -->
+			<a
+				data-mdb-ripple-init
+				class="btn text-white btn-floating m-1"
+				style="background-color: #55acee;"  
+				href="document/CURRICULO - DADOS.pdf"  
+				download="CURRICULO - DADOS.pdf" 
+				role="button"
+				>
+				<i class="fas fa-download"></i>
+			</a>
 		
 
 		  </section>
