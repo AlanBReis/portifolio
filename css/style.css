@@ -79,45 +79,45 @@ body {
 }
 
 #project-details-modal {
-    width: 80%; /* Reduz a largura para centralizar melhor */
-    max-width: 800px; /* Define uma largura máxima */
-    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    width: 90%; /* Aumenta a largura em telas menores */
+    max-width: 90%; /* Garante que não ultrapasse a largura da tela */
+    height: auto;
     position: fixed;
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta o posicionamento */
-    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradiente suave */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
     z-index: 1000;
-    padding: 30px;
+    padding: 20px; /* Reduz o padding em telas menores */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
-    text-align: center; /* Centraliza o texto */
-    font-family: 'Arial', sans-serif; /* Fonte mais agradável */
-    animation: fadeIn 0.5s ease-in-out; /* Animação de fade-in */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 #project-details-modal h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px; /* Reduz o tamanho da fonte em telas menores */
+    margin-bottom: 15px;
     color: #333;
 }
 
 #project-details-modal p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+    line-height: 1.5;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 #project-details-modal button {
-    padding: 12px 25px;
+    padding: 10px 20px; /* Reduz o padding do botão em telas menores */
     background-color: #E44D26;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transição suave */
+    transition: background-color 0.3s ease;
 }
 
 #project-details-modal button:hover {
@@ -127,6 +127,22 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Media query para telas menores (celulares) */
+@media (max-width: 600px) {
+    #project-details-modal {
+        width: 95%; /* Aumenta ainda mais a largura */
+        padding: 15px; /* Reduz ainda mais o padding */
+    }
+
+    #project-details-modal h2 {
+        font-size: 18px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    #project-details-modal p {
+        font-size: 13px; /* Reduz ainda mais o tamanho da fonte */
+    }
 }
 
 
