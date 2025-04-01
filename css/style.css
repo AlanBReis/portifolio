@@ -145,7 +145,77 @@ body {
     }
 }
 
+.now-section {
+    text-align: center;
+    padding: 50px 20px;
+}
 
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.timeline-item {
+    background: #fff;
+    border-left: 4px solid #E44D26;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #E44D26;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+}
+
+
+
+/* Ocultar itens que não estão visíveis inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Estilizando o botão */
+#loadMore {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E44D26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loadMore:hover {
+    background-color: #D43F1B;
+}
+
+#loadMore, #loadLess {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+#loadLess {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E44D26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loadLess:hover {
+    background-color: #D43F1B;
+}
 
 .certificationsSection {
     background-color: #e74c3c; 

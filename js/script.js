@@ -7,6 +7,40 @@ $(window).on("load", function() {
 })
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    let visibleItems = 2; // Número inicial de itens visíveis
+    const items = document.querySelectorAll('.timeline-item');
+    const loadMoreButton = document.getElementById('loadMore');
+    const loadLessButton = document.getElementById('loadLess'); 
+
+    // Inicializa os itens corretamente
+    function updateVisibility() {
+        items.forEach((item, index) => {
+            item.style.display = index < visibleItems ? "block" : "none";
+        });
+
+        // Exibir ou ocultar botões dependendo da quantidade de itens visíveis
+        loadMoreButton.style.display = visibleItems >= items.length ? "none" : "block";
+        loadLessButton.style.display = visibleItems > 2 ? "block" : "none";
+    }
+
+    // Carregar mais 2 itens
+    loadMoreButton.addEventListener("click", function () {
+        visibleItems = Math.min(visibleItems + 2, items.length);
+        updateVisibility();
+    });
+
+    // Ocultar 2 itens
+    loadLessButton.addEventListener("click", function () {
+        visibleItems = Math.max(2, visibleItems - 2);
+        updateVisibility();
+    });
+
+    // Aplicar a visibilidade inicial
+    updateVisibility();
+});
+
+
 
 
 $(document).ready(function() {
