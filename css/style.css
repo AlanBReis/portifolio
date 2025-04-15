@@ -78,9 +78,9 @@ body {
     height: auto;  /* Mantém a proporção da imagem */
 }
 
-#project-details-modal {
-    width: 90%; /* Aumenta a largura em telas menores */
-    max-width: 90%; /* Garante que não ultrapasse a largura da tela */
+.project-modal {
+    width: 90%;
+    max-width: 90%;
     height: auto;
     position: fixed;
     top: 50%;
@@ -88,7 +88,7 @@ body {
     transform: translate(-50%, -50%);
     background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
     z-index: 1000;
-    padding: 20px; /* Reduz o padding em telas menores */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
@@ -97,21 +97,21 @@ body {
     animation: fadeIn 0.5s ease-in-out;
 }
 
-#project-details-modal h2 {
-    font-size: 20px; /* Reduz o tamanho da fonte em telas menores */
+.project-modal h2 {
+    font-size: 20px;
     margin-bottom: 15px;
     color: #333;
 }
 
-#project-details-modal p {
-    font-size: 14px; /* Reduz o tamanho da fonte em telas menores */
+.project-modal p {
+    font-size: 14px;
     line-height: 1.5;
     color: #555;
     margin-bottom: 20px;
 }
 
-#project-details-modal button {
-    padding: 10px 20px; /* Reduz o padding do botão em telas menores */
+.project-modal button {
+    padding: 10px 20px;
     background-color: #E44D26;
     color: white;
     border: none;
@@ -120,30 +120,25 @@ body {
     transition: background-color 0.3s ease;
 }
 
-#project-details-modal button:hover {
+.project-modal button:hover {
     background-color: #D43F1B;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Media query para telas menores (celulares) */
 @media (max-width: 600px) {
-    #project-details-modal {
-        width: 95%; /* Aumenta ainda mais a largura */
-        padding: 15px; /* Reduz ainda mais o padding */
+    .project-modal {
+        width: 95%;
+        padding: 15px;
     }
 
-    #project-details-modal h2 {
-        font-size: 18px; /* Reduz ainda mais o tamanho da fonte */
+    .project-modal h2 {
+        font-size: 18px;
     }
 
-    #project-details-modal p {
-        font-size: 13px; /* Reduz ainda mais o tamanho da fonte */
+    .project-modal p {
+        font-size: 13px;
     }
 }
+
 
 .now-section {
     text-align: center;

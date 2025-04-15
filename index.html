@@ -109,44 +109,29 @@
 		<div class="timeline">
 			<!-- Primeiros 2 itens visíveis -->
 			<div class="timeline-item">
-				<div class="timeline-date">31/03/2025</div>
+				<div class="timeline-date">31/03/2025 | 10/04/2025</div>
 				<div class="timeline-content">
-					<p>🔹 Participando de um trabalho voluntário como Engenheiro de Dados e Automação</p>
-					<p>Meu papel envolve a automação de processos e a análise de dados para tornar o sistema mais eficiente e funcional.</p>
+					<p>Participei de um trabalho voluntário como Engenheiro de Dados e Automação</p>
+					<p>Meu papel envolvia a automação de processos em google sheets para automatizar tarefas repetitivas e criação de uma lista de chamadas com back-up</p>
 					<img class="timeline-image" src="https://media.tenor.com/s04Ck4wFnQkAAAAi/me-penguin.gif" alt="penguin"></img>
 				</div>
 			</div>					
-			<div class="timeline-item">
-				<div class="timeline-date">26/03/2025</div>
+			<div class="timeline-item hidden">
+				<div class="timeline-date">20/03/2025 | 20/06/2025</div>
 				<div class="timeline-content">
-					<p>🔹 Semana de provas chegando</p>
-					<p>Analise e projetos orientado a objetos | Estrutura de dados | Matemática aplicada a computação</p>
-					<img class="timeline-image" src="https://media1.tenor.com/m/x1dYnqeehLAAAAAC/stitch-sad-sad-stitch.gif" alt="stitch"></img>
-				</div>
-			</div>
-			<div class="timeline-item">
-				<div class="timeline-date">20/03/2025</div>
-				<div class="timeline-content">
-					<p>🔹 Cursando diversos conteúdos de Engenharia de Dados</p>
-					<p>Pipeline de Dados, MongoDB, SQL, Apache Airflow </p>
+					<p> Inscrito no Hackathon Unicesumar + Google</p>
+					<p>Evento de Tecnologia onde estamos criando em grupo um projeto de sustentabilidade no agronegocio. </p>
 					<img class="timeline-image" src="https://media.tenor.com/whgQwNlVvNkAAAAi/xero-code.gif" alt="stitch"></img>
 				</div>
 			</div>
-			<!-- Outros itens ocultos inicialmente -->
 			<div class="timeline-item hidden">
 				<div class="timeline-date">17/03/2025</div>
 				<div class="timeline-content">
-					<p>🔹 Participando da 10ª Maratona CiberEducação Cisco Brasil!</p>
+					<p> Participando da 10ª Maratona CiberEducação Cisco Brasil!</p>
 					<p>Fazendo o curso de Defesa de Rede na UTFPR</p>
 				</div>
 			</div>
-			<div class="timeline-item hidden">
-				<div class="timeline-date">17/03/2025</div>
-				<div class="timeline-content">
-					<p>🔹 Inscrito no Hackathon Unicesumar + Google</p>
-					<p>Evento que une tecnologia, colaboração e impacto social para construir soluções voltadas à sustentabilidade!</p>
-				</div>
-			</div>
+
 			
 		</div>
 		<button id="loadMore">Ver mais</button>
@@ -192,7 +177,7 @@
 				<div class="heading">
 					<h2>Projetos</h2>
 				</div>
-				<div class="filter">
+				<!-- <div class="filter">
 					<ul id="filters">
 						<li><a href="#" data-filter="*" class="current">Todos</a></li>
 						<li><a href="#" data-filter=".apps">ETL & Pipelines de Dados</a></li>
@@ -200,7 +185,7 @@
 						<li><a href="#" data-filter=".websites">Banco de Dados e Data Warehousing</a></li>
 						<li><a href="#" data-filter=".websites">Ferramentas de Análise e Visualização</a></li>
 					</ul>
-				</div>
+				</div> -->
 				<div class="itemsContainer">
 					<ul class="items">
 						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
@@ -217,13 +202,28 @@
 								<div class="imageOverlay"></div>
 							</div>
 						</li>
+						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="img/thumbnail/thumbnail-spotify-data-analyzer.png">
+								<div class="icons">
+									<a href="#project-details-modal-spotify" title="View image" class="openButton projectDetailsButton">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="https://github.com/AlanBReis/spotify-data-analysis" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div style="display: none;" id="project-details-modal">
+	<!-- Modal do Projeto 1: Airflow -->
+	<div style="display: none;" id="project-details-modal" class="project-modal">
 		<h2>Automatizando a Extração de Dados da ANS com Apache Airflow</h2>
 		<p>
 			Imagine ter um assistente digital que vasculha a internet em busca de informações importantes, extrai dados de arquivos PDF e organiza tudo em planilhas fáceis de entender. Foi exatamente isso que eu construí com este projeto!
@@ -234,19 +234,47 @@
 		</p>
 		<button id="backToProjects">Voltar para Projetos</button>
 	</div>
+
+	<!-- Modal do Projeto 2: Spotify -->
+	<div style="display: none;" id="project-details-modal-spotify" class="project-modal">
+		<h2>Dashboard Interativa com Spotify e Power BI</h2>
+		<p>
+			Neste projeto utilizei Python, a API do Spotify e Docker para coletar e tratar dados de uma playlist de forma automatizada.
+			<br><br>
+			Os dados foram analisados e visualizados no Power BI com gráficos interativos, destacando informações como as músicas mais populares, duração total da playlist e quantidade de músicas. 
+			<br><br>
+			A dashboard segue o estilo visual do Spotify, com cores escuras e detalhes vibrantes — ideal para demonstrar integração de APIs, automação com Docker e visualização de dados.
+		</p>		
+		<button id="backToProjectsSpotify">Voltar para Projetos</button>
+	</div>
+
+		
+	</div>
 	
 	<script>
-		$(document).ready(function() {
-			$('.projectDetailsButton').click(function(e) {
+		$(document).ready(function () {
+			// Botão do projeto Airflow
+			$('a[href="#project-details-modal"]').click(function (e) {
 				e.preventDefault();
 				$('#project-details-modal').show();
 			});
 	
-			$('#backToProjects').click(function() {
+			$('#backToProjects').click(function () {
 				$('#project-details-modal').hide();
+			});
+	
+			// Botão do projeto Spotify
+			$('a[href="#project-details-modal-spotify"]').click(function (e) {
+				e.preventDefault();
+				$('#project-details-modal-spotify').show();
+			});
+	
+			$('#backToProjectsSpotify').click(function () {
+				$('#project-details-modal-spotify').hide();
 			});
 		});
 	</script>
+	
 	
 	
 
