@@ -216,6 +216,20 @@
 								<div class="imageOverlay"></div>
 							</div>
 						</li>
+						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+								<img src="img/thumbnail/thumbnail-datalake.png">
+								<div class="icons">
+									<a href="#project-details-modal-datalakehouse" title="View image" class="openButton projectDetailsButton">
+										<i class="fa fa-search"></i>
+									</a>
+									<a href="https://github.com/AlanBReis/datalakehouse-analytics-pipeline" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+								<div class="imageOverlay"></div>
+							</div>
+						</li>						
 					</ul>
 				</div>
 			</div>
@@ -248,6 +262,20 @@
 		<button id="backToProjectsSpotify">Voltar para Projetos</button>
 	</div>
 
+	<!-- Modal do Projeto 3: Datalakehouse -->
+	<div style="display: none;" id="project-details-modal-datalakehouse" class="project-modal">
+		<h2>Lakehouse Analytics Pipeline com Delta Lake e Power BI</h2>
+		<p>
+			Neste projeto estou desenvolvendo um pipeline completo baseado em arquitetura Lakehouse, utilizando PySpark, Delta Lake e Databricks para ingestão, tratamento e organização de dados.
+			<br><br>
+			Os dados serão consumidos diretamente do Delta Lake e visualizados no Power BI por meio de dashboards interativos, com KPIs para análises estratégicas. O projeto demonstra arquitetura de dados, versionamento, otimizações com ZORDER e integração com ferramentas de BI.
+			<br><br>
+			<strong>Projeto em andamento.</strong> Estou estudando para as provas da faculdade em paralelo e atualizo assim que o projeto estiver terminado.
+		</p>
+		<button id="backToProjectsDatalakehouse">Voltar para Projetos</button>
+	</div>
+		
+
 		
 	</div>
 	
@@ -258,21 +286,32 @@
 				e.preventDefault();
 				$('#project-details-modal').show();
 			});
-	
+
 			$('#backToProjects').click(function () {
 				$('#project-details-modal').hide();
 			});
-	
+
 			// Botão do projeto Spotify
 			$('a[href="#project-details-modal-spotify"]').click(function (e) {
 				e.preventDefault();
 				$('#project-details-modal-spotify').show();
 			});
-	
+
 			$('#backToProjectsSpotify').click(function () {
 				$('#project-details-modal-spotify').hide();
 			});
+
+			// Botão do projeto Datalakehouse
+			$('a[href="#project-details-modal-datalakehouse"]').click(function (e) {
+				e.preventDefault();
+				$('#project-details-modal-datalakehouse').show();
+			});
+
+			$('#backToProjectsDatalakehouse').click(function () {
+				$('#project-details-modal-datalakehouse').hide();
+			});
 		});
+
 	</script>
 	
 	
