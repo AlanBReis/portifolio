@@ -1,337 +1,13 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio DevOps - Alan Borges dos Reis</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script src="script.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Ruda&display=swap');
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-    </style>
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-
-</head>
-<body>
-    <div class="container">
-        
-        <header>
-            <div class="language-selector">
-                <button class="lang-btn" data-lang="pt">
-                    <img src="arquivos/50221_flag_brasil_icon.png" alt="Português">
-                </button>
-                <button class="lang-btn" data-lang="en">
-                    <img src="arquivos/32364_united_states_flag_usa_united states_icon.png" alt="English">
-                </button>
-            </div>
-            <nav>
-                <ul>
-                    <li class="about-me"><a href="#sobre" data-translate="about">Sobre mim</a></li>
-                    <li class="about-me"><a href="#projetos" data-translate="projects">Projetos</a></li>
-                    <li class="about-me"><a href="#habilidades" data-translate="skills">Habilidades</a></li>
-                    <li class="about-me"><a href="#certificacoes" data-translate="certifications">Certificações</a></li>
-                    <li class="about-me"><a href="#Contato" data-translate="contact">Contato</a></li>
-                </ul>
-            </nav>
-            <br>
-
-            <img class="apresentacao" src="arquivos/apresentacao.png" alt="apresenção">
-            
-            
-        </header>
-
-
-        <br><br><br>
-
-        <section id="sobre">
-            <h2 class="titulo" data-translate="about">Sobre mim</h2>
-            <div class="sobre-container">
-                <!-- <img src="arquivos/Sem título.png" alt="foto alan borges dos reis" class="foto-perfil"> -->
-                <div class="texto-sobre">
-                    <p class="paragrafo-sobre" data-translate="about2">
-                       Olá, sou Alan, DevOps Engineer com foco em automação e infraestrutura em nuvem (AWS e Azure). Estudo Engenharia de Software na Unicesumar e estou participando de um bootcamp da Microsoft Azure, além de ser aluno da Escola da Nuvem da AWS, onde me preparo para as certificações AWS Cloud Practitioner e Microsoft Azure.
-                            <br>
-                        Atualmente, sou estagiário na HZ Sistemas, onde estou desenvolvendo em conjunto com a equipe, um sistema de gestão para óticas. Este sistema será utilizado para venda de assinaturas. Minhas responsabilidades incluem a configuração e gerenciamento de ambientes Docker para desenvolvimento e produção, implementação de pipelines CI/CD com GitHub Actions e utilização de infraestrutura como código (IaC) com Terraform e Ansible para provisionamento e gerenciamento de servidores. Também faço o monitoramento de performance com Prometheus e Grafana e a gestão de banco de dados PostgreSQL.
-                            <br>
-                        Minha experiência abrange o desenvolvimento de pipelines automatizados, integração de ferramentas de monitoramento e aplicação de IaC, utilizando tecnologias como Docker, Kubernetes e Terraform, além de ferramentas de CI/CD como Jenkins e GitHub Actions.
-                            <br>
-                        Iniciei minha trajetória na área de tecnologia em 2023, com o desenvolvimento de jogos em Unity. Hoje, estou focado em DevOps e SRE, com ênfase em automação de infraestrutura e orquestração de containers. Sou proficiente em Python e Bash e aplico as melhores práticas de Cloud Computing para criar soluções escaláveis e seguras.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <br><br><br>
-        <section id="projetos">
-            <h2 class="titulo">Projetos</h2>
-            <div class="project-container">
-                <!-- Repita este bloco para cada projeto -->
-                <h2 class="project-title" onclick="toggleProjectDetails('project1')">Pipeline Automatizado com Docker</h2>
-                <div id="project1" class="project-details">
-                    <p class="paragrafo-projetos"> Voce Pode Conferir o codigo fonte do projeto em meu <a href="https://github.com/AlanBReis/pipeline-automatizado" target="_blank">Github</a> <br><br>Descrição: Este projeto demonstra a criação de uma aplicação web simples com Flask, acompanhada de um pipeline de automação para desenvolvimento e testes. A ideia principal é automatizar o processo de construção e testes da aplicação, utilizando Docker e GitHub Actions. </p>
-                    <h2 class="paragrafo-projetos-tecnologias">
-                        Tecnologias Utilizadas
-                    </h2>
-                    <div class="paragrafo-projetos-tecnologias">
-                        <li>
-                            Controle de Versão: Git, GitHub        
-                        </li>
-                        <li>
-                            CI/CD: GitHub Actions  
-                        </li>
-                        <li>
-                            Containerização: Docker   
-                        </li>
-                        <li>
-                            Orquestração de Containers: Docker Compose
-                        </li>
-                        <li>
-                            Linguagem de Programação: Python
-                        </li>
-                        <li>
-                            Serviços de Deploy: AWS
-                        </div>
-                    </p>    
-                    <img src="arquivos/img1.png" alt="imagem aplicação no ar">
-
-                    <p class="paragrafo-projetos-tecnologias">O que Faz: A aplicação web foi desenvolvida com o framework Flask e é exibida em uma página estilizada e animada. Com o uso de Docker, a aplicação é empacotada em um container, o que facilita sua execução e gerenciamento. O pipeline automatizado, configurado com GitHub Actions, garante que o código seja testado e a imagem do Docker seja criada automaticamente sempre que há uma atualização no código.</p>
-                    
-                    <img src="arquivos/img2.png" alt="imagem testes">
-                        
-                    <p class="paragrafo-projetos-tecnologias">
-                        Objetivo: O principal objetivo deste projeto é demonstrar a aplicação de práticas modernas de desenvolvimento e automação. Embora o deploy automático na AWS ainda não esteja implementado, o projeto já inclui um pipeline que prepara a aplicação para um futuro deploy em ambientes de produção.
-                        
-                    </p>
-                    <p class="paragrafo-projetos-tecnologias">
-                        Por que é Interessante: Este projeto é uma excelente vitrine para quem deseja ver como a automação pode ser utilizada para facilitar o desenvolvimento e garantir a qualidade do código. Ele mostra a integração de tecnologias como Flask para o desenvolvimento da aplicação, Docker para a containerização, e GitHub Actions para a automação do processo de build e testes.
-                        
-                    </p>
-                    <img src="arquivos/img3.png" alt="Imagem Docker">
-                </div>
-            
-                <h2 class="project-title" onclick="toggleProjectDetails('project2')">CI/CD Pipeline para Aplicação Web com Deploy na AWS</h2>
-                <div id="project2" class="project-details">
-                    <p class="paragrafo-projetos" >Voce pode Conferir o codigo fonte do projeto em meu <a href="https://github.com/AlanBReis/ci-cd-aws-deploy" target="_blank"> Github</a>. Este projeto exemplifica a criação de um pipeline CI/CD robusto para uma aplicação web de previsão do tempo, construída com Flask e Docker. Utilizando a API do OpenWeatherMap, a aplicação é totalmente automatizada desde a construção até o deploy. O pipeline inclui integração com GitHub Actions para automação de build e testes, e usa Terraform e Ansible para a configuração e deploy automatizado na AWS. Este projeto visa demonstrar práticas avançadas de DevOps, como criação de imagens Docker, deploy contínuo e integração contínua, aplicando as melhores práticas para garantir uma entrega eficiente e segura.
-                    </p>
-                    <h2 class="paragrafo-projetos-tecnologias">Tecnologias Utilizadas</h2>
-                    <div class="paragrafo-projetos-tecnologias">
-                        <li>
-                            Linguagem/Framework: Flask (Python)
-                        </li>
-                        <li>
-                                Docker: Para containerização da aplicação
-                        </li>
-                        <li>
-                                GitHub Actions: Para automação do pipeline CI/CD
-                        </li>
-                        <li>
-                                Terraform: Para provisionamento de infraestrutura como código (EC2, S3)
-                        </li>
-                        <li>
-                                Ansible: Para automação e configuração de servidores
-                            AWS:
-                        </li>
-                    </div>
-                    <div class="img-project" >
-                        <img src="arquivos/img-tempo.jpg" alt="Imagem do Projeto 2">
-                    </div>
-                </div>
-
-                <h2 class="project-title" onclick="toggleProjectDetails('project3')" data-translate="deploy-automation">Deploy Automatico (Vagrant)</h2>
-                <div id="project3" class="project-details">
-                    <h2 data-translate="deploy-automation-resume1"> O que o projeto faz?</h2>
-                    <p class="paragrafo-projetos-tecnologias" data-translate="deploy-automation-resume2"  ><br>
-                        
-                        Voce Pode Conferir o codigo fonte do meu projeto em meu <a href="https://github.com/AlanBReis/vagrant-deploy-automatico" target="_blank">Github</a> :  <br><br>
-
-                        
-                        Este projeto demonstra a capacidade de criar e configurar um ambiente de desenvolvimento virtualizado e hospedar um site web. Aqui está uma visão geral do que ele faz: <br>
-                        
-                        Criação de uma Máquina Virtual: Utiliza o Vagrant para configurar uma máquina virtual. Isso cria um ambiente isolado e controlado onde você pode instalar e testar softwares sem interferir no sistema principal. Ideal para garantir que o ambiente de desenvolvimento seja consistente e reproduzível. <br>
-                        
-                        Clonagem de um Repositório do GitHub: O projeto clona um repositório do GitHub que contém o código de um site web. Isso permite integrar e trabalhar com o código do site diretamente na máquina virtual, facilitando o desenvolvimento e a atualização do site. <br>
-                        
-                        Configuração de um Servidor Web com Nginx: Após clonar o repositório, o projeto configura o Nginx na máquina virtual para servir o conteúdo do site. O Nginx é um servidor web de alto desempenho que gerencia o tráfego e exibe o site na máquina virtual, tornando-o acessível através de um navegador web. <br>
-                        
-                        Este projeto ilustra habilidades importantes em configuração de ambientes virtuais, gerenciamento de código e implantação de servidores web. Ele mostra a capacidade de preparar um ambiente de desenvolvimento completo e hospedar um site web de forma eficaz. <br>
-                        
-                        
-                    </p>
-                    <div class="paragrafo-projetos-tecnologias">
-                        <h2> Tecnologias Utilizadas: </h2>
-                        <li>
-                            Vagrant
-                        </li>
-                        <li>
-                            VirtualBox
-                        </li>
-                        <li>
-                            Nginx
-                        </li>
-                        <li>
-                            Shell Script
-                        </li>
-                    </div>
-                    <img src="arquivos/vagrant-vm.png" alt="Devops - Imagem VM criada por Vagrant">
-                </div>
-
-<!--                 <h2 class="project-title" onclick="toggleProjectDetails('project4')">CI/CD Pipeline para Aplicação Web com Deploy na AWS</h2>
-                <div id="project4" class="project-details">
-                    <p class="paragrafo-projetos" >Utilize Terraform para criar um cluster Kubernetes em uma nuvem pública (AWS, GCP ou Azure) e deployar um aplicativo simples nele.
-                        Incremento: Após provisionar o cluster, implemente a implantação automatizada de uma aplicação completa (frontend e backend) com CI/CD. Adicione políticas de segurança e gerenciamento de identidade (IAM).
-Modificação: Configure o cluster para ser altamente disponível (multi-node, multi-region) e implemente escalabilidade automática de pods.
-                    </p>
-                    <img src="caminho/para/imagem-projeto1.jpg" alt="Imagem do Projeto 4">
-                </div> 
-
-<!--                 <h2 class="project-title" onclick="toggleProjectDetails('project5')">Projeto Extra: Infraestrutura como Código (IaC) Completa</h2>
-                <div id="project5" class="project-details">
-                    <p class="paragrafo-projetos" >Descrição: Crie um projeto que configure toda a infraestrutura necessária para uma aplicação usando apenas código (ex. Terraform para a nuvem, Ansible para configuração de servidor, Kubernetes para orquestração de contêineres).
-                        Benefícios: Demonstra sua capacidade de gerenciar infraestruturas complexas e reproduzíveis.
-                    </p>
-                    <img src="caminho/para/imagem-projeto1.jpg" alt="Imagem do Projeto 5">
-                </div> -->
-
-<!--                 <h2 class="project-title" onclick="toggleProjectDetails('project6')">Projeto Extra: Implementação de Observabilidade:</h2>
-                <div id="project6" class="project-details">
-                    <p class="paragrafo-projetos" >Descrição: Configure um sistema completo de observabilidade para uma aplicação, incluindo logs centralizados (ELK Stack ou Grafana Loki), métricas (Prometheus), e tracing distribuído (Jaeger).
-                        Benefícios: Mostra habilidade em monitorar e diagnosticar problemas em sistemas distribuídos
-                    </p>
-                    <img src="caminho/para/imagem-projeto1.jpg" alt="Imagem do Projeto 6">
-                </div> -->
-                <!-- Repita até aqui -->
-            </div>
-        </section>
-        <br><br><br>
-
-        <section id="habilidades">
-            <h2 class="titulo" data-translate="Hability">Habilidades</h2>
-            <br>
-            <ul class="paragrafo-habilidades">
-                <img src="icones/8546827_aws_icon.png" alt="icone aws"> 
-                <li data-translate="Aws">
-                    AWS (Amazon Web Services) – Experiência em configuração, gerenciamento
-                    de instâncias EC2, S3, e RDS, além de integração com outros serviços de nuvem.</li> 
-                <br>
-
-                <img src="icones/8666171_docker_icon.png" alt="icone docker">    
-                <li data-translate="Docker">
-                    Docker: Contêineres, Docker Compose – Criação e orquestração de contêineres, otimização de
-                    ambientes de desenvolvimento e produção.</li> 
-                <br>
-
-                <img src="icones/4691301_kubernetes_icon.png" alt="icone kubernetes">
-                <li data-translate="Kubernetes">
-                    Kubernetes: Criação e gerenciamento de clusters, implementação de estratégias de escalabilidade horizontal e vertical para aplicações mission-critical, utilizando recursos como Deployments, Services, Ingresses e NetworkPolicies.</li>
-                <br>
-
-                <img src="icones/4691319_jenkins_icon.png" alt="icone jenkins">
-                <li data-translate="Ci/Cd">
-                    CI/CD: Implementação de pipelines CI/CD robustos com Jenkins, GitLab CI e GitHub Actions, abrangendo desde a construção e testes até o deploy em diversos ambientes. Experiência em testes unitários, de integração e end-to-end, utilizando ferramentas como Jest e Selenium.</li>
-                <br>
-
-                <img src="icones/infrastructure_9147970.png" alt="icone infra">
-                <li data-translate="Iac">
-                    IaC: Provisionamento e gerenciamento de infraestrutura com Terraform e Ansible, garantindo a reprodutibilidade e escalabilidade dos ambientes. Criação de módulos personalizados para automatizar tarefas repetitivas.</li>
-                <br>
-
-                <img src="icones/4691312_grafana_icon.png" alt="icone grafana"> 
-                <li data-translate="Prometheus">
-                    Prometheus, Grafana – Configuração e customização de
-                    sistemas de monitoramento, dashboards, e alertas para garantir a disponibilidade e
-                    desempenho das aplicações.</li>
-                <br>
-
-                <img src="icones/rede.png" alt="icone redes">
-                <li data-translate="Redes">
-                    Redes: Conhecimento em redes TCP/IP, configuração de roteamento e firewalls, VPNs, e
-                    práticas de segurança em rede.</li>
-                <br>
-
-                <img src="icones/9025799_git_branch_icon.png" alt="icone git">
-                <li data-translate="Git">
-                    Git Controle de Versionamento: Git GitHub GitLab– Uso avançado de versionamento de código,
-                    gerenciamento de branches, pull requests e integração com CI/CD.</li>   
-                <br>
-
-                <img src="icones/211904_social_github_icon.png" alt="icone github"> <br>
-                <li data-translate="Github">
-                    Github versionamento de código, Utilização de ferramentas do GitHub, como GitHub Actions para automatizar workflows
-                </li>
-                <br>
-
-                <img src="icones/8679465_gitlab_icon.png" alt="icone gitlab"> <br>
-                <li data-translate="Gitlab">
-                    GitLab Configuração de runners para executar pipelines em diferentes plataformas</li>             
-                <li>
-                <br>
-
-                <img src="icones/4691213_python_icon.png" alt="icone python"> <br>    
-                <li data-translate="Python">
-                    Python para a criação de scripts e automação</li>
-                <br>
-                
-                <img src="icones/9035061_logo_javascript_icon.png" alt="icone javascript"> <br>
-                <li data-translate="Javascript">
-                    JavaScript (desenvolvimento fullstack)</li>
-            </ul>
-        </section>
-        <br><br><br>
-        <section id="certificacoes">
-            <h2 class="titulo" data-translate="certification">Certificações</h2>
-            <ul>
-                <li class="paragrafo" data-translate="certification-aws">Certificação AWS Cloud Practitioner (em andamento, voucher garantido pela Escola
-                    da Nuvem)</li>
-                <li class="paragrafo" data-translate="certification-azure">Microsoft Certified: Azure Fundamentals (Planejada, voucher garantido por
-                    bootcamp DIO)</li>
-                                
-            </ul>
-            <br><br>
-
-            <div id="contact-section">
-                <!-- Seu conteúdo de contato aqui -->
-                
-                <!-- Link para download do currículo -->
-                <div id="resume-download">
-                    <h2 data-translate="curriculum">Baixe meu currículo</h2>
-                    <a href="arquivos/CURRICULO - ALAN BREIS.pdf" download>
-                        <button class="download-button">Download PT-BR</button>
-                    </a>
-                    <a href="arquivos/CURRICULUM EN - ALAN REIS.pdf" download>
-                        <button class="download-button">Download EN</button>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <br><br><br>
-        <section class="contato-itens">
-            <h1 class="titulo" id="Contato" data-translate="contact">Contato</h1>
-            <a class="contato-icones" href="https://wa.me/5544920024399/?text=Oi%20Tudo%20bem%20?%20vamos%20conversar" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" width="42px" height="42px"><path d="M 7.5 1 C 3.914063 1 1 3.914063 1 7.5 C 1 8.796875 1.417969 9.984375 2.070313 11 L 0.953125 14.121094 L 4.429688 13.140625 C 5.351563 13.644531 6.375 14 7.5 14 C 11.085938 14 14 11.085938 14 7.5 C 14 3.914063 11.085938 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 10.542969 10.542969 13 7.5 13 C 6.457031 13 5.492188 12.707031 4.65625 12.203125 L 4.472656 12.089844 L 2.546875 12.628906 L 3.171875 10.894531 L 3.019531 10.683594 C 2.378906 9.78125 2 8.6875 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 5.0625 4 C 4.949219 4 4.761719 4.046875 4.601563 4.234375 C 4.445313 4.417969 4 4.867188 4 5.78125 C 4 6.691406 4.617188 7.574219 4.703125 7.699219 C 4.789063 7.824219 5.917969 9.695313 7.644531 10.5 C 8.054688 10.691406 8.375 10.804688 8.625 10.890625 C 9.039063 11.03125 9.414063 11.011719 9.710938 10.964844 C 10.042969 10.910156 10.730469 10.515625 10.875 10.082031 C 11.015625 9.648438 11.019531 9.277344 10.972656 9.199219 C 10.933594 9.121094 10.816406 9.074219 10.644531 8.984375 C 10.472656 8.890625 9.625 8.441406 9.46875 8.382813 C 9.3125 8.316406 9.195313 8.289063 9.078125 8.472656 C 8.964844 8.660156 8.636719 9.078125 8.535156 9.199219 C 8.433594 9.324219 8.335938 9.339844 8.164063 9.246094 C 7.988281 9.152344 7.433594 8.957031 6.777344 8.324219 C 6.265625 7.832031 5.917969 7.226563 5.820313 7.039063 C 5.71875 6.851563 5.808594 6.753906 5.894531 6.664063 C 5.972656 6.578125 6.066406 6.445313 6.152344 6.335938 C 6.238281 6.230469 6.265625 6.148438 6.324219 6.027344 C 6.382813 5.902344 6.355469 5.792969 6.3125 5.703125 C 6.265625 5.609375 5.921875 4.695313 5.78125 4.324219 C 5.640625 3.964844 5.496094 4.011719 5.390625 4.007813 C 5.292969 4 5.175781 4 5.0625 4 Z"/></svg></a>
-            <a class="contato-icones" href="https://www.linkedin.com/in/alanbrreis/" target="_blank"><svg height="48px" width="48px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.693 56.693"><g><path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/><path d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/></g></svg></a>
-            <a class="contato-icones" href="https://github.com/AlanBReis/" target="_blank"><svg height="48px" width="48px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.467-5.887-60.466,22.668c-17.587-4.885-37.172-8.134-57.501-8.134c-20.336,0-39.92,3.249-57.501,8.134c-42-28.555-60.466-22.668-60.466-22.668c-12.252,30.833-5,53.057-2.734,58.947c-14.046,15.421-22.67,35.379-22.67,59.869c0,86.162,53.057,104.301,102.942,110.192c-6.515,5.587-12.252,16.753-14.516,32.34c-13.026,5.888-46.998,16.753-67.327-19.336c0,0-12.252-21.337-35.379-22.668c0,0-22.67-0.775-1.512,14.646c0,0,15.42,7.664,26.585,36.498c0,0,13.792,44.448,77.566,29.002v38.777c0,5.891-4.374,12.252-14.516,10.912c-80.643-26.585-139.092-101.367-139.092-189.98C71.93,164.04,160.23,75.74,267.392,75.74c107.163,0,195.464,88.301,195.464,195.464c0,88.613-58.449,163.395-139.092,189.98c-10.138,1.34-14.516-5.022-14.516-10.912v-53.776C308.385,385.522,302.648,372.494,296.133,354.174z"/></g></svg></a>
-            <a class="contato-icones" href="mailto:alanbreis.work@gmail.com"><?xml version="1.0" ?><svg fill="none" height="48px" viewBox="0 0 34 27" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M28.5 25.6H5.5C3.4 25.6 1.70001 23.8929 1.70001 21.7841V5.41592C1.70001 3.30714 3.4 1.59998 5.5 1.59998H28.5C30.6 1.59998 32.3 3.30714 32.3 5.41592V21.7841C32.4 23.8929 30.6 25.6 28.5 25.6Z" stroke="#4F4F4F" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><path d="M17 14.9557L2.60001 3.60834" stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><path d="M31.4 3.60834L17 14.9557" stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg></a>
-        </section>
-            
-</script>
-
-    </div>    
-        <footer>
-            <p>&copy; 2024 Alan Borges dos Reis. Todos os direitos reservados.</p>
-        </footer>
-    
-=======
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title>Alan Reis | Analista de Dados</title>
+	<title>Alan Reis | Analista de Dados &amp; Dev de Sistemas</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Portfólio de Alan Reis — Analista de Dados com experiência em SQL, Python, Power BI e cloud (AWS, Azure, Oracle).">
+	<meta name="description" content="Portfólio de Alan Reis — Analista de Dados e Desenvolvedor de Sistemas com experiência em Python, Power BI, SQL, APIs e automações.">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -345,6 +21,374 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<style>
+		/* ── Project cards with info below image ── */
+		.project-wrap {
+			border-radius: var(--radius);
+			overflow: hidden;
+			box-shadow: var(--shadow);
+			border: 1px solid var(--border);
+			background: var(--white);
+			transition: transform 0.25s ease, box-shadow 0.25s ease;
+		}
+		.project-wrap:hover {
+			transform: translateY(-4px);
+			box-shadow: var(--shadow-hover);
+		}
+		.project-wrap .item {
+			border-radius: 0 !important;
+			box-shadow: none !important;
+			border: none !important;
+		}
+		.project-card-body {
+			padding: 14px 16px 16px;
+			background: var(--white);
+			border-top: 1px solid var(--border);
+		}
+		.project-card-body h5 {
+			font-size: 13px;
+			font-weight: 700;
+			color: var(--text-dark);
+			margin: 0 0 8px;
+			letter-spacing: -0.2px;
+		}
+		.project-tech-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
+		.project-tech-tags span {
+			background: #eef2ff;
+			color: var(--accent);
+			padding: 2px 9px;
+			border-radius: 100px;
+			font-size: 11px;
+			font-weight: 500;
+			border: 1px solid #c7d2fe;
+		}
+
+		/* ── About section visual boost ── */
+		#about {
+			background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+		}
+		.about-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			background: #eef2ff;
+			border: 1px solid #c7d2fe;
+			color: var(--accent);
+			font-size: 12px;
+			font-weight: 600;
+			padding: 4px 12px;
+			border-radius: 100px;
+			margin-bottom: 16px;
+		}
+		.about-badge-dot {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #10b981;
+			display: inline-block;
+		}
+
+		/* ── Confidential project card ── */
+		.confidential-card {
+			background: var(--bg-card-dark);
+			border-radius: var(--radius);
+			padding: 32px 28px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 12px;
+			border: 1px solid rgba(255,255,255,0.08);
+		}
+		.confidential-card .lock-icon {
+			font-size: 28px;
+			margin-bottom: 4px;
+		}
+		.confidential-card h5 {
+			font-size: 16px;
+			font-weight: 700;
+			color: #f1f5f9;
+			margin: 0;
+		}
+		.confidential-card p {
+			font-size: 13px;
+			color: var(--text-muted-light);
+			margin: 0;
+			line-height: 1.7;
+		}
+		.conf-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+		.conf-tags span {
+			background: rgba(99,102,241,0.15);
+			color: #818cf8;
+			border: 1px solid rgba(99,102,241,0.25);
+			padding: 3px 10px;
+			border-radius: 100px;
+			font-size: 11px;
+			font-weight: 500;
+		}
+		#portfolio .confidential-row {
+			background: var(--bg-dark);
+			padding: 48px 0;
+			margin-top: 0;
+		}
+
+		/* ── Acadevo live badge ── */
+		.live-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			background: rgba(16,185,129,0.12);
+			border: 1px solid rgba(16,185,129,0.3);
+			color: #10b981;
+			font-size: 10.5px;
+			font-weight: 600;
+			padding: 3px 10px;
+			border-radius: 100px;
+			margin-top: 4px;
+		}
+		.live-badge-dot {
+			width: 6px; height: 6px;
+			border-radius: 50%;
+			background: #10b981;
+			animation: pulse 1.8s ease-in-out infinite;
+		}
+		@keyframes pulse {
+			0%, 100% { opacity: 1; }
+			50% { opacity: 0.35; }
+		}
+
+		/* ── Freelance section updates ── */
+		.freelance-tag-row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin-top: 16px;
+		}
+		.freelance-tag-row span {
+			background: rgba(255,255,255,0.08);
+			color: rgba(255,255,255,0.65);
+			border: 1px solid rgba(255,255,255,0.12);
+			padding: 4px 12px;
+			border-radius: 100px;
+			font-size: 11.5px;
+			font-weight: 500;
+		}
+
+		/* ── Projects: 1 coluna full-width — imagem topo, info abaixo ── */
+		#portfolio .items {
+			display: flex !important;
+			flex-direction: column;
+			gap: 32px;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			position: static !important;
+			height: auto !important;
+		}
+		#portfolio .items li {
+			display: block !important;
+			padding: 0 !important;
+			width: 100% !important;
+			position: static !important;
+			transform: none !important;
+		}
+
+		/* Card: bloco vertical full-width */
+		#portfolio .project-wrap {
+			display: block !important;
+			border-radius: var(--radius) !important;
+			overflow: hidden !important;
+		}
+
+		/* Imagem: full-width, altura proporcional */
+		#portfolio .project-wrap .item {
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			border-radius: 0 !important;
+			box-shadow: none !important;
+			border: none !important;
+			position: relative;
+		}
+		#portfolio .items .item img {
+			width: 100%;
+			height: 480px;
+			object-fit: cover;
+			object-position: top left;
+			display: block;
+			border-radius: 0;
+			transition: transform 0.5s ease;
+		}
+		#portfolio .items .item:hover img {
+			transform: scale(1.02);
+		}
+
+		/* Info: abaixo da imagem, horizontal */
+		#portfolio .project-card-body {
+			display: flex !important;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 32px;
+			padding: 28px 32px !important;
+			border-top: 1px solid var(--border) !important;
+			border-left: none !important;
+			background: #fff;
+			flex-wrap: wrap;
+		}
+		#portfolio .project-card-body .card-info {
+			flex: 1;
+			min-width: 260px;
+		}
+		#portfolio .project-card-body h5 {
+			font-size: 19px !important;
+			font-weight: 700;
+			color: var(--text-dark);
+			margin: 0 0 8px !important;
+			letter-spacing: -0.3px;
+			line-height: 1.3;
+		}
+		#portfolio .project-card-body .card-desc {
+			font-size: 13.5px;
+			color: var(--text-muted);
+			line-height: 1.7;
+			margin: 0 0 14px;
+		}
+		#portfolio .project-card-body .card-actions {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			flex-wrap: wrap;
+			flex-shrink: 0;
+			padding-top: 4px;
+		}
+		#portfolio .project-card-body .project-tech-tags {
+			gap: 7px;
+			flex-wrap: wrap;
+		}
+		#portfolio .project-card-body .project-tech-tags span {
+			font-size: 12px;
+			padding: 4px 12px;
+		}
+
+		/* Ícones hover dentro da imagem */
+		#portfolio .items .icons {
+			position: absolute;
+			bottom: 16px;
+			right: 16px;
+			top: auto;
+			left: auto;
+			width: auto;
+			height: auto;
+			margin: 0;
+			display: flex;
+			gap: 8px;
+			z-index: 4;
+		}
+		#portfolio .items a.openButton,
+		#portfolio .items a.projectLink {
+			float: none !important;
+			left: auto !important;
+			right: auto !important;
+			position: relative !important;
+			opacity: 0;
+			transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s !important;
+			transform: translateY(6px);
+		}
+		#portfolio .items .item:hover a.openButton,
+		#portfolio .items .item:hover a.projectLink {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		@media (max-width: 768px) {
+			#portfolio .items .item img { height: 260px; }
+			#portfolio .project-card-body {
+				flex-direction: column !important;
+				gap: 16px;
+				padding: 22px 20px !important;
+			}
+			#portfolio .project-card-body h5 { font-size: 16px !important; }
+		}
+
+		/* overlay cobre só a área da imagem */
+		#portfolio .items .imageOverlay {
+			border-radius: 0 !important;
+		}
+
+		/* ── Confidential cards equal height ── */
+		.confidential-row .row {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
+		}
+		.confidential-row .col-md-4 {
+			display: flex;
+			flex-direction: column;
+		}
+		.confidential-card {
+			flex: 1;
+			height: 100%;
+		}
+
+		/* ── Modal close (X) button ── */
+		.project-modal {
+			position: fixed !important;
+		}
+		.modal-close-btn {
+			position: absolute;
+			top: 14px;
+			right: 14px;
+			width: 32px;
+			height: 32px;
+			background: #f1f5f9;
+			border: 1px solid var(--border);
+			border-radius: 50%;
+			cursor: pointer;
+			font-size: 20px;
+			color: var(--text-muted);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			line-height: 1;
+			padding: 0;
+			font-family: inherit;
+			transition: background 0.18s, color 0.18s, transform 0.18s;
+			z-index: 10;
+		}
+		.modal-close-btn:hover {
+			background: #e2e8f0;
+			color: var(--text-dark);
+			transform: scale(1.1);
+		}
+
+		/* ── Section title consistent style ── */
+		.section-title-center {
+			text-align: center;
+			font-size: clamp(24px, 4vw, 36px);
+			font-weight: 700;
+			color: var(--text-dark);
+			letter-spacing: -0.5px;
+			margin-bottom: 10px;
+		}
+		.section-title-center::after {
+			content: '';
+			display: block;
+			width: 48px;
+			height: 4px;
+			background: var(--accent);
+			border-radius: 2px;
+			margin: 12px auto 0;
+		}
+
+		/* ── Skills section WhatsApp/Chat group ── */
+		.skill-group-highlight {
+			border: 1.5px solid #c7d2fe;
+		}
+	</style>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -355,87 +399,59 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 	</div>
 
 	<div id="slides">
-
 		<div class="overlay"></div>
-
 		<div class="slides-container">
 		    <img src="img/slide1.jpg" alt="">
 		    <img src="img/slide2.jpeg" alt="">
 		    <img src="img/slide3.jpeg" alt="">
 		</div>
-
 		<div class="titleMessage">
 			<div class="heading">
 				<p class="main">Alan Reis</p>
 				<p class="sub typed"></p>
 			</div>
 		</div>
-
-
-		<!-- <nav class="slides-navigation">
-		    <a href="#" class="next"></a>
-		    <a href="#" class="prev"></a>
-		</nav> -->
-
-
 	</div>
 
 
 	<nav id="navigation" class="navbar navbar-expand-lg">
-	  <a class="navbar-brand" href="index.html">Inicio</a>
-
+	  <a class="navbar-brand" href="index.html">Início</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#about">Sobre</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Habilidades</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#freelance">Freelance</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#certifications">Certificações</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Projetos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contato</a>
-      </li>
-
+	      <li class="nav-item active"><a class="nav-link" href="#about">Sobre</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#freelance">Serviços</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#certifications">Certificações</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#portfolio">Projetos</a></li>
+	      <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
 	    </ul>
 	  </div>
-
 	</nav>
 
 
-
-
+	<!-- ===== ABOUT ===== -->
 	<div id="about" class="section">
-
 		<div class="container">
-
 			<div class="row align-items-center">
-
 				<div class="col-md-4 text-center mb-4 mb-md-0">
-					<img class="aboutImage" src="img/about.jpg" alt="Alan Reis">
+					<img class="aboutImage" src="img/about.png" alt="Alan Reis">
 				</div>
-
 				<div class="col-md-8">
+					<span class="about-badge"><span class="about-badge-dot"></span>Disponível para novos projetos</span>
 					<h1>Meu nome é Alan Reis</h1>
-					<p class="sobre">Analista de Dados com experiência em SQL, Python e Power BI, atuando na análise e visualização de dados para apoiar decisões estratégicas. Desenvolvo pipelines de dados, dashboards interativos e automações que transformam dados brutos em insights acionáveis. Certificado em AWS, Azure e Oracle Cloud.</p>
+					<p class="sobre">
+						Analista de Dados e Desenvolvedor de Sistemas com experiência prática em automação, integrações via API e criação de soluções digitais do zero. Atuo na <strong>Medformula</strong> e <strong>Dr. Atende</strong> desenvolvendo pipelines de dados em Python, dashboards no Power BI e automações que transformam processos operacionais em rotinas eficientes.
+						<br><br>
+						Implantei e configurei o <strong>ChatWoot</strong> como plataforma de atendimento omnichannel para a empresa, substituindo a ferramenta anterior (Ialui) — integrando WhatsApp via GupShup, construindo o chatbot, os fluxogramas de atendimento e a distribuição para múltiplas equipes e unidades. Também criei o <strong>Acadevo</strong>, um sistema completo de gestão de academias hoje em produção em <a href="https://www.acadevo.com.br" target="_blank" style="color:var(--accent)">acadevo.com.br</a>.
+						<br><br>
+						Certificado em AWS, Azure e Oracle Cloud. Graduando em Engenharia de Software pela Unicesumar.
+					</p>
 				</div>
-
 			</div>
-
 		</div>
-
 	</div>
 
 
@@ -443,11 +459,10 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 	<section id="skills" class="skills-section">
 		<div class="container">
 			<h2 class="skills-section-title">Ferramentas &amp; Habilidades</h2>
-			<p class="skills-subtitle">Tecnologias que uso no dia a dia para extrair valor dos dados</p>
+			<p class="skills-subtitle">Tecnologias que uso no dia a dia para extrair valor dos dados e construir sistemas</p>
 
 			<div class="skills-grid">
 				<div class="skill-group">
-					<!-- <span class="skill-group-icon">📊</span> -->
 					<h4>Análise &amp; Visualização</h4>
 					<div class="skill-tags">
 						<span>Power BI</span>
@@ -458,7 +473,6 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 				</div>
 
 				<div class="skill-group">
-					<!-- <span class="skill-group-icon">💻</span> -->
 					<h4>Programação</h4>
 					<div class="skill-tags">
 						<span>Python</span>
@@ -468,8 +482,28 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 					</div>
 				</div>
 
+				<div class="skill-group skill-group-highlight">
+					<h4>APIs &amp; Automações</h4>
+					<div class="skill-tags">
+						<span>REST API</span>
+						<span>WhatsApp API</span>
+						<span>GupShup</span>
+						<span>Webhook</span>
+						<span>Postman</span>
+					</div>
+				</div>
+
+				<div class="skill-group skill-group-highlight">
+					<h4>Chatbot &amp; Atendimento</h4>
+					<div class="skill-tags">
+						<span>ChatWoot</span>
+						<span>Chatbot</span>
+						<span>Fluxograma</span>
+						<span>Automação</span>
+					</div>
+				</div>
+
 				<div class="skill-group">
-					<!-- <span class="skill-group-icon">☁️</span> -->
 					<h4>Cloud &amp; Infra</h4>
 					<div class="skill-tags">
 						<span>AWS</span>
@@ -480,7 +514,6 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 				</div>
 
 				<div class="skill-group">
-					<!-- <span class="skill-group-icon">🔧</span> -->
 					<h4>Dados &amp; Pipelines</h4>
 					<div class="skill-tags">
 						<span>Apache Airflow</span>
@@ -491,7 +524,6 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 				</div>
 
 				<div class="skill-group">
-					<!-- <span class="skill-group-icon">🗄️</span> -->
 					<h4>Banco de Dados</h4>
 					<div class="skill-tags">
 						<span>PostgreSQL</span>
@@ -500,7 +532,6 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 				</div>
 
 				<div class="skill-group">
-					<!-- <span class="skill-group-icon">✅</span> -->
 					<h4>Qualidade &amp; Governança</h4>
 					<div class="skill-tags">
 						<span>Data Quality</span>
@@ -514,7 +545,7 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 	</section>
 
 
-	<!-- ===== FREELANCE / DASHBOARD ===== -->
+	<!-- ===== SERVIÇOS / FREELANCE ===== -->
 	<section id="freelance" class="freelance-section">
 		<div class="container">
 			<div class="freelance-layout">
@@ -536,8 +567,8 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 							<span class="db-kpi-delta up">+12.4%</span>
 						</div>
 						<div class="db-kpi">
-							<span class="db-kpi-label">Clientes Ativos</span>
-							<span class="db-kpi-value">1.847</span>
+							<span class="db-kpi-label">Atendimentos</span>
+							<span class="db-kpi-value">8.312</span>
 							<span class="db-kpi-delta up">+8.2%</span>
 						</div>
 						<div class="db-kpi">
@@ -546,8 +577,8 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 							<span class="db-kpi-delta up">+2.1pp</span>
 						</div>
 						<div class="db-kpi">
-							<span class="db-kpi-label">NPS</span>
-							<span class="db-kpi-value">87</span>
+							<span class="db-kpi-label">Confirmações Bot</span>
+							<span class="db-kpi-value">91%</span>
 							<span class="db-kpi-delta up">+5 pts</span>
 						</div>
 					</div>
@@ -592,18 +623,9 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 								<line x1="0" y1="20" x2="260" y2="20" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
 								<line x1="0" y1="55" x2="260" y2="55" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
 								<line x1="0" y1="88" x2="260" y2="88" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-								<path d="M10,62 C24,62 30,48 44,48 C58,48 64,54 78,54 C92,54 98,40 112,40 C126,40 132,35 146,35 C160,35 166,42 180,42 C194,42 200,28 214,28 C228,28 234,32 248,32 L248,95 L10,95 Z"
-									  fill="url(#areaGradA)"/>
-								<path d="M10,62 C24,62 30,48 44,48 C58,48 64,54 78,54 C92,54 98,40 112,40 C126,40 132,35 146,35 C160,35 166,42 180,42 C194,42 200,28 214,28 C228,28 234,32 248,32"
-									  fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-								<circle cx="10"  cy="62" r="2.5" fill="#38bdf8"/>
-								<circle cx="44"  cy="48" r="2.5" fill="#38bdf8"/>
-								<circle cx="78"  cy="54" r="2.5" fill="#38bdf8"/>
-								<circle cx="112" cy="40" r="2.5" fill="#38bdf8"/>
-								<circle cx="146" cy="35" r="2.5" fill="#38bdf8"/>
-								<circle cx="180" cy="42" r="2.5" fill="#38bdf8"/>
-								<circle cx="214" cy="28" r="4"   fill="#38bdf8" stroke="rgba(255,255,255,0.85)" stroke-width="1.5"/>
-								<circle cx="248" cy="32" r="2.5" fill="#38bdf8"/>
+								<path d="M10,62 C24,62 30,48 44,48 C58,48 64,54 78,54 C92,54 98,40 112,40 C126,40 132,35 146,35 C160,35 166,42 180,42 C194,42 200,28 214,28 C228,28 234,32 248,32 L248,95 L10,95 Z" fill="url(#areaGradA)"/>
+								<path d="M10,62 C24,62 30,48 44,48 C58,48 64,54 78,54 C92,54 98,40 112,40 C126,40 132,35 146,35 C160,35 166,42 180,42 C194,42 200,28 214,28 C228,28 234,32 248,32" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<circle cx="214" cy="28" r="4" fill="#38bdf8" stroke="rgba(255,255,255,0.85)" stroke-width="1.5"/>
 							</svg>
 						</div>
 					</div>
@@ -611,15 +633,24 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 
 				<!-- Text -->
 				<div class="freelance-text">
-					<h2>Dados que geram resultados</h2>
-					<p>Ofereço projetos freelancer de ponta a ponta: da coleta de dados via API e ETL em Python à entrega de dashboards no Power BI que transformam números em decisões estratégicas para o negócio.</p>
+					<h2>Dados e sistemas que geram resultados</h2>
+					<p>Ofereço projetos de ponta a ponta: da coleta de dados via API e ETL em Python à entrega de dashboards no Power BI, passando pela criação de chatbots, automações WhatsApp e sistemas web completos.</p>
 					<ul class="freelance-benefits">
 						<li><span class="benefit-dash">—</span> Integração e coleta de dados via API</li>
 						<li><span class="benefit-dash">—</span> Pipelines ETL automatizados com Python</li>
 						<li><span class="benefit-dash">—</span> Dashboards interativos no Power BI</li>
-						<li><span class="benefit-dash">—</span> Automação de relatórios e alertas</li>
+						<li><span class="benefit-dash">—</span> Chatbots e automações WhatsApp</li>
+						<li><span class="benefit-dash">—</span> Sistemas web sob medida</li>
 					</ul>
 					<a href="#contact" class="freelance-cta">Falar sobre um projeto</a>
+					<div class="freelance-tag-row">
+						<span>Python</span>
+						<span>Power BI</span>
+						<span>WhatsApp API</span>
+						<span>ChatWoot</span>
+						<span>SQL</span>
+						<span>AWS</span>
+					</div>
 				</div>
 
 			</div>
@@ -627,15 +658,24 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 	</section>
 
 
+	<!-- ===== EXPERIÊNCIA / NOW ===== -->
 	<section id="now" class="now-section">
-		<h2>O que estou fazendo agora</h2>
+		<h2>Experiência &amp; Trajetória</h2>
 		<div class="timeline">
 
 			<div class="timeline-item">
 				<div class="timeline-date">Nov 2025 — Atual</div>
 				<div class="timeline-content">
-					<p>Analista de Dados — Medformula &amp; Dr Atende</p>
-					<p>Atuo na extração e tratamento de dados via API, desenvolvimento de pipelines ETL com Python, construção de dashboards no Power BI e automação de tarefas operacionais, gerando insights estratégicos para as equipes de gestão.</p>
+					<p>Analista de Dados — Medformula &amp; Dr. Atende</p>
+					<p>Extração e tratamento de dados via API, pipelines ETL com Python, dashboards no Power BI e automações operacionais. Configuração e implantação do ChatWoot como plataforma de atendimento omnichannel (substituindo o Ialui), com integração WhatsApp via GupShup, chatbot, fluxograma de atendimento e distribuição por times e unidades. Desenvolvimento de automação em Python para confirmação de produtos via WhatsApp.</p>
+				</div>
+			</div>
+
+			<div class="timeline-item hidden">
+				<div class="timeline-date">2024 — 2025</div>
+				<div class="timeline-content">
+					<p>Desenvolvedor — Acadevo (Projeto próprio)</p>
+					<p>Desenvolvimento completo do sistema de gestão de academia Acadevo, hoje em produção e operante. Funcionalidades: gestão de alunos, planos, pagamentos, frequência e relatórios. Disponível em <strong>acadevo.com.br</strong>.</p>
 				</div>
 			</div>
 
@@ -666,15 +706,14 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 		</div>
 		<button id="loadMore">Ver mais</button>
 		<button id="loadLess">Ver menos</button>
-
 	</section>
 
 
-
+	<!-- ===== CERTIFICATIONS ===== -->
 	<div id="certifications" class="certificationsSection section">
 		<div class="container text-center">
 			<h2 class="sectionTitle">Certificações</h2>
-			
+
 			<div class="certificationsContainer">
 				<div class="certification">
 					<a href="https://www.credly.com/badges/c4cce4c6-7243-4c39-b0b7-a14f17710c92/linked_in?t=srja7r" target="_blank">
@@ -682,14 +721,14 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 					</a>
 					<p>AWS Certified Cloud Practitioner</p>
 				</div>
-	
+
 				<div class="certification">
 					<a href="https://learn.microsoft.com/api/credentials/share/pt-br/ALANBORGESDOSREIS-2140/27CE7885A7B6F779?sharingId=7B7AF10CC4C9AFF5" target="_blank">
 						<img src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Microsoft Certified">
 					</a>
 					<p>AZ-900: Microsoft Azure Fundamentals</p>
 				</div>
-	
+
 				<div class="oracle">
 					<a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=A988BC5FE44A81A3B119AC75CDBF688F300C9225F5B6CFB133DC26151DFF06D3" target="_blank">
 						<img src="img/oracle-badge.png" alt="Oracle Cloud Infrastructure Certified Foundations Associate" height="400px">
@@ -701,152 +740,263 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 	</div>
 
 
+	<!-- ===== PROJETOS ===== -->
 	<div id="portfolio" class="section">
 		<div class="container">
 			<div class="row">
-				<div class="heading">
+				<div class="heading col-12">
 					<h2>Projetos</h2>
 				</div>
-				<!-- <div class="filter">
-					<ul id="filters">
-						<li><a href="#" data-filter="*" class="current">Todos</a></li>
-						<li><a href="#" data-filter=".apps">ETL & Pipelines de Dados</a></li>
-						<li><a href="#" data-filter=".me">Armazenamento de Dados</a></li>
-						<li><a href="#" data-filter=".websites">Banco de Dados e Data Warehousing</a></li>
-						<li><a href="#" data-filter=".websites">Ferramentas de Análise e Visualização</a></li>
-					</ul>
-				</div> -->
-				<div class="itemsContainer">
+				<div class="itemsContainer col-12">
 					<ul class="items">
-						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							<div class="item">
-								<img src="img/thumbnail/project-apacheairflow-etl-escrita.png">
-								<div class="icons">
-									<a href="#project-details-modal" title="View image" class="openButton projectDetailsButton">
-										<i class="fa fa-search"></i>
-									</a>
-									<a href="https://github.com/AlanBReis/ans-data-pipeline-airflow" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
+
+						<!-- ChatWoot -->
+						<li class="me">
+							<div class="project-wrap">
+								<div class="item">
+									<img src="img/thumbnail/chatwoot-dashboard.webp" alt="Plataforma de Atendimento com ChatWoot">
+									<div class="icons">
+										<a href="#project-details-modal-ialui" title="Ver detalhes" class="openButton projectDetailsButton"><i class="fa fa-search"></i></a>
+									</div>
+									<div class="imageOverlay"></div>
 								</div>
-								<div class="imageOverlay"></div>
+								<div class="project-card-body">
+									<div class="card-info">
+										<h5>Atendimento Omnichannel — ChatWoot</h5>
+										<p class="card-desc">Configurei e implantei o ChatWoot como plataforma de atendimento interno, substituindo o Ialui. Integração com WhatsApp via GupShup, chatbot com fluxograma automático e distribuição para múltiplas equipes e unidades.</p>
+										<div class="project-tech-tags">
+											<span>ChatWoot</span>
+											<span>GupShup</span>
+											<span>WhatsApp API</span>
+											<span>Chatbot</span>
+											<span>Webhook</span>
+										</div>
+									</div>
+									<div class="card-actions">
+										<a href="#project-details-modal-ialui" class="openButton projectDetailsButton" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:10px 22px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap">Ver detalhes</a>
+									</div>
+								</div>
 							</div>
 						</li>
-						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							<div class="item">
-								<img src="img/thumbnail/thumbnail-spotify-data-analyzer.png">
-								<div class="icons">
-									<a href="#project-details-modal-spotify" title="View image" class="openButton projectDetailsButton">
-										<i class="fa fa-search"></i>
-									</a>
-									<a href="https://github.com/AlanBReis/spotify-data-analysis" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
+
+						<!-- Acadevo -->
+						<li class="me">
+							<div class="project-wrap">
+								<div class="item">
+									<img src="img/thumbnail/acadevo-painel.png" alt="Acadevo — Gestão de Academia">
+									<div class="icons">
+										<a href="#project-details-modal-acadevo" title="Ver detalhes" class="openButton projectDetailsButton"><i class="fa fa-search"></i></a>
+										<a href="https://www.acadevo.com.br" target="_blank" class="projectLink"><i class="fa fa-link"></i></a>
+									</div>
+									<div class="imageOverlay"></div>
 								</div>
-								<div class="imageOverlay"></div>
+								<div class="project-card-body">
+									<div class="card-info">
+										<h5>Acadevo — Sistema de Gestão de Academia</h5>
+										<p class="card-desc">Sistema web completo desenvolvido do zero — controle de alunos, planos, mensalidades, check-in, agenda de aulas e dashboard com KPIs em tempo real. Atualmente em produção e operante em acadevo.com.br.</p>
+										<div class="project-tech-tags">
+											<span>Next.js</span>
+											<span>PostgreSQL</span>
+											<span>Docker</span>
+											<span>NestJS</span>
+										</div>
+									</div>
+									<div class="card-actions">
+										<a href="#project-details-modal-acadevo" class="openButton projectDetailsButton" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:10px 22px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap">Ver detalhes</a>
+										<a href="https://www.acadevo.com.br" target="_blank" style="display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap"><i class="fa fa-external-link" style="font-size:11px"></i> Acessar site</a>
+										<span class="live-badge"><span class="live-badge-dot"></span>Em produção</span>
+									</div>
+								</div>
 							</div>
 						</li>
-						<li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							<div class="item">
-								<img src="img/thumbnail/thumbnail-datalake.png">
-								<div class="icons">
-									<a href="#project-details-modal-datalakehouse" title="View image" class="openButton projectDetailsButton">
-										<i class="fa fa-search"></i>
-									</a>
-									<a href="https://github.com/AlanBReis/datalakehouse-analytics-pipeline" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
+
+						<!-- Chatbot Medformula -->
+						<li class="me">
+							<div class="project-wrap">
+								<div class="item">
+									<img src="img/thumbnail/thumbnail-chatbot.svg" alt="Chatbot Medformula">
+									<div class="icons">
+										<a href="#project-details-modal-chatbot" title="Ver detalhes" class="openButton projectDetailsButton"><i class="fa fa-search"></i></a>
+									</div>
+									<div class="imageOverlay"></div>
 								</div>
-								<div class="imageOverlay"></div>
+								<div class="project-card-body">
+									<div class="card-info">
+										<h5>Chatbot de Confirmação de Produtos — Medformula</h5>
+										<p class="card-desc">Automação em Python para envio de mensagens de confirmação de pedidos via WhatsApp para clientes da Medformula. Integração com a API do GupShup, tratamento de respostas e fila com rate limiting. Taxa de confirmação acima de 90%.</p>
+										<div class="project-tech-tags">
+											<span>Python</span>
+											<span>WhatsApp API</span>
+											<span>GupShup</span>
+											<span>Postman</span>
+											<span>Automação</span>
+										</div>
+									</div>
+									<div class="card-actions">
+										<a href="#project-details-modal-chatbot" class="openButton projectDetailsButton" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:10px 22px;border-radius:100px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap">Ver detalhes</a>
+									</div>
+								</div>
 							</div>
-						</li>						
+						</li>
+
 					</ul>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<!-- Modal do Projeto 1: Airflow -->
-	<div style="display: none;" id="project-details-modal" class="project-modal">
-		<h2>Automatizando a Extração de Dados da ANS com Apache Airflow</h2>
-		<p>
-			Imagine ter um assistente digital que vasculha a internet em busca de informações importantes, extrai dados de arquivos PDF e organiza tudo em planilhas fáceis de entender. Foi exatamente isso que eu construí com este projeto!
-			<br><br>
-			Utilizando o Apache Airflow, uma ferramenta de orquestração de fluxos de trabalho, desenvolvi um pipeline automatizado que coleta dados, transforma-os em arquivos CSV e os compacta para facilitar o armazenamento e o compartilhamento.
-			<br><br>
-			Este projeto demonstra como a automação pode simplificar tarefas complexas de extração e transformação de dados, economizando tempo e recursos.
-		</p>
-		<button id="backToProjects">Voltar para Projetos</button>
+
+		<!-- Confidential projects banner -->
+		<div class="confidential-row" style="background:var(--bg-dark); padding: 48px 0;">
+			<div class="container">
+				<p class="section-title-center" style="color:#f1f5f9; font-size:14px; font-weight:600; letter-spacing:1px; text-transform:uppercase; margin-bottom:24px;">Projetos Profissionais — Conteúdo Confidencial</p>
+				<div class="row justify-content-center" style="gap:0">
+					<div class="col-md-4 mb-3">
+						<div class="confidential-card">
+							<div class="lock-icon">📊</div>
+							<h5>Dashboards Power BI</h5>
+							<p>Múltiplos painéis executivos desenvolvidos para Medformula, Dr. Atende e Cartão Atende — análise de atendimentos, receita, conversão e performance operacional.</p>
+							<div class="conf-tags">
+								<span>Power BI</span>
+								<span>DAX</span>
+								<span>SQL</span>
+								<span>Python</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-3">
+						<div class="confidential-card">
+							<div class="lock-icon">🔗</div>
+							<h5>Pipelines ETL &amp; Integrações API</h5>
+							<p>Automações de extração, tratamento e carga de dados para os sistemas internos das empresas do grupo, conectando APIs de terceiros a bancos de dados e BIs.</p>
+							<div class="conf-tags">
+								<span>Python</span>
+								<span>Pandas</span>
+								<span>REST API</span>
+								<span>PostgreSQL</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<!-- Modal do Projeto 2: Spotify -->
-	<div style="display: none;" id="project-details-modal-spotify" class="project-modal">
-		<h2>Dashboard Interativa com Spotify e Power BI</h2>
-		<p>
-			Neste projeto utilizei Python, a API do Spotify e Docker para coletar e tratar dados de uma playlist de forma automatizada.
-			<br><br>
-			Os dados foram analisados e visualizados no Power BI com gráficos interativos, destacando informações como as músicas mais populares, duração total da playlist e quantidade de músicas. 
-			<br><br>
-			A dashboard segue o estilo visual do Spotify, com cores escuras e detalhes vibrantes — ideal para demonstrar integração de APIs, automação com Docker e visualização de dados.
-		</p>		
-		<button id="backToProjectsSpotify">Voltar para Projetos</button>
+
+	<!-- ===== MODAIS DOS PROJETOS ===== -->
+
+	<!-- Modal ChatWoot -->
+	<div style="display: none;" id="project-details-modal-ialui" class="project-modal">
+		<button class="modal-close-btn" data-close-modal>&#x2715;</button>
+		<h2>Atendimento Omnichannel com ChatWoot</h2>
+
+		<p><strong>Contexto</strong><br>
+		A empresa utilizava o <strong>Ialui</strong> como ferramenta de chat interno, mas com o crescimento das operações e a chegada de múltiplas unidades, a plataforma começou a mostrar limitações: falta de controle granular sobre filas, ausência de um chatbot configurável e dificuldade para segmentar os atendimentos por time. A missão foi migrar para o <strong>ChatWoot</strong> e montar do zero toda a estrutura de atendimento.</p>
+
+		<p><strong>O que foi implementado</strong><br>
+		Fiz a instalação e configuração completa do ChatWoot, conectei o canal de WhatsApp da empresa através da <strong>API do GupShup</strong> — o que envolveu configurar a conta no painel do GupShup, registrar o número no WhatsApp Business, gerar as credenciais e apontar o <strong>webhook</strong> corretamente para o ChatWoot receber e enviar mensagens em tempo real.<br><br>
+		Com o canal funcionando, estruturei os <strong>times por área</strong> (Vendas, Suporte, Agendamento) e configurei a distribuição automática de conversas para cada equipe de acordo com o fluxo da mensagem. Para cada unidade da empresa foi criada uma caixa de entrada separada, mantendo os atendimentos isolados e rastreáveis.<br><br>
+		O passo seguinte foi construir o <strong>chatbot com fluxograma de atendimento</strong>: mapeei os casos mais frequentes (confirmação de agenda, dúvidas sobre horários, direcionamento de novos clientes), montei os fluxos de resposta automática e configurei as regras de escalonamento para atendente humano quando necessário. O bot passou a enviar mensagens de confirmação de agendamentos automaticamente, eliminando boa parte do trabalho manual da equipe.</p>
+
+		<p><strong>Dificuldades enfrentadas</strong><br>
+		A maior dor foi a <strong>configuração do webhook entre GupShup e ChatWoot</strong>. A documentação do GupShup nem sempre é clara sobre os headers esperados e o formato exato do payload, então precisei usar o Postman para interceptar e comparar as requisições até o handshake funcionar corretamente. Outro ponto crítico foi o <strong>delay de entrega das mensagens</strong> em horários de pico — resolvido ajustando os timeouts e habilitando filas no servidor. A configuração das permissões por time também exigiu várias iterações, já que cada unidade tinha necessidades diferentes de visibilidade sobre as conversas.</p>
+
+		<p><strong>Resultado</strong><br>
+		O time de atendimento passou a operar com visibilidade total das conversas, histórico centralizado e distribuição automática. O chatbot reduziu significativamente o volume de mensagens repetitivas tratadas manualmente e o tempo médio de primeira resposta caiu de forma expressiva.</p>
+
+		<p style="margin-bottom:0"><strong>Tecnologias:</strong> ChatWoot · GupShup · WhatsApp Business API · Webhook · Postman · Fluxograma de atendimento · Múltiplas unidades</p>
+		<button id="backToProjectsIalui">Voltar para Projetos</button>
 	</div>
 
-	<!-- Modal do Projeto 3: Datalakehouse -->
-	<div style="display: none;" id="project-details-modal-datalakehouse" class="project-modal">
-		<h2>Lakehouse Analytics Pipeline com Delta Lake e Power BI</h2>
-		<p>
-			Neste projeto desenvolvi um pipeline completo baseado em arquitetura Lakehouse, utilizando PySpark, Delta Lake e Databricks para ingestão, tratamento e organização de dados.
-			<br><br>
-			Os dados são consumidos diretamente do Delta Lake e visualizados no Power BI por meio de dashboards interativos, com KPIs para análises estratégicas. O projeto demonstra arquitetura de dados, versionamento, otimizações com ZORDER e integração com ferramentas de BI.
-		</p>
-		<button id="backToProjectsDatalakehouse">Voltar para Projetos</button>
+	<!-- Modal Acadevo -->
+	<div style="display: none;" id="project-details-modal-acadevo" class="project-modal">
+		<button class="modal-close-btn" data-close-modal>&#x2715;</button>
+		<h2>Acadevo — Sistema de Gestão de Academia</h2>
+
+		<p><strong>Contexto</strong><br>
+		O Acadevo nasceu de uma necessidade real: academias de menor porte não tinham acesso a sistemas de gestão acessíveis e completos — ou pagavam caro por plataformas cheias de funcionalidades que não usavam, ou controlavam tudo em planilhas e papel. Decidi construir do zero uma solução enxuta, funcional e com foco na rotina do gestor de academia.</p>
+
+		<p><strong>O que foi construído</strong><br>
+		O sistema cobre o ciclo completo de operação: <strong>cadastro e gestão de alunos</strong>, controle de <strong>planos e vencimentos</strong> com alertas automáticos de inadimplência, registro de <strong>check-in por frequência</strong>, agenda de <strong>aulas e horários</strong>, <strong>relatórios financeiros</strong> por período e um dashboard com os KPIs principais da academia — alunos ativos, receita do mês, aulas do dia e taxa de retenção.<br><br>
+		Todo o sistema foi desenvolvido pensando em responsividade, para que o dono da academia consiga usar no celular ou no computador da recepção sem perder nenhuma funcionalidade.</p>
+
+		<p><strong>Dificuldades enfrentadas</strong><br>
+		Um dos pontos mais desafiadores foi a <strong>lógica de controle de planos</strong>: precisava lidar com planos mensais, trimestrais e anuais de forma consistente, calcular datas de vencimento corretamente considerando meses com dias diferentes, gerar cobranças proporcionais em casos de adesão no meio do mês e emitir alertas no momento certo sem sobrecarregar o sistema com verificações desnecessárias.<br><br>
+		Levar o sistema para <strong>produção real</strong> também trouxe desafios que o desenvolvimento local não antecipou: performance em consultas que crescem com o volume de alunos, tratamento de sessões simultâneas na recepção e garantia de que nenhuma atualização de código quebrasse dados já cadastrados.</p>
+
+		<p><strong>Resultado</strong><br>
+		O Acadevo está em operação em <a href="https://www.acadevo.com.br" target="_blank" style="color:var(--accent)">acadevo.com.br</a> e sendo utilizado por academias reais no dia a dia — o que exige estabilidade, manutenção contínua e evolução constante baseada no feedback dos usuários.</p>
+
+		<p style="margin-bottom:0"><strong>Acesse:</strong> <a href="https://www.acadevo.com.br" target="_blank" style="color:var(--accent)">acadevo.com.br</a></p>
+		<button id="backToProjectsAcadevo">Voltar para Projetos</button>
+	</div>
+
+	<!-- Modal Chatbot Medformula -->
+	<div style="display: none;" id="project-details-modal-chatbot" class="project-modal">
+		<button class="modal-close-btn" data-close-modal>&#x2715;</button>
+		<h2>Chatbot de Confirmação de Produtos — Medformula</h2>
+
+		<p><strong>Contexto</strong><br>
+		O processo de confirmação de pedidos da Medformula era feito manualmente pela equipe: ligações ou mensagens individuais para cada cliente confirmando se o produto seria entregue. Com o volume crescendo, esse processo virou um gargalo — além de lento, era sujeito a erros e esquecimentos. A solução foi automatizar o fluxo inteiro com um chatbot via WhatsApp.</p>
+
+		<p><strong>O que foi desenvolvido</strong><br>
+		Criei um script em <strong>Python</strong> que lê a lista de pedidos pendentes, gera mensagens personalizadas com os dados de cada cliente e produto, e os envia via <strong>API do GupShup</strong> (WhatsApp Business API). O cliente recebe a mensagem diretamente no WhatsApp e responde com <em>"SIM"</em> para confirmar ou <em>"NÃO"</em> para recusar/reagendar — o bot interpreta a resposta e atualiza o status do pedido.<br><br>
+		Todo o fluxo de autenticação, construção do payload e tratamento das respostas foi mapeado e testado no <strong>Postman</strong> antes de qualquer linha de código ir para produção. Isso foi essencial para entender exatamente o formato que a API esperava e os diferentes códigos de status que ela retornava.</p>
+
+		<p><strong>Dificuldades enfrentadas</strong><br>
+		A API do GupShup tem algumas particularidades que não estão totalmente documentadas: o <strong>formato do número de telefone</strong> precisa seguir um padrão específico com código do país sem o sinal de mais, e números com nono dígito inconsistente causavam falhas silenciosas — a requisição retornava 200 mas a mensagem não chegava. Precisei criar uma função de sanitização dos números antes do envio para tratar esses casos.<br><br>
+		Outro desafio foi lidar com o <strong>rate limiting da API</strong>: enviar centenas de mensagens em sequência sem respeitar os intervalos causava bloqueios temporários. Implementei uma fila com delay configurável entre os envios para respeitar os limites sem comprometer o tempo total de execução.<br><br>
+		A interpretação das respostas também foi um ponto de atenção: clientes respondiam de formas variadas ("sim", "Sim", "SIM", "s", "1", "pode confirmar") — adicionei um parser com normalização de texto para capturar todas as variações de confirmação.</p>
+
+		<p><strong>Resultado</strong><br>
+		O processo que antes levava horas de trabalho manual passou a rodar em minutos. A taxa de confirmação ficou acima de 90% e a equipe de atendimento pôde direcionar o tempo para casos que realmente precisavam de interação humana.</p>
+
+		<p style="margin-bottom:0"><strong>Tecnologias:</strong> Python · WhatsApp Business API · GupShup · Postman · dotenv · Sanitização de dados</p>
+		<button id="backToProjectsChatbot">Voltar para Projetos</button>
 	</div>
 
 	<script>
 		$(document).ready(function () {
-			// Botão do projeto Airflow
-			$('a[href="#project-details-modal"]').click(function (e) {
-				e.preventDefault();
-				$('#project-details-modal').show();
+			function openModal(modalId) {
+				$(modalId).show();
+				$('html, body').animate({ scrollTop: $(modalId).offset().top - 80 }, 300);
+			}
+
+			/* X button — fecha qualquer modal */
+			$(document).on('click', '[data-close-modal]', function () {
+				$(this).closest('.project-modal').hide();
+				$('html, body').animate({ scrollTop: $('#portfolio').offset().top - 60 }, 300);
 			});
 
-			$('#backToProjects').click(function () {
-				$('#project-details-modal').hide();
+			$('a[href="#project-details-modal-ialui"]').click(function (e) {
+				e.preventDefault(); openModal('#project-details-modal-ialui');
+			});
+			$('#backToProjectsIalui').click(function () {
+				$('#project-details-modal-ialui').hide();
+				$('html, body').animate({ scrollTop: $('#portfolio').offset().top - 60 }, 300);
 			});
 
-			// Botão do projeto Spotify
-			$('a[href="#project-details-modal-spotify"]').click(function (e) {
-				e.preventDefault();
-				$('#project-details-modal-spotify').show();
+			$('a[href="#project-details-modal-acadevo"]').click(function (e) {
+				e.preventDefault(); openModal('#project-details-modal-acadevo');
+			});
+			$('#backToProjectsAcadevo').click(function () {
+				$('#project-details-modal-acadevo').hide();
+				$('html, body').animate({ scrollTop: $('#portfolio').offset().top - 60 }, 300);
 			});
 
-			$('#backToProjectsSpotify').click(function () {
-				$('#project-details-modal-spotify').hide();
+			$('a[href="#project-details-modal-chatbot"]').click(function (e) {
+				e.preventDefault(); openModal('#project-details-modal-chatbot');
 			});
-
-			// Botão do projeto Datalakehouse
-			$('a[href="#project-details-modal-datalakehouse"]').click(function (e) {
-				e.preventDefault();
-				$('#project-details-modal-datalakehouse').show();
-			});
-
-			$('#backToProjectsDatalakehouse').click(function () {
-				$('#project-details-modal-datalakehouse').hide();
+			$('#backToProjectsChatbot').click(function () {
+				$('#project-details-modal-chatbot').hide();
+				$('html, body').animate({ scrollTop: $('#portfolio').offset().top - 60 }, 300);
 			});
 		});
-
 	</script>
-	
-	
-	
 
 
-
+	<!-- ===== CONTACT ===== -->
 	<div id="contact" class="contactSection section">
 		<div class="container">
 			<div class="row justify-content-center">
-				<!-- Seção do E-mail -->
 				<div class="col-md-4 text-center">
 					<h4 class="subHeading">Me envie um e-mail</h4>
 					<a href="mailto:contato@alanbreis.com" class="contactButton">Basta clicar aqui!</a>
@@ -854,81 +1004,22 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 			</div>
 		</div>
 	</div>
-	
 
 
 	<footer class="bg-body-tertiary text-center">
-		<!-- Grid container -->
 		<div class="container p-4 pb-0">
-		  <!-- Section: Social media -->
-		  <section class="mb-4">	  
-
-
-
-	  
-			<!-- Linkedin -->
-			<a
-			  data-mdb-ripple-init
-			  class="btn text-white btn-floating m-1"
-			  style="background-color: #0082ca;"
-			  href="https://www.linkedin.com/in/alanbrreis/"
-			  role="button"
-			  ><i class="fab fa-linkedin-in"></i
-			></a>
-			<!-- Github -->
-			<a
-			  data-mdb-ripple-init
-			  class="btn text-white btn-floating m-1"
-			  style="background-color: #333333;"
-			  href="https://github.com/AlanBReis"
-			  role="button"
-			  ><i class="fab fa-github"></i
-			></a>
-
-			<!-- Instagram -->
-			<a
-				data-mdb-ripple-init
-				class="btn text-white btn-floating m-1"
-				style="background-color: #ac2bac;"
-				href="https://www.instagram.com/alanzit0x/"
-				role="button"
-				><i class="fab fa-instagram"></i
-			></a>
-
-			<!-- WhatsApp -->
-			<a
-				data-mdb-ripple-init
-				class="btn text-white btn-floating m-1"
-				style="background-color: #0fbd69;"
-				href="https://wa.me/5544920024399/?text=Oi%20Tudo%20bem%20?"
-				role="button"
-				><i class="fab fa-whatsapp"></i
-			></a>
-
-			<!-- Curriculo -->
-			<a
-				data-mdb-ripple-init
-				class="btn text-white btn-floating m-1"
-				style="background-color: #55acee;"  
-				href="document/CURRICULO LINKEDIN.pdf"  
-				download="CURRICULO -ALAN B REIS - Analista de Dados.pdf" 
-				role="button"
-				>
-				<i class="fas fa-download"></i>
-			</a>
-		
-
+		  <section class="mb-4">
+			<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/in/alanbrreis/" role="button"><i class="fab fa-linkedin-in"></i></a>
+			<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/AlanBReis" role="button"><i class="fab fa-github"></i></a>
+			<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/alanzit0x/" role="button"><i class="fab fa-instagram"></i></a>
+			<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0fbd69;" href="https://wa.me/5544920024399/?text=Oi%20Tudo%20bem%20?" role="button"><i class="fab fa-whatsapp"></i></a>
+			<a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="document/CURRICULO LINKEDIN.pdf" download="CURRICULO-ALAN-B-REIS-Analista-de-Dados.pdf" role="button"><i class="fas fa-download"></i></a>
 		  </section>
-		  <!-- Section: Social media -->
 		</div>
-		
-	  
-		
 		<div class="text-center p-3">
-		  © 2025 Copyright Alan Borges dos Reis Todos os direitos reservados.
+		  © 2025 Copyright Alan Borges dos Reis — Todos os direitos reservados.
 		</div>
-		
-	  </footer>	
+	</footer>
 
 
 	<script src="js/countUp.js"></script>
@@ -941,9 +1032,7 @@ Modificação: Configure o cluster para ser altamente disponível (multi-node, m
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-
 	<script src="js/script.js"></script>
 
->>>>>>> new-version
 </body>
 </html>

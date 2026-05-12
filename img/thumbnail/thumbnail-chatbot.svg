@@ -1,0 +1,180 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgCb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1f3c"/>
+    </linearGradient>
+    <linearGradient id="pythonGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#306998"/>
+      <stop offset="100%" stop-color="#ffd43b"/>
+    </linearGradient>
+    <linearGradient id="greenMsg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#25d366"/>
+      <stop offset="100%" stop-color="#128c7e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgCb)"/>
+
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="46" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="16" cy="23" r="5" fill="#ff5f57"/>
+  <circle cx="30" cy="23" r="5" fill="#febc2e"/>
+  <circle cx="44" cy="23" r="5" fill="#28c840"/>
+  <text x="400" y="28" text-anchor="middle" font-family="monospace,sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">chatbot_medformula.py — Python 3.11</text>
+
+  <!-- Code editor (left panel) -->
+  <rect x="0" y="46" width="420" height="454" fill="#0d1f3c"/>
+  <rect x="420" y="46" width="1" height="454" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- Line numbers bg -->
+  <rect x="0" y="46" width="36" height="454" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- Code content -->
+  <text x="12" y="72" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">1</text>
+  <text x="46" y="72" font-family="monospace" font-size="10" fill="#6272a4"># Medformula — Chatbot WhatsApp</text>
+  <text x="12" y="88" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">2</text>
+  <text x="46" y="88" font-family="monospace" font-size="10" fill="#6272a4"># Confirmação automática de produtos</text>
+  <text x="12" y="104" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">3</text>
+  <text x="12" y="120" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">4</text>
+  <text x="46" y="120" font-family="monospace" font-size="10" fill="#ff79c6">import</text>
+  <text x="98" y="120" font-family="monospace" font-size="10" fill="#f8f8f2"> requests, json</text>
+  <text x="12" y="136" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">5</text>
+  <text x="46" y="136" font-family="monospace" font-size="10" fill="#ff79c6">from</text>
+  <text x="82" y="136" font-family="monospace" font-size="10" fill="#f8f8f2"> dotenv </text>
+  <text x="143" y="136" font-family="monospace" font-size="10" fill="#ff79c6">import</text>
+  <text x="195" y="136" font-family="monospace" font-size="10" fill="#f8f8f2"> load_dotenv</text>
+  <text x="12" y="152" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">6</text>
+  <text x="12" y="168" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">7</text>
+  <text x="46" y="168" font-family="monospace" font-size="10" fill="#8be9fd">API_URL</text>
+  <text x="118" y="168" font-family="monospace" font-size="10" fill="#ff79c6"> = </text>
+  <text x="136" y="168" font-family="monospace" font-size="10" fill="#f1fa8c">"https://api.gupshup.io/sm/api"</text>
+  <text x="12" y="184" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">8</text>
+  <text x="46" y="184" font-family="monospace" font-size="10" fill="#8be9fd">API_KEY</text>
+  <text x="116" y="184" font-family="monospace" font-size="10" fill="#ff79c6"> = </text>
+  <text x="134" y="184" font-family="monospace" font-size="10" fill="#f1fa8c">os.getenv("GUPSHUP_KEY")</text>
+  <text x="12" y="200" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">9</text>
+  <text x="12" y="216" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">10</text>
+  <text x="12" y="232" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">11</text>
+  <text x="46" y="232" font-family="monospace" font-size="10" fill="#50fa7b">def</text>
+  <text x="72" y="232" font-family="monospace" font-size="10" fill="#8be9fd"> enviar_confirmacao</text>
+  <text x="215" y="232" font-family="monospace" font-size="10" fill="#f8f8f2">(phone, pedido):</text>
+  <text x="12" y="248" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">12</text>
+  <text x="46" y="248" font-family="monospace" font-size="10" fill="#f8f8f2">    payload = &#123;</text>
+  <text x="12" y="264" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">13</text>
+  <text x="46" y="264" font-family="monospace" font-size="10" fill="#f1fa8c">        "channel"</text>
+  <text x="135" y="264" font-family="monospace" font-size="10" fill="#f8f8f2">: </text>
+  <text x="148" y="264" font-family="monospace" font-size="10" fill="#f1fa8c">"whatsapp",</text>
+  <text x="12" y="280" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">14</text>
+  <text x="46" y="280" font-family="monospace" font-size="10" fill="#f1fa8c">        "destination"</text>
+  <text x="155" y="280" font-family="monospace" font-size="10" fill="#f8f8f2">: phone,</text>
+  <text x="12" y="296" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">15</text>
+  <text x="46" y="296" font-family="monospace" font-size="10" fill="#f1fa8c">        "message"</text>
+  <text x="127" y="296" font-family="monospace" font-size="10" fill="#f8f8f2">: confirmar_msg(pedido)</text>
+  <text x="12" y="312" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">16</text>
+  <text x="46" y="312" font-family="monospace" font-size="10" fill="#f8f8f2">    &#125;</text>
+  <text x="12" y="328" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">17</text>
+  <text x="46" y="328" font-family="monospace" font-size="10" fill="#8be9fd">    res</text>
+  <text x="73" y="328" font-family="monospace" font-size="10" fill="#ff79c6"> = </text>
+  <text x="90" y="328" font-family="monospace" font-size="10" fill="#f8f8f2">requests.</text>
+  <text x="148" y="328" font-family="monospace" font-size="10" fill="#50fa7b">post</text>
+  <text x="174" y="328" font-family="monospace" font-size="10" fill="#f8f8f2">(API_URL, json=payload,</text>
+  <text x="12" y="344" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">18</text>
+  <text x="46" y="344" font-family="monospace" font-size="10" fill="#f8f8f2">             headers=&#123;</text>
+  <text x="148" y="344" font-family="monospace" font-size="10" fill="#f1fa8c">"apikey"</text>
+  <text x="202" y="344" font-family="monospace" font-size="10" fill="#f8f8f2">: API_KEY&#125;)</text>
+  <text x="12" y="360" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.2)">19</text>
+  <text x="46" y="360" font-family="monospace" font-size="10" fill="#ff79c6">    return</text>
+  <text x="96" y="360" font-family="monospace" font-size="10" fill="#f8f8f2"> res.</text>
+  <text x="119" y="360" font-family="monospace" font-size="10" fill="#50fa7b">json</text>
+  <text x="145" y="360" font-family="monospace" font-size="10" fill="#f8f8f2">()</text>
+
+  <!-- Active line highlight -->
+  <rect x="36" y="322" width="384" height="14" fill="rgba(255,255,255,0.04)"/>
+
+  <!-- Terminal below code -->
+  <rect x="0" y="390" width="420" height="110" fill="#080e1a"/>
+  <rect x="0" y="390" width="420" height="1" fill="rgba(255,255,255,0.08)"/>
+  <text x="12" y="408" font-family="monospace" font-size="9.5" fill="rgba(255,255,255,0.4)">TERMINAL</text>
+  <text x="12" y="426" font-family="monospace" font-size="10" fill="#50fa7b">▶</text>
+  <text x="24" y="426" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.7)"> python chatbot_medformula.py</text>
+  <text x="12" y="442" font-family="monospace" font-size="10" fill="#6272a4">[INFO] Carregando lista de pedidos...</text>
+  <text x="12" y="458" font-family="monospace" font-size="10" fill="#50fa7b">[OK]</text>
+  <text x="40" y="458" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.65)"> 47 mensagens enviadas ✓</text>
+  <text x="12" y="474" font-family="monospace" font-size="10" fill="#f1fa8c">[WARN]</text>
+  <text x="60" y="474" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.5)"> 2 números inválidos — ignorados</text>
+  <text x="12" y="490" font-family="monospace" font-size="10" fill="#6272a4">_</text>
+
+  <!-- WhatsApp preview panel (right) -->
+  <rect x="421" y="46" width="379" height="454" fill="#0b141a"/>
+
+  <!-- WA header -->
+  <rect x="421" y="46" width="379" height="60" fill="#1f2c34"/>
+  <circle cx="450" cy="76" r="16" fill="#25d366"/>
+  <text x="450" y="82" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#fff" font-weight="700">M</text>
+  <text x="476" y="70" font-family="Arial,sans-serif" font-size="12" fill="#e9edef" font-weight="600">Medformula Bot</text>
+  <text x="476" y="86" font-family="Arial,sans-serif" font-size="10" fill="#8696a0">online</text>
+  <!-- WA dots -->
+  <circle cx="758" cy="76" r="3" fill="rgba(255,255,255,0.35)"/>
+  <circle cx="769" cy="76" r="3" fill="rgba(255,255,255,0.35)"/>
+  <circle cx="780" cy="76" r="3" fill="rgba(255,255,255,0.35)"/>
+
+  <!-- WA background pattern (subtle) -->
+  <rect x="421" y="106" width="379" height="304" fill="#0b141a"/>
+
+  <!-- WA messages -->
+  <!-- Bot message 1 -->
+  <rect x="432" y="118" width="250" height="66" rx="8" fill="#1f2c34"/>
+  <rect x="432" y="118" width="4" height="66" rx="2" fill="#25d366"/>
+  <text x="446" y="137" font-family="Arial,sans-serif" font-size="10" fill="#25d366" font-weight="600">Medformula</text>
+  <text x="446" y="154" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef">Olá! 😊 Confirmamos seu pedido</text>
+  <text x="446" y="170" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef">#4521 — Produto A.</text>
+  <text x="600" y="176" font-family="Arial,sans-serif" font-size="8.5" fill="#8696a0">09:14 ✓✓</text>
+
+  <!-- Bot message 2 -->
+  <rect x="432" y="196" width="290" height="52" rx="8" fill="#1f2c34"/>
+  <text x="446" y="214" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef">Responda </text>
+  <text x="502" y="214" font-family="Arial,sans-serif" font-size="10.5" fill="#25d366" font-weight="700">SIM</text>
+  <text x="527" y="214" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef"> para confirmar ou</text>
+  <text x="446" y="230" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef">NÃO para reagendar.</text>
+  <text x="644" y="240" font-family="Arial,sans-serif" font-size="8.5" fill="#8696a0">09:14 ✓✓</text>
+
+  <!-- User reply -->
+  <rect x="530" y="262" width="80" height="34" rx="8" fill="#005c4b"/>
+  <text x="570" y="277" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef">SIM ✓</text>
+  <text x="570" y="291" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.5)">09:15 ✓✓</text>
+
+  <!-- Bot confirmation -->
+  <rect x="432" y="310" width="280" height="66" rx="8" fill="#1f2c34"/>
+  <text x="446" y="330" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef">✅ Perfeito! Seu pedido #4521</text>
+  <text x="446" y="347" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef">está confirmado para entrega</text>
+  <text x="446" y="364" font-family="Arial,sans-serif" font-size="10.5" fill="#e9edef">amanhã. Obrigado! 💊</text>
+  <text x="644" y="370" font-family="Arial,sans-serif" font-size="8.5" fill="#8696a0">09:15 ✓✓</text>
+
+  <!-- WA input area -->
+  <rect x="421" y="410" width="379" height="50" fill="#1f2c34"/>
+  <rect x="430" y="422" width="290" height="28" rx="14" fill="#2a3942"/>
+  <text x="450" y="440" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.3)">Mensagem</text>
+  <circle cx="735" cy="436" r="14" fill="#25d366"/>
+  <text x="735" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#fff">🎙</text>
+
+  <!-- Stats bar -->
+  <rect x="421" y="460" width="379" height="40" fill="rgba(255,255,255,0.04)"/>
+  <text x="436" y="476" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.3)">Enviadas hoje</text>
+  <text x="436" y="491" font-family="monospace" font-size="12" fill="#25d366" font-weight="700">47 msgs</text>
+  <text x="540" y="476" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.3)">Taxa confirmação</text>
+  <text x="540" y="491" font-family="monospace" font-size="12" fill="#ffd43b" font-weight="700">91.5%</text>
+  <text x="662" y="476" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.3)">API</text>
+  <text x="662" y="491" font-family="monospace" font-size="12" fill="#8be9fd" font-weight="700">GupShup</text>
+
+  <!-- Postman badge -->
+  <rect x="630" y="118" width="158" height="70" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+  <text x="640" y="136" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.3)" font-weight="700">STACK</text>
+  <rect x="640" y="143" width="55" height="16" rx="8" fill="rgba(48,105,152,0.4)"/>
+  <text x="667" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#8be9fd">Python</text>
+  <rect x="704" y="143" width="70" height="16" rx="8" fill="rgba(37,211,102,0.2)"/>
+  <text x="739" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#25d366">WhatsApp API</text>
+  <rect x="640" y="165" width="58" height="16" rx="8" fill="rgba(255,108,55,0.3)"/>
+  <text x="669" y="177" text-anchor="middle" font-family="monospace" font-size="8" fill="#ff6c37">Postman</text>
+  <rect x="704" y="165" width="44" height="16" rx="8" fill="rgba(255,212,59,0.25)"/>
+  <text x="726" y="177" text-anchor="middle" font-family="monospace" font-size="8" fill="#ffd43b">dotenv</text>
+</svg>

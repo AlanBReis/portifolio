@@ -52,8 +52,9 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Analista de Dados","Power BI","SQL & Python"],
+		strings: ["Analista de Dados","Dev de Sistemas","Power BI","Python &amp; APIs","Automação &amp; Chatbot"],
 		typeSpeed: 70,
+		backSpeed: 40,
 		loop: true,
 		startDelay: 1000,
 		showCursor: false
@@ -124,33 +125,7 @@ $(document).ready(function() {
 	$("[data-fancybox]").fancybox();
 
 
-	$(".items").isotope({
-		filter: '*',
-		animationOptions: {
-			duration: 1500,
-			easing: 'linear',
-			queue: false
-		}
-	});
-
-	$("#filters a").click(function() {
-
-		$("#filters .current").removeClass("current");
-		$(this).addClass("current");
-
-		var selector = $(this).attr("data-filter");
-
-		$(".items").isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 1500,
-				easing: 'linear',
-				queue: false
-			}
-		});
-
-		return false;
-	});
+	// CSS grid handles project layout — no Isotope needed
 
 
 
