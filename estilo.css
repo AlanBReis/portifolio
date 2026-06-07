@@ -1,0 +1,429 @@
+:root {
+    --cor-font-grande: #2f3334;
+    --cor-font-pequena: #538898;
+    --cor-background: #F4F4F4;
+    --cor-hover: #f0e6e6;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+.apresentacao {
+    width: 100%; /* Ajuste para se adaptar ao tamanho da tela */
+    height: auto; /* Permite que a altura seja ajustada automaticamente */
+    max-width: 1200px;
+}
+
+#resume-download {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-button {
+    background-color: #121312; /* Cor do botão */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.download-button:hover {
+    background-color: #666363; /* Cor ao passar o mouse */
+}
+
+.titulo {
+    font-family: "Ruda", sans-serif;
+    font-size: 60px;
+    color: var(--cor-font-grande);
+    text-align: center;
+}
+
+.titulo-menor {
+    font-family: "Ruda", sans-serif;
+    font-size: 40px;
+    color: var(--cor-font-grande);
+    text-align: left;
+}
+
+
+
+.paragrafo {
+    font-size: 34px;
+    font-family: "Questrial", sans-serif;
+    text-align: left;
+    color: var(--cor-font-pequena);
+}
+
+.paragrafo-habilidades {
+    font-size: 18px;
+    font-family: "Ruda", sans-serif;
+    color: var(--cor-font-pequena);
+}
+
+.paragrafo-sobre {
+    font-size: 32px;
+    font-family: "Questrial", sans-serif;
+    text-align: left;
+}
+
+.paragrafo-projetos {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+
+}
+
+.paragrafo-projetos-tecnologias {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+
+.foto-perfil {
+    width: 100%; /* Ajusta a largura da imagem */
+    max-width: 400px; /* Limita o tamanho máximo */
+    height: auto;
+}
+
+.texto-sobre {
+    flex: 1; /* Ocupa o espaço restante */
+    margin-left: 30px; /* Espaçamento entre a imagem e o texto */
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-background);
+}
+
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lang-btn img {
+    width: 40px; /* tamanho da bandeira */
+    height: auto;
+    border-radius: 4px;
+}
+
+.lang-btn:hover {
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+#language-switcher {
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--cor-background);
+    border: 2px solid #00aaff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#language-switcher:hover {
+    background-color: var(--cor-background);
+    border-color: var(--cor-font-grande);
+}
+
+.img-project {
+    text-align: center;
+}
+
+.about-me:hover {
+    background-color: var(--cor-hover);
+}
+
+.about-me {
+    transform: scale(0.7);
+    font-family: "Ruda", sans-serif;
+    font-size: 32px;
+    font-style: none;
+    color: var(--cor-font-grande);
+}
+
+.about-me a {
+    color: var(--cor-font-grande);
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 12px auto;
+    background: transparent;
+}
+
+/* Estilos padrão para header */
+header {
+    color: white;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos padrão para perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte em telas menores */
+}
+
+/* Navegação */
+nav {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--cor-font-pequena);
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background: var(--cor-background);
+}
+
+.project-title {
+    font-family: "Ruda", sans-serif;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--cor-font-grande);
+    margin-top: 20px;
+}
+
+.project-title:hover {
+    background-color: var(--cor-hover);
+}
+
+.project-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-details img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    background: var(--cor-background);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.contato-itens {
+    text-align: center;
+}
+
+.contato-icones {
+    margin: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Media Queries */
+
+/* Estilos para telas de desktop grandes (1200px e acima) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 20px;
+        max-width: 1200px;
+    }
+}
+
+/* Estilos para tablets (768px a 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        padding: 15px;
+        max-width: 750px;
+    }
+    
+    .titulo {
+        font-size: 48px;
+    }
+
+    .titulo-menor {
+        font-size: 32px;
+    }
+
+    .paragrafo {
+        font-size: 28px;
+    }
+
+    .sobre-container {
+        flex-direction: column; /* Alinha a foto e o texto em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .paragrafo-sobre {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .paragrafo-projetos {
+        font-size: 18px;
+    }
+
+    .foto-perfil {
+        width: 80%;
+        max-width: 300px;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .texto-sobre {
+        margin-left: 15px;
+
+    }
+}
+
+/* Estilos para smartphones (576px a 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        padding: 10px;
+        max-width: 540px;
+    }
+
+    .titulo {
+        font-size: 36px;
+    }
+
+    .titulo-menor {
+        font-size: 28px;
+    }
+
+    .paragrafo {
+        font-size: 24px;
+    }
+
+    .sobre-container {
+        flex-direction: column; /* Alinha a foto e o texto em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .paragrafo-sobre {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 100%;
+        max-width: 300px;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .texto-sobre {
+        margin-left: 10px;
+    }
+}
+
+/* Estilos para dispositivos móveis (menor que 576px) */
+@media (max-width: 575px) {
+    .container {
+        padding: 5px;
+        max-width: 100%;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .titulo-menor {
+        font-size: 24px;
+    }
+
+    .paragrafo {
+        font-size: 20px;
+    }
+
+    .paragrafo-sobre {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sobre-container {
+        flex-direction: column; /* Alinha a foto e o texto em coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+
+    .foto-perfil {
+        width: 100%;
+        max-width: 200px;
+        align-items: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .texto-sobre {
+        margin-left: 5px;
+    }
+}

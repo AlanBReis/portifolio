@@ -1,0 +1,242 @@
+<svg width="900" height="560" viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="Inter,Arial,sans-serif">
+  <defs>
+    <linearGradient id="navGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#065f46"/>
+    </linearGradient>
+    <linearGradient id="cardGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="cardBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="cardAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cardPurple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="barGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.10)"/>
+    </filter>
+  </defs>
+
+  <!-- Page background -->
+  <rect width="900" height="560" fill="#f1f5f9"/>
+
+  <!-- ── Top Nav ── -->
+  <rect x="0" y="0" width="900" height="54" fill="url(#navGrad)"/>
+  <!-- Logo mark -->
+  <rect x="16" y="12" width="30" height="30" rx="7" fill="rgba(255,255,255,0.2)"/>
+  <text x="31" y="32" text-anchor="middle" font-size="16" fill="#fff" font-weight="800">A</text>
+  <text x="56" y="25" font-size="15" fill="#fff" font-weight="700">Acadevo</text>
+  <text x="56" y="40" font-size="9" fill="rgba(255,255,255,0.55)" letter-spacing="0.5">academia.com.br</text>
+  <!-- Nav links -->
+  <text x="200" y="31" font-size="12" fill="rgba(255,255,255,0.75)">Dashboard</text>
+  <rect x="195" y="46" width="70" height="2" rx="1" fill="#fff"/>
+  <text x="290" y="31" font-size="12" fill="rgba(255,255,255,0.55)">Alunos</text>
+  <text x="360" y="31" font-size="12" fill="rgba(255,255,255,0.55)">Financeiro</text>
+  <text x="445" y="31" font-size="12" fill="rgba(255,255,255,0.55)">Aulas</text>
+  <text x="510" y="31" font-size="12" fill="rgba(255,255,255,0.55)">Relatórios</text>
+  <!-- Right side nav -->
+  <circle cx="856" cy="27" r="15" fill="rgba(255,255,255,0.15)"/>
+  <text x="856" y="32" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">AB</text>
+  <rect x="810" y="17" width="30" height="20" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <text x="825" y="30" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.7)">🔔</text>
+
+  <!-- ── Page header ── -->
+  <text x="24" y="82" font-size="18" fill="#1e293b" font-weight="700">Visão Geral</text>
+  <text x="24" y="98" font-size="11" fill="#94a3b8">Segunda-feira, 12 de Maio de 2025</text>
+  <!-- Add button -->
+  <rect x="760" y="66" width="120" height="32" rx="16" fill="url(#cardGreen)" filter="url(#cardShadow)"/>
+  <text x="820" y="86" text-anchor="middle" font-size="11" fill="#fff" font-weight="600">+ Novo Aluno</text>
+
+  <!-- ── KPI Cards Row ── -->
+
+  <!-- Card 1: Alunos Ativos -->
+  <rect x="24" y="112" width="196" height="94" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="24" y="112" width="196" height="4" rx="12" fill="url(#cardGreen)"/>
+  <rect x="168" y="124" width="40" height="40" rx="10" fill="#dcfce7"/>
+  <text x="188" y="149" text-anchor="middle" font-size="20">👥</text>
+  <text x="40" y="140" font-size="11" fill="#94a3b8">Alunos Ativos</text>
+  <text x="40" y="168" font-size="30" fill="#065f46" font-weight="800">284</text>
+  <rect x="40" y="182" width="46" height="16" rx="8" fill="#dcfce7"/>
+  <text x="63" y="194" text-anchor="middle" font-size="8.5" fill="#16a34a" font-weight="600">↑ +8.2%</text>
+
+  <!-- Card 2: Receita do Mês -->
+  <rect x="234" y="112" width="196" height="94" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="234" y="112" width="196" height="4" rx="12" fill="url(#cardBlue)"/>
+  <rect x="378" y="124" width="40" height="40" rx="10" fill="#dbeafe"/>
+  <text x="398" y="149" text-anchor="middle" font-size="20">💰</text>
+  <text x="250" y="140" font-size="11" fill="#94a3b8">Receita do Mês</text>
+  <text x="250" y="166" font-size="22" fill="#1e40af" font-weight="800">R$ 18.4k</text>
+  <rect x="250" y="180" width="56" height="16" rx="8" fill="#dbeafe"/>
+  <text x="278" y="192" text-anchor="middle" font-size="8.5" fill="#2563eb" font-weight="600">↑ +12.1%</text>
+
+  <!-- Card 3: Check-ins Hoje -->
+  <rect x="444" y="112" width="196" height="94" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="444" y="112" width="196" height="4" rx="12" fill="url(#cardAmber)"/>
+  <rect x="588" y="124" width="40" height="40" rx="10" fill="#fef3c7"/>
+  <text x="608" y="149" text-anchor="middle" font-size="20">📍</text>
+  <text x="460" y="140" font-size="11" fill="#94a3b8">Check-ins Hoje</text>
+  <text x="460" y="168" font-size="30" fill="#92400e" font-weight="800">67</text>
+  <rect x="460" y="182" width="60" height="16" rx="8" fill="#fef3c7"/>
+  <text x="490" y="194" text-anchor="middle" font-size="8.5" fill="#d97706" font-weight="600">↑ +4 hoje</text>
+
+  <!-- Card 4: Inadimplentes -->
+  <rect x="654" y="112" width="222" height="94" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <rect x="654" y="112" width="222" height="4" rx="12" fill="url(#cardPurple)"/>
+  <rect x="834" y="124" width="40" height="40" rx="10" fill="#f5f3ff"/>
+  <text x="854" y="149" text-anchor="middle" font-size="20">⚠️</text>
+  <text x="670" y="140" font-size="11" fill="#94a3b8">Inadimplentes</text>
+  <text x="670" y="168" font-size="30" fill="#6d28d9" font-weight="800">12</text>
+  <rect x="670" y="182" width="66" height="16" rx="8" fill="#fee2e2"/>
+  <text x="703" y="194" text-anchor="middle" font-size="8.5" fill="#dc2626" font-weight="600">4.2% da base</text>
+
+  <!-- ── Chart + Members section ── -->
+
+  <!-- Bar chart: Matrículas -->
+  <rect x="24" y="224" width="440" height="214" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <text x="42" y="252" font-size="13" fill="#1e293b" font-weight="600">Matrículas por Mês</text>
+  <text x="42" y="267" font-size="9" fill="#94a3b8">Últimos 6 meses · 2024–2025</text>
+
+  <!-- Grid lines -->
+  <line x1="70" y1="284" x2="440" y2="284" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="70" y1="304" x2="440" y2="304" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="70" y1="324" x2="440" y2="324" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="70" y1="344" x2="440" y2="344" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="70" y1="364" x2="440" y2="364" stroke="#f1f5f9" stroke-width="1"/>
+  <line x1="70" y1="384" x2="440" y2="384" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Y axis labels -->
+  <text x="62" y="288" text-anchor="end" font-size="8.5" fill="#cbd5e1">200</text>
+  <text x="62" y="308" text-anchor="end" font-size="8.5" fill="#cbd5e1">150</text>
+  <text x="62" y="328" text-anchor="end" font-size="8.5" fill="#cbd5e1">100</text>
+  <text x="62" y="348" text-anchor="end" font-size="8.5" fill="#cbd5e1">50</text>
+  <text x="62" y="388" text-anchor="end" font-size="8.5" fill="#cbd5e1">0</text>
+
+  <!-- Bars -->
+  <rect x="88"  y="344" width="42" height="40" rx="4" fill="url(#barGreen)" opacity="0.65"/>
+  <rect x="148" y="334" width="42" height="50" rx="4" fill="url(#barGreen)" opacity="0.72"/>
+  <rect x="208" y="320" width="42" height="64" rx="4" fill="url(#barGreen)" opacity="0.80"/>
+  <rect x="268" y="312" width="42" height="72" rx="4" fill="url(#barGreen)" opacity="0.88"/>
+  <rect x="328" y="298" width="42" height="86" rx="4" fill="url(#barGreen)" opacity="0.94"/>
+  <rect x="388" y="284" width="42" height="100" rx="4" fill="url(#barGreen)"/>
+
+  <!-- Bar value labels -->
+  <text x="109" y="340" text-anchor="middle" font-size="9" fill="#059669" font-weight="600">156</text>
+  <text x="169" y="330" text-anchor="middle" font-size="9" fill="#059669" font-weight="600">196</text>
+  <text x="229" y="316" text-anchor="middle" font-size="9" fill="#059669" font-weight="600">217</text>
+  <text x="289" y="308" text-anchor="middle" font-size="9" fill="#059669" font-weight="600">229</text>
+  <text x="349" y="294" text-anchor="middle" font-size="9" fill="#059669" font-weight="600">258</text>
+  <text x="409" y="280" text-anchor="middle" font-size="9" fill="#065f46" font-weight="700">284</text>
+
+  <!-- X axis labels -->
+  <text x="109" y="400" text-anchor="middle" font-size="9" fill="#94a3b8">Nov</text>
+  <text x="169" y="400" text-anchor="middle" font-size="9" fill="#94a3b8">Dez</text>
+  <text x="229" y="400" text-anchor="middle" font-size="9" fill="#94a3b8">Jan</text>
+  <text x="289" y="400" text-anchor="middle" font-size="9" fill="#94a3b8">Fev</text>
+  <text x="349" y="400" text-anchor="middle" font-size="9" fill="#94a3b8">Mar</text>
+  <text x="409" y="400" text-anchor="middle" font-size="9" fill="#065f46" font-weight="600">Abr ★</text>
+
+  <!-- ── Members table ── -->
+  <rect x="480" y="224" width="396" height="214" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <text x="498" y="252" font-size="13" fill="#1e293b" font-weight="600">Alunos Recentes</text>
+  <text x="802" y="252" text-anchor="end" font-size="10" fill="#4f46e5">Ver todos →</text>
+
+  <!-- Table header -->
+  <rect x="480" y="260" width="396" height="26" fill="#f8fafc"/>
+  <text x="498" y="277" font-size="9" fill="#94a3b8" font-weight="700" letter-spacing="0.5">ALUNO</text>
+  <text x="672" y="277" font-size="9" fill="#94a3b8" font-weight="700" letter-spacing="0.5">PLANO</text>
+  <text x="750" y="277" font-size="9" fill="#94a3b8" font-weight="700" letter-spacing="0.5">VENCIMENTO</text>
+  <text x="848" y="277" text-anchor="middle" font-size="9" fill="#94a3b8" font-weight="700" letter-spacing="0.5">STATUS</text>
+
+  <!-- Row 1 -->
+  <circle cx="510" cy="303" r="11" fill="#dcfce7"/>
+  <text x="510" y="307" text-anchor="middle" font-size="8.5" fill="#16a34a" font-weight="700">JS</text>
+  <text x="528" y="302" font-size="11" fill="#1e293b" font-weight="500">João Silva</text>
+  <text x="528" y="314" font-size="9" fill="#94a3b8">Cadastrado há 3 dias</text>
+  <rect x="660" y="293" width="58" height="18" rx="9" fill="#dbeafe"/>
+  <text x="689" y="306" text-anchor="middle" font-size="9" fill="#2563eb" font-weight="500">Mensal</text>
+  <text x="752" y="306" font-size="9.5" fill="#475569">15/06/2025</text>
+  <rect x="826" y="293" width="44" height="18" rx="9" fill="#dcfce7"/>
+  <text x="848" y="306" text-anchor="middle" font-size="9" fill="#16a34a" font-weight="600">Ativo</text>
+  <line x1="496" y1="322" x2="868" y2="322" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- Row 2 -->
+  <circle cx="510" cy="340" r="11" fill="#ede9fe"/>
+  <text x="510" y="344" text-anchor="middle" font-size="8.5" fill="#7c3aed" font-weight="700">MC</text>
+  <text x="528" y="339" font-size="11" fill="#1e293b" font-weight="500">Maria Costa</text>
+  <text x="528" y="351" font-size="9" fill="#94a3b8">Renovação automática</text>
+  <rect x="660" y="330" width="68" height="18" rx="9" fill="#fef3c7"/>
+  <text x="694" y="343" text-anchor="middle" font-size="9" fill="#d97706" font-weight="500">Trimestral</text>
+  <text x="752" y="343" font-size="9.5" fill="#475569">30/07/2025</text>
+  <rect x="826" y="330" width="44" height="18" rx="9" fill="#dcfce7"/>
+  <text x="848" y="343" text-anchor="middle" font-size="9" fill="#16a34a" font-weight="600">Ativo</text>
+  <line x1="496" y1="359" x2="868" y2="359" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- Row 3 -->
+  <circle cx="510" cy="377" r="11" fill="#fce7f3"/>
+  <text x="510" y="381" text-anchor="middle" font-size="8.5" fill="#9d174d" font-weight="700">PR</text>
+  <text x="528" y="376" font-size="11" fill="#1e293b" font-weight="500">Pedro Ramos</text>
+  <text x="528" y="388" font-size="9" fill="#94a3b8">Plano anual · 2ª parcela</text>
+  <rect x="660" y="367" width="48" height="18" rx="9" fill="#f5f3ff"/>
+  <text x="684" y="380" text-anchor="middle" font-size="9" fill="#7c3aed" font-weight="500">Anual</text>
+  <text x="752" y="380" font-size="9.5" fill="#475569">10/01/2026</text>
+  <rect x="826" y="367" width="44" height="18" rx="9" fill="#dcfce7"/>
+  <text x="848" y="380" text-anchor="middle" font-size="9" fill="#16a34a" font-weight="600">Ativo</text>
+  <line x1="496" y1="396" x2="868" y2="396" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- Row 4 -->
+  <circle cx="510" cy="414" r="11" fill="#fef3c7"/>
+  <text x="510" y="418" text-anchor="middle" font-size="8.5" fill="#b45309" font-weight="700">AL</text>
+  <text x="528" y="413" font-size="11" fill="#1e293b" font-weight="500">Ana Lima</text>
+  <text x="528" y="425" font-size="9" fill="#ef4444">⚠ Venceu há 3 dias</text>
+  <rect x="660" y="404" width="58" height="18" rx="9" fill="#dbeafe"/>
+  <text x="689" y="417" text-anchor="middle" font-size="9" fill="#2563eb" font-weight="500">Mensal</text>
+  <text x="752" y="417" font-size="9.5" fill="#ef4444">09/05/2025</text>
+  <rect x="826" y="404" width="56" height="18" rx="9" fill="#fee2e2"/>
+  <text x="854" y="417" text-anchor="middle" font-size="9" fill="#dc2626" font-weight="600">Vencido</text>
+
+  <!-- ── Bottom section: Aulas do dia ── -->
+  <rect x="24" y="454" width="852" height="88" rx="12" fill="#fff" filter="url(#cardShadow)"/>
+  <text x="42" y="478" font-size="13" fill="#1e293b" font-weight="600">Aulas de Hoje</text>
+  <text x="820" y="478" text-anchor="end" font-size="10" fill="#4f46e5">Ver agenda completa →</text>
+
+  <!-- Aula cards -->
+  <rect x="42"  y="488" width="148" height="44" rx="8" fill="#ecfdf5" stroke="#d1fae5" stroke-width="1"/>
+  <text x="54"  y="506" font-size="10.5" fill="#065f46" font-weight="600">Musculação</text>
+  <text x="54"  y="521" font-size="9" fill="#059669">06:00 – 07:00  ·  22 alunos</text>
+
+  <rect x="202" y="488" width="148" height="44" rx="8" fill="#eff6ff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="214" y="506" font-size="10.5" fill="#1d4ed8" font-weight="600">Spinning</text>
+  <text x="214" y="521" font-size="9" fill="#3b82f6">08:00 – 09:00  ·  15 alunos</text>
+
+  <rect x="362" y="488" width="148" height="44" rx="8" fill="#fdf4ff" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="374" y="506" font-size="10.5" fill="#7e22ce" font-weight="600">Pilates</text>
+  <text x="374" y="521" font-size="9" fill="#9333ea">10:00 – 11:00  ·  12 alunos</text>
+
+  <rect x="522" y="488" width="148" height="44" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="534" y="506" font-size="10.5" fill="#c2410c" font-weight="600">CrossFit</text>
+  <text x="534" y="521" font-size="9" fill="#ea580c">18:00 – 19:00  ·  30 alunos</text>
+
+  <rect x="682" y="488" width="148" height="44" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="694" y="506" font-size="10.5" fill="#14532d" font-weight="600">Yoga</text>
+  <text x="694" y="521" font-size="9" fill="#16a34a">19:30 – 20:30  ·  18 alunos</text>
+
+  <!-- Live status indicator -->
+  <circle cx="836" cy="510" r="5" fill="#10b981"/>
+  <circle cx="836" cy="510" r="5" fill="#10b981" opacity="0.4">
+    <animate attributeName="r" values="5;10;5" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="848" y="514" font-size="9.5" fill="#059669" font-weight="600">Sistema Online</text>
+</svg>

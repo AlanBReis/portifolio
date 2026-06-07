@@ -1,208 +1,153 @@
-$(window).on("load", function() {
+/* =========================================================
+   Portfolio — Alan Reis | interações (vanilla JS)
+   ========================================================= */
 
-	$(".loader .inner").fadeOut(500, function() {
-		$(".loader").fadeOut(750);
-	});
-
-})
+/* ---- Loader ---- */
+window.addEventListener("load", function () {
+	var loader = document.querySelector(".loader");
+	if (!loader) return;
+	loader.style.transition = "opacity 0.5s ease";
+	loader.style.opacity = "0";
+	setTimeout(function () { loader.style.display = "none"; }, 550);
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let visibleItems = 2; // Número inicial de itens visíveis
-    const items = document.querySelectorAll('.timeline-item');
-    const loadMoreButton = document.getElementById('loadMore');
-    const loadLessButton = document.getElementById('loadLess'); 
 
-    // Inicializa os itens corretamente
-    function updateVisibility() {
-        items.forEach((item, index) => {
-            item.style.display = index < visibleItems ? "block" : "none";
-        });
+	/* ---- Tema (claro / escuro) ---- */
+	var root = document.documentElement;
+	var savedTheme = localStorage.getItem("theme");
+	if (savedTheme === "dark") root.setAttribute("data-theme", "dark");
 
-        // Exibir ou ocultar botões dependendo da quantidade de itens visíveis
-        loadMoreButton.style.display = visibleItems >= items.length ? "none" : "block";
-        loadLessButton.style.display = visibleItems > 2 ? "block" : "none";
-    }
-
-    // Carregar mais 2 itens
-    loadMoreButton.addEventListener("click", function () {
-        visibleItems = Math.min(visibleItems + 2, items.length);
-        updateVisibility();
-    });
-
-    // Ocultar 2 itens
-    loadLessButton.addEventListener("click", function () {
-        visibleItems = Math.max(2, visibleItems - 2);
-        updateVisibility();
-    });
-
-    // Aplicar a visibilidade inicial
-    updateVisibility();
-});
-
-
-
-
-$(document).ready(function() {
-
-	$('#slides').superslides({
-		animation: 'fade',
-		play: 5000,
-		pagination: false
-	});
-
-	var typed = new Typed(".typed", {
-		strings: ["Analista de Dados","Power BI","SQL & Python"],
-		typeSpeed: 70,
-		loop: true,
-		startDelay: 1000,
-		showCursor: false
-	});
-
-	$('.owl-carousel').owlCarousel({
-	    loop:true,
-	    items: 4,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        480:{
-	            items:2
-	        },
-	        768:{
-	            items:3
-	        },
-	        938:{
-	            items:4
-	        }
-	    }
-	});
-
-
-	
-
-
-	var skillsTopOffset = $(".skillsSection").offset().top;
-	var statsTopOffset = $(".statsSection").offset().top;
-	var countUpFinished = false;
-	$(window).scroll(function() {
-
-		if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
-
-			$('.chart').easyPieChart({
-		        easing: 'easeInOut',
-		        barColor: '#fff',
-		        trackColor: false,
-		        scaleColor: false,
-		        lineWidth: 4,
-		        size: 152,
-		        onStep: function(from, to, percent) {
-		        	$(this.el).find('.percent').text(Math.round(percent));
-		        }
-		    });
-
-
-		}
-
-
-		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
-			$(".counter").each(function() {
-				var element = $(this);
-				var endVal = parseInt(element.text());
-
-				element.countup(endVal);
-			})
-
-			countUpFinished = true;
-
-		}
-
-
-	});
-
-
-	$("[data-fancybox]").fancybox();
-
-
-	$(".items").isotope({
-		filter: '*',
-		animationOptions: {
-			duration: 1500,
-			easing: 'linear',
-			queue: false
-		}
-	});
-
-	$("#filters a").click(function() {
-
-		$("#filters .current").removeClass("current");
-		$(this).addClass("current");
-
-		var selector = $(this).attr("data-filter");
-
-		$(".items").isotope({
-			filter: selector,
-			animationOptions: {
-				duration: 1500,
-				easing: 'linear',
-				queue: false
+	var themeToggle = document.getElementById("themeToggle");
+	if (themeToggle) {
+		themeToggle.addEventListener("click", function () {
+			var isDark = root.getAttribute("data-theme") === "dark";
+			if (isDark) {
+				root.removeAttribute("data-theme");
+				localStorage.setItem("theme", "light");
+			} else {
+				root.setAttribute("data-theme", "dark");
+				localStorage.setItem("theme", "dark");
 			}
 		});
-
-		return false;
-	});
-
-
-
-	$("#navigation li a").click(function(e) {
-		e.preventDefault();
-
-		var targetElement = $(this).attr("href");
-		var targetPosition = $(targetElement).offset().top;
-		$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
-
-	});
-
-
-
-
-	const nav = $("#navigation");
-	const navTop = nav.offset().top;
-
-	$(window).on("scroll", stickyNavigation);
-
-	function stickyNavigation() {
-
-		var body = $("body");
-
-		if($(window).scrollTop() >= navTop) {
-			body.css("padding-top", nav.outerHeight() + "px");
-			body.addClass("fixedNav");
-		}
-		else {
-			body.css("padding-top", 0);
-			body.removeClass("fixedNav");
-		}
-
-
-
-
 	}
 
+	/* ---- Menu mobile (drawer) ---- */
+	var navToggle   = document.getElementById("navToggle");
+	var navBackdrop = document.getElementById("navBackdrop");
+
+	function closeMenu() {
+		document.body.classList.remove("nav-open");
+		if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+	}
+	function toggleMenu() {
+		var open = document.body.classList.toggle("nav-open");
+		if (navToggle) navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+	}
+
+	if (navToggle)   navToggle.addEventListener("click", toggleMenu);
+	if (navBackdrop) navBackdrop.addEventListener("click", closeMenu);
+	document.addEventListener("keydown", function (e) {
+		if (e.key === "Escape") closeMenu();
+	});
+
+	/* ---- Nav: fundo ao rolar + fechar drawer ao clicar ---- */
+	var nav = document.getElementById("navigation");
+	var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav-links .nav-link"));
+
+	function onScroll() {
+		if (!nav) return;
+		if (window.scrollY > 40) nav.classList.add("scrolled");
+		else nav.classList.remove("scrolled");
+	}
+	window.addEventListener("scroll", onScroll, { passive: true });
+	onScroll();
+
+	navLinks.forEach(function (link) {
+		link.addEventListener("click", closeMenu);
+	});
+
+	/* ---- Scroll-spy: marca a seção visível no menu ---- */
+	var sections = navLinks
+		.map(function (link) {
+			var href = link.getAttribute("href");
+			return href && href.charAt(0) === "#" ? document.querySelector(href) : null;
+		})
+		.filter(Boolean);
+
+	if ("IntersectionObserver" in window && sections.length) {
+		var spy = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (!entry.isIntersecting) return;
+				var id = "#" + entry.target.id;
+				navLinks.forEach(function (l) {
+					l.classList.toggle("active", l.getAttribute("href") === id);
+				});
+			});
+		}, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+		sections.forEach(function (s) { spy.observe(s); });
+	}
+
+	/* ---- Timeline: ver mais / ver menos ---- */
+	var visibleItems = 2;
+	var items = document.querySelectorAll(".timeline-item");
+	var loadMoreButton = document.getElementById("loadMore");
+	var loadLessButton = document.getElementById("loadLess");
+
+	function updateVisibility() {
+		items.forEach(function (item, index) {
+			item.style.display = index < visibleItems ? "block" : "none";
+		});
+		if (loadMoreButton) loadMoreButton.style.display = visibleItems >= items.length ? "none" : "block";
+		if (loadLessButton) loadLessButton.style.display = visibleItems > 2 ? "block" : "none";
+	}
+
+	if (loadMoreButton) {
+		loadMoreButton.addEventListener("click", function () {
+			visibleItems = Math.min(visibleItems + 2, items.length);
+			updateVisibility();
+		});
+	}
+	if (loadLessButton) {
+		loadLessButton.addEventListener("click", function () {
+			visibleItems = Math.max(2, visibleItems - 2);
+			updateVisibility();
+		});
+	}
+	if (items.length) updateVisibility();
+
+	/* ---- Carrossel de BIs (Power BI) ---- */
+	(function () {
+		var carousel = document.getElementById("biCarousel");
+		if (!carousel) return;
+		var slides = Array.prototype.slice.call(carousel.querySelectorAll(".bi-slide"));
+		var dots   = Array.prototype.slice.call(carousel.querySelectorAll(".bi-dot"));
+		if (slides.length < 2) {
+			// 1 imagem: esconde setas/dots e mantém estática
+			carousel.querySelectorAll(".bi-arrow, .bi-dots").forEach(function (el) { el.style.display = "none"; });
+			return;
+		}
+		var current = 0;
+		var timer = null;
+
+		function go(i) {
+			current = (i + slides.length) % slides.length;
+			slides.forEach(function (s, idx) { s.classList.toggle("is-active", idx === current); });
+			dots.forEach(function (d, idx) { d.classList.toggle("is-active", idx === current); });
+		}
+		function start() { stop(); timer = setInterval(function () { go(current + 1); }, 5000); }
+		function stop()  { if (timer) { clearInterval(timer); timer = null; } }
+
+		var next = carousel.querySelector(".bi-next");
+		var prev = carousel.querySelector(".bi-prev");
+		if (next) next.addEventListener("click", function () { go(current + 1); start(); });
+		if (prev) prev.addEventListener("click", function () { go(current - 1); start(); });
+		dots.forEach(function (d) {
+			d.addEventListener("click", function () { go(parseInt(d.getAttribute("data-go"), 10) || 0); start(); });
+		});
+		carousel.addEventListener("mouseenter", stop);
+		carousel.addEventListener("mouseleave", start);
+		start();
+	})();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

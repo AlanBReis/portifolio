@@ -1,0 +1,136 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1020"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+
+  <!-- Window chrome -->
+  <rect x="0" y="0" width="800" height="38" fill="rgba(255,255,255,0.04)" rx="0"/>
+  <circle cx="16" cy="19" r="5" fill="#ff5f57"/>
+  <circle cx="30" cy="19" r="5" fill="#febc2e"/>
+  <circle cx="44" cy="19" r="5" fill="#28c840"/>
+  <rect x="200" y="8" width="400" height="22" rx="11" fill="rgba(255,255,255,0.06)"/>
+  <text x="400" y="23" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">ialui.app — Atendimento Interno</text>
+
+  <!-- Sidebar -->
+  <rect x="0" y="38" width="220" height="462" fill="#080e1c"/>
+  <rect x="220" y="38" width="1" height="462" fill="rgba(255,255,255,0.07)"/>
+
+  <!-- Logo -->
+  <rect x="14" y="54" width="32" height="32" rx="8" fill="url(#accentGrad)"/>
+  <text x="30" y="75" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14" fill="#fff" font-weight="800">I</text>
+  <text x="56" y="68" font-family="Inter,Arial,sans-serif" font-size="14" fill="#f1f5f9" font-weight="700">Ialui</text>
+  <text x="56" y="82" font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">Plataforma de Atendimento</text>
+
+  <!-- Sidebar label -->
+  <text x="14" y="110" font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" font-weight="700" letter-spacing="1">CONVERSAS</text>
+
+  <!-- Conversation items -->
+  <rect x="8" y="118" width="204" height="52" rx="8" fill="rgba(99,102,241,0.22)"/>
+  <rect x="8" y="118" width="3" height="52" rx="1.5" fill="#818cf8"/>
+  <circle cx="33" cy="144" r="13" fill="#4f46e5"/>
+  <text x="33" y="149" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" fill="#fff" font-weight="700">MF</text>
+  <text x="54" y="140" font-family="Inter,Arial,sans-serif" font-size="11" fill="#f1f5f9" font-weight="600">Medformula</text>
+  <text x="54" y="155" font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">Pedido confirmado ✓</text>
+  <rect x="188" y="134" width="18" height="16" rx="8" fill="#4f46e5"/>
+  <text x="197" y="146" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="8.5" fill="#fff">3</text>
+
+  <rect x="8" y="178" width="204" height="52" rx="8" fill="transparent"/>
+  <circle cx="33" cy="204" r="13" fill="#0ea5e9"/>
+  <text x="33" y="209" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" fill="#fff" font-weight="700">DA</text>
+  <text x="54" y="200" font-family="Inter,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.65)" font-weight="600">Dr. Atende</text>
+  <text x="54" y="215" font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Agendamento confirmado</text>
+
+  <rect x="8" y="238" width="204" height="52" rx="8" fill="transparent"/>
+  <circle cx="33" cy="264" r="13" fill="#10b981"/>
+  <text x="33" y="269" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" fill="#fff" font-weight="700">CA</text>
+  <text x="54" y="260" font-family="Inter,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.65)" font-weight="600">Cartão Atende</text>
+  <text x="54" y="275" font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)">Obrigado pelo contato!</text>
+
+  <rect x="8" y="298" width="204" height="52" rx="8" fill="transparent"/>
+  <circle cx="33" cy="324" r="13" fill="#f59e0b"/>
+  <text x="33" y="329" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="10" fill="#fff" font-weight="700">UN</text>
+  <text x="54" y="320" font-family="Inter,Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.65)" font-weight="600">Unidade Maringá</text>
+  <text x="54" y="335" font-family="Inter,Arial,sans-serif" font-size="9" fill="#10b981">● Chatbot ativo</text>
+
+  <!-- Equipes -->
+  <text x="14" y="378" font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.3)" font-weight="700" letter-spacing="1">EQUIPES</text>
+  <rect x="8" y="386" width="204" height="32" rx="6" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="22" cy="402" r="5" fill="#4f46e5"/>
+  <text x="32" y="406" font-family="Inter,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.55)">Time de Vendas</text>
+  <text x="196" y="406" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(255,255,255,0.25)">12 agentes</text>
+
+  <rect x="8" y="424" width="204" height="32" rx="6" fill="rgba(255,255,255,0.04)"/>
+  <circle cx="22" cy="440" r="5" fill="#10b981"/>
+  <text x="32" y="444" font-family="Inter,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.55)">Suporte Técnico</text>
+
+  <!-- Stats sidebar bottom -->
+  <rect x="0" y="460" width="220" height="40" fill="rgba(255,255,255,0.03)"/>
+  <text x="14" y="476" font-family="Inter,Arial,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)">Hoje</text>
+  <text x="14" y="490" font-family="Inter,Arial,sans-serif" font-size="12" fill="#818cf8" font-weight="700">147 conv.</text>
+  <text x="90" y="476" font-family="Inter,Arial,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)">Resolvidas</text>
+  <text x="90" y="490" font-family="Inter,Arial,sans-serif" font-size="12" fill="#10b981" font-weight="700">94%</text>
+  <text x="160" y="476" font-family="Inter,Arial,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)">Unidades</text>
+  <text x="160" y="490" font-family="Inter,Arial,sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" font-weight="700">5</text>
+
+  <!-- Main chat area -->
+  <rect x="221" y="38" width="579" height="462" fill="#111827"/>
+
+  <!-- Chat header -->
+  <rect x="221" y="38" width="579" height="54" fill="#1a2435"/>
+  <circle cx="252" cy="65" r="14" fill="#4f46e5"/>
+  <text x="252" y="70" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" fill="#fff" font-weight="700">MF</text>
+  <text x="276" y="60" font-family="Inter,Arial,sans-serif" font-size="13" fill="#f1f5f9" font-weight="600">Medformula</text>
+  <text x="276" y="76" font-family="Inter,Arial,sans-serif" font-size="9" fill="#10b981">● Online • Via WhatsApp</text>
+  <rect x="680" y="54" width="90" height="22" rx="11" fill="rgba(16,185,129,0.15)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="725" y="69" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9" fill="#10b981" font-weight="600">GupShup ●</text>
+
+  <!-- Messages -->
+  <rect x="236" y="108" width="300" height="52" rx="10" fill="rgba(255,255,255,0.07)"/>
+  <text x="252" y="130" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="rgba(255,255,255,0.75)">🤖 Olá! Seu pedido #4521 foi confirmado.</text>
+  <text x="252" y="147" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="rgba(255,255,255,0.75)">Deseja reagendar ou confirmar?</text>
+  <text x="252" y="170" font-family="Inter,Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.25)">14:32 • Chatbot</text>
+
+  <rect x="490" y="180" width="220" height="36" rx="10" fill="url(#accentGrad)"/>
+  <text x="506" y="194" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="#fff">Confirmar! ✓</text>
+  <text x="506" y="208" font-family="Inter,Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.6)">14:33 • ✓✓</text>
+
+  <rect x="236" y="228" width="310" height="64" rx="10" fill="rgba(255,255,255,0.07)"/>
+  <text x="252" y="248" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="rgba(255,255,255,0.75)">✅ Perfeito! Agendamento confirmado</text>
+  <text x="252" y="264" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="rgba(255,255,255,0.75)">para amanhã às 10:00.</text>
+  <text x="252" y="280" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="rgba(255,255,255,0.75)">Até logo! 👋</text>
+  <text x="252" y="302" font-family="Inter,Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.25)">14:33 • Chatbot</text>
+
+  <!-- Transfer badge -->
+  <rect x="236" y="314" width="340" height="24" rx="12" fill="rgba(99,102,241,0.12)" stroke="rgba(99,102,241,0.25)" stroke-width="1"/>
+  <text x="406" y="330" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9" fill="rgba(129,140,248,0.75)">⇄ Transferido para Atendente — Unidade Maringá</text>
+
+  <!-- Agent message -->
+  <rect x="236" y="350" width="260" height="36" rx="10" fill="rgba(255,255,255,0.07)"/>
+  <text x="252" y="366" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="rgba(255,255,255,0.7)">Olá! Vou confirmar seu pedido 😊</text>
+  <text x="252" y="378" font-family="Inter,Arial,sans-serif" font-size="8" fill="rgba(255,255,255,0.25)">14:34 • Ana — Atendente</text>
+
+  <!-- Input area -->
+  <rect x="221" y="452" width="579" height="48" fill="#1a2435"/>
+  <rect x="236" y="463" width="460" height="26" rx="13" fill="rgba(255,255,255,0.06)"/>
+  <text x="252" y="481" font-family="Inter,Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.2)">Digite uma mensagem...</text>
+  <circle cx="720" cy="476" r="14" fill="url(#accentGrad)"/>
+  <text x="720" y="481" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#fff">↑</text>
+
+  <!-- Webhook badge -->
+  <rect x="650" y="108" width="140" height="80" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="660" y="126" font-family="Inter,Arial,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)" font-weight="700">INTEGRAÇÕES</text>
+  <rect x="660" y="133" width="60" height="14" rx="7" fill="rgba(99,102,241,0.3)"/>
+  <text x="690" y="144" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="7.5" fill="#818cf8">Webhook</text>
+  <rect x="660" y="153" width="50" height="14" rx="7" fill="rgba(16,185,129,0.2)"/>
+  <text x="685" y="164" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="7.5" fill="#34d399">GupShup</text>
+  <rect x="660" y="173" width="60" height="14" rx="7" fill="rgba(37,211,102,0.2)"/>
+  <text x="690" y="184" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="7.5" fill="#25d366">WhatsApp</text>
+</svg>
