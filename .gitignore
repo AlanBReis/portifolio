@@ -1,0 +1,27 @@
+# Claude Code / harness
+.claude/
+
+# Backups e checkpoints de edição (não publicar)
+*.bak-redesign.*
+*.checkpoint.*
+
+# Arquivos temporários de preview/render
+_preview*.png
+_preview*.pdf
+_cardtest*.*
+_bitest*.*
+_cons.*
+_full.*
+_cbcard.png
+_cbtest.*
+_dark.html
+
+# Originais SEM blur / dados sensíveis — NUNCA versionar
+imagem1.jpg
+imagem2.jpg
+*_original.*
+img/**/*original*
+
+# OS
+.DS_Store
+**/.DS_Store

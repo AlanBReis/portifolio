@@ -1,0 +1,225 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bgBenef" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="60%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="ctaGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#1e1b4b" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- BG -->
+  <rect width="1200" height="720" fill="url(#bgBenef)"/>
+  <circle cx="120" cy="100" r="140" fill="#a5b4fc" opacity="0.25"/>
+  <circle cx="1080" cy="640" r="180" fill="#c4b5fd" opacity="0.28"/>
+
+  <!-- Browser chrome -->
+  <rect x="60" y="50" width="1080" height="620" rx="16" fill="#ffffff" filter="url(#cardShadow)"/>
+  <rect x="60" y="50" width="1080" height="44" rx="16" fill="#f1f5f9"/>
+  <rect x="60" y="78" width="1080" height="16" fill="#f1f5f9"/>
+  <circle cx="84" cy="72" r="6" fill="#ff5f57"/>
+  <circle cx="104" cy="72" r="6" fill="#febc2e"/>
+  <circle cx="124" cy="72" r="6" fill="#28c840"/>
+  <rect x="430" y="60" width="340" height="24" rx="12" fill="#e2e8f0"/>
+  <text x="600" y="76" text-anchor="middle" font-size="11" fill="#64748b" font-weight="500">🔒 agendamento.cartaoatende.com.br</text>
+
+  <!-- Top brand bar -->
+  <rect x="60" y="94" width="1080" height="60" fill="#ffffff"/>
+  <rect x="60" y="153" width="1080" height="1" fill="#e2e8f0"/>
+  <!-- Logo mark -->
+  <rect x="92" y="110" width="34" height="30" rx="6" fill="url(#cardGrad)"/>
+  <text x="109" y="131" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">CA</text>
+  <text x="138" y="129" font-size="15" font-weight="700" fill="#0f172a">Cartão Atende</text>
+  <text x="138" y="144" font-size="10.5" font-weight="500" fill="#64748b" letter-spacing="1.5">BENEFICIÁRIO · AGENDAMENTO</text>
+
+  <!-- Step badge -->
+  <rect x="930" y="115" width="178" height="24" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <circle cx="945" cy="127" r="3.5" fill="#10b981"/>
+  <text x="956" y="131" font-size="11" font-weight="600" fill="#047857">Cartão validado · Beneficiário</text>
+
+  <!-- Title block -->
+  <text x="92" y="200" font-size="26" font-weight="800" fill="#0f172a" letter-spacing="-0.5">Agende sua consulta</text>
+  <text x="92" y="225" font-size="13.5" fill="#64748b">Cobertura confirmada pelo seu Cartão Atende — selecione a especialidade e o horário disponível.</text>
+
+  <!-- Step indicator -->
+  <g transform="translate(92, 250)">
+    <circle cx="10" cy="10" r="10" fill="#4f46e5"/>
+    <text x="10" y="14" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+    <text x="28" y="14" font-size="12" font-weight="600" fill="#0f172a">Identificação</text>
+    <rect x="125" y="9" width="55" height="2" rx="1" fill="#4f46e5"/>
+    <circle cx="190" cy="10" r="10" fill="#4f46e5"/>
+    <text x="190" y="14" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">2</text>
+    <text x="208" y="14" font-size="12" font-weight="600" fill="#0f172a">Especialidade</text>
+    <rect x="304" y="9" width="55" height="2" rx="1" fill="#cbd5e1"/>
+    <circle cx="368" cy="10" r="10" fill="#e2e8f0" stroke="#cbd5e1"/>
+    <text x="368" y="14" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">3</text>
+    <text x="386" y="14" font-size="12" font-weight="500" fill="#94a3b8">Horário</text>
+    <rect x="463" y="9" width="55" height="2" rx="1" fill="#cbd5e1"/>
+    <circle cx="528" cy="10" r="10" fill="#e2e8f0" stroke="#cbd5e1"/>
+    <text x="528" y="14" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">4</text>
+    <text x="546" y="14" font-size="12" font-weight="500" fill="#94a3b8">Confirmação</text>
+  </g>
+
+  <!-- Two column layout -->
+  <!-- LEFT: Specialty picker -->
+  <g transform="translate(92, 295)">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#0f172a" letter-spacing="0.4">ESPECIALIDADES DISPONÍVEIS</text>
+
+    <!-- Card 1 active -->
+    <rect x="0" y="14" width="300" height="76" rx="12" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+    <circle cx="34" cy="52" r="20" fill="#ffffff" stroke="#6366f1" stroke-width="1.5"/>
+    <text x="34" y="58" text-anchor="middle" font-size="18">🩺</text>
+    <text x="68" y="46" font-size="14" font-weight="700" fill="#0f172a">Clínico Geral</text>
+    <text x="68" y="64" font-size="11.5" fill="#64748b">Dr. Marcos R. · CRM 31.452</text>
+    <rect x="68" y="72" width="64" height="14" rx="7" fill="#dcfce7"/>
+    <text x="100" y="82" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">COBERTO 100%</text>
+    <circle cx="274" cy="52" r="10" fill="#6366f1"/>
+    <text x="274" y="56" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">✓</text>
+
+    <!-- Card 2 -->
+    <rect x="0" y="100" width="300" height="76" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="34" cy="138" r="20" fill="#fef3c7"/>
+    <text x="34" y="144" text-anchor="middle" font-size="16">🦷</text>
+    <text x="68" y="132" font-size="14" font-weight="700" fill="#0f172a">Odontologia</text>
+    <text x="68" y="150" font-size="11.5" fill="#64748b">12 profissionais · 3 unidades</text>
+    <rect x="68" y="158" width="64" height="14" rx="7" fill="#dcfce7"/>
+    <text x="100" y="168" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">COBERTO 100%</text>
+
+    <!-- Card 3 -->
+    <rect x="0" y="186" width="300" height="76" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="34" cy="224" r="20" fill="#fce7f3"/>
+    <text x="34" y="230" text-anchor="middle" font-size="16">👶</text>
+    <text x="68" y="218" font-size="14" font-weight="700" fill="#0f172a">Pediatria</text>
+    <text x="68" y="236" font-size="11.5" fill="#64748b">Dra. Larissa T. · CRM 28.901</text>
+    <rect x="68" y="244" width="80" height="14" rx="7" fill="#fef3c7"/>
+    <text x="108" y="254" text-anchor="middle" font-size="9.5" font-weight="700" fill="#a16207">COPART. R$ 25</text>
+
+    <!-- Card 4 -->
+    <rect x="0" y="272" width="300" height="76" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="34" cy="310" r="20" fill="#dbeafe"/>
+    <text x="34" y="316" text-anchor="middle" font-size="16">💊</text>
+    <text x="68" y="304" font-size="14" font-weight="700" fill="#0f172a">Psicologia</text>
+    <text x="68" y="322" font-size="11.5" fill="#64748b">Atendimento presencial e online</text>
+    <rect x="68" y="330" width="64" height="14" rx="7" fill="#dcfce7"/>
+    <text x="100" y="340" text-anchor="middle" font-size="9.5" font-weight="700" fill="#15803d">COBERTO 100%</text>
+  </g>
+
+  <!-- RIGHT: calendar + summary -->
+  <g transform="translate(440, 295)">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#0f172a" letter-spacing="0.4">SELECIONE DATA &amp; HORÁRIO</text>
+
+    <!-- Mini calendar -->
+    <rect x="0" y="14" width="320" height="200" rx="14" fill="#ffffff" stroke="#e2e8f0" filter="url(#softShadow)"/>
+    <text x="16" y="38" font-size="13" font-weight="700" fill="#0f172a">Maio 2026</text>
+    <text x="304" y="38" text-anchor="end" font-size="11" fill="#4f46e5" font-weight="600">⟨   ⟩</text>
+
+    <!-- weekday header -->
+    <g font-size="9.5" font-weight="600" fill="#94a3b8" text-anchor="middle">
+      <text x="32"  y="60">D</text>
+      <text x="74"  y="60">S</text>
+      <text x="116" y="60">T</text>
+      <text x="158" y="60">Q</text>
+      <text x="200" y="60">Q</text>
+      <text x="242" y="60">S</text>
+      <text x="284" y="60">S</text>
+    </g>
+
+    <!-- Day grid -->
+    <g font-size="11" font-weight="600" fill="#475569" text-anchor="middle">
+      <!-- row 1 -->
+      <text x="200" y="84">1</text><text x="242" y="84">2</text><text x="284" y="84">3</text>
+      <!-- row 2 -->
+      <text x="32" y="106">4</text><text x="74" y="106">5</text><text x="116" y="106">6</text><text x="158" y="106">7</text><text x="200" y="106">8</text><text x="242" y="106">9</text><text x="284" y="106">10</text>
+      <!-- row 3 -->
+      <text x="32" y="128">11</text><text x="74" y="128">12</text><text x="116" y="128">13</text><text x="158" y="128">14</text>
+      <!-- highlighted 17 -->
+      <circle cx="284" cy="124" r="13" fill="#4f46e5"/>
+      <text x="200" y="128" fill="#94a3b8">15</text><text x="242" y="128" fill="#94a3b8">16</text>
+      <text x="284" y="128" fill="#ffffff" font-weight="700">17</text>
+      <!-- row 4 -->
+      <text x="32" y="150">18</text><text x="74" y="150">19</text><text x="116" y="150">20</text><text x="158" y="150">21</text><text x="200" y="150">22</text><text x="242" y="150">23</text><text x="284" y="150">24</text>
+      <!-- row 5 -->
+      <text x="32" y="172">25</text><text x="74" y="172">26</text><text x="116" y="172">27</text><text x="158" y="172">28</text><text x="200" y="172">29</text><text x="242" y="172">30</text><text x="284" y="172">31</text>
+    </g>
+    <!-- legend -->
+    <circle cx="16" cy="194" r="4" fill="#4f46e5"/>
+    <text x="26" y="197" font-size="10" fill="#64748b">Selecionado</text>
+    <circle cx="116" cy="194" r="4" fill="#fbbf24"/>
+    <text x="126" y="197" font-size="10" fill="#64748b">Poucas vagas</text>
+
+    <!-- Time slots -->
+    <text x="0" y="240" font-size="12" font-weight="700" fill="#0f172a" letter-spacing="0.4">HORÁRIOS — SÁBADO, 17/MAI</text>
+    <g font-size="12" font-weight="600">
+      <rect x="0"   y="252" width="72" height="36" rx="9" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="36"  y="275" text-anchor="middle" fill="#475569">08:00</text>
+      <rect x="80"  y="252" width="72" height="36" rx="9" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="116" y="275" text-anchor="middle" fill="#475569">08:30</text>
+      <rect x="160" y="252" width="72" height="36" rx="9" fill="#4f46e5"/>
+      <text x="196" y="275" text-anchor="middle" fill="#ffffff">09:00</text>
+      <rect x="240" y="252" width="72" height="36" rx="9" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="276" y="275" text-anchor="middle" fill="#475569">09:30</text>
+
+      <rect x="0"   y="296" width="72" height="36" rx="9" fill="#fef3c7" stroke="#fcd34d"/>
+      <text x="36"  y="319" text-anchor="middle" fill="#92400e">10:00</text>
+      <rect x="80"  y="296" width="72" height="36" rx="9" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="116" y="319" text-anchor="middle" fill="#475569">10:30</text>
+      <rect x="160" y="296" width="72" height="36" rx="9" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="196" y="319" text-anchor="middle" fill="#475569">14:00</text>
+      <rect x="240" y="296" width="72" height="36" rx="9" fill="#ffffff" stroke="#e2e8f0"/>
+      <text x="276" y="319" text-anchor="middle" fill="#475569">14:30</text>
+    </g>
+  </g>
+
+  <!-- Summary card right -->
+  <g transform="translate(800, 295)">
+    <rect x="0" y="14" width="278" height="334" rx="14" fill="url(#cardGrad)" filter="url(#softShadow)"/>
+    <text x="20" y="42" font-size="11" font-weight="700" fill="rgba(255,255,255,0.75)" letter-spacing="1.5">RESUMO DO AGENDAMENTO</text>
+
+    <!-- Card preview -->
+    <rect x="20" y="56" width="238" height="98" rx="10" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)"/>
+    <text x="34" y="78" font-size="9.5" font-weight="600" fill="rgba(255,255,255,0.7)" letter-spacing="1.2">CARTÃO ATENDE · BENEFICIÁRIO</text>
+    <text x="34" y="106" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="2">•••• •••• •••• 4829</text>
+    <text x="34" y="128" font-size="9" font-weight="500" fill="rgba(255,255,255,0.65)">TITULAR</text>
+    <text x="34" y="142" font-size="12" font-weight="700" fill="#ffffff">MARIA J. SILVA</text>
+    <text x="200" y="128" font-size="9" font-weight="500" fill="rgba(255,255,255,0.65)">PLANO</text>
+    <text x="200" y="142" font-size="12" font-weight="700" fill="#ffffff">GOLD</text>
+
+    <!-- summary rows -->
+    <line x1="20" y1="176" x2="258" y2="176" stroke="rgba(255,255,255,0.15)"/>
+    <text x="20" y="198" font-size="11" fill="rgba(255,255,255,0.65)">Especialidade</text>
+    <text x="258" y="198" text-anchor="end" font-size="12" font-weight="700" fill="#ffffff">Clínico Geral</text>
+    <text x="20" y="222" font-size="11" fill="rgba(255,255,255,0.65)">Profissional</text>
+    <text x="258" y="222" text-anchor="end" font-size="12" font-weight="700" fill="#ffffff">Dr. Marcos R.</text>
+    <text x="20" y="246" font-size="11" fill="rgba(255,255,255,0.65)">Data</text>
+    <text x="258" y="246" text-anchor="end" font-size="12" font-weight="700" fill="#ffffff">Sáb, 17 Mai · 09:00</text>
+    <text x="20" y="270" font-size="11" fill="rgba(255,255,255,0.65)">Cobertura</text>
+    <text x="258" y="270" text-anchor="end" font-size="12" font-weight="700" fill="#86efac">100% — Sem custo</text>
+
+    <!-- CTA -->
+    <rect x="20" y="290" width="238" height="46" rx="100" fill="#ffffff"/>
+    <text x="139" y="318" text-anchor="middle" font-size="13.5" font-weight="700" fill="#4f46e5">Confirmar agendamento  →</text>
+  </g>
+
+  <!-- Footer status bar -->
+  <rect x="60" y="618" width="1080" height="52" rx="0" fill="#f8fafc"/>
+  <rect x="60" y="618" width="1080" height="1" fill="#e2e8f0"/>
+  <circle cx="92" cy="644" r="4" fill="#10b981"/>
+  <circle cx="92" cy="644" r="7" fill="#10b981" opacity="0.3"/>
+  <text x="106" y="649" font-size="11.5" font-weight="600" fill="#0f172a">Sistema integrado ao ChatWoot</text>
+  <text x="280" y="649" font-size="11" fill="#64748b">· Confirmação automática via WhatsApp</text>
+  <text x="540" y="649" font-size="11" fill="#64748b">· LGPD compliant</text>
+  <text x="1108" y="649" text-anchor="end" font-size="11" font-weight="600" fill="#4f46e5">cartaoatende.com.br</text>
+</svg>
